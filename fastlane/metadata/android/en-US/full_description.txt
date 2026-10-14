@@ -1,0 +1,10 @@
+<p>Send text as Morse code with the flashlight and read it back with the camera, optionally encrypted with a master password.</p>
+<p>One phone flashes, another one points its camera at the light and turns the pulses back into text. It also reads any other blinking light: a lamp, a screen, a torch in the distance.</p>
+<ul>
+<li><b>Send</b>: type, pick the speed, flash. Repeat in a loop so the receiver has time to get settled.</li>
+<li><b>Receive</b>: aim and press Start. Pinch to zoom on distant lights. Each repeat lands on its own line, and the received text can be edited by hand.</li>
+<li><b>Encrypt / Decrypt</b>: AES-256 with a master password, in a compact format of letters and digits made for Morse: "HOLA MUNDO" becomes 26 characters.</li>
+</ul>
+<p>The receiver follows only what blinks, so a bright screen next to the lamp does not blind it. It measures the sender's speed by itself, tolerates a hand holding the phone and pauses while the phone moves.</p>
+<p>No network permission: nothing leaves the phone except light. Nothing is stored.</p>
+<p>Sending needs a phone with a flashlight; receiving needs a camera.</p>

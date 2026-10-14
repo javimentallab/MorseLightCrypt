@@ -1,0 +1,25 @@
+*.iml
+.gradle/
+.kotlin/
+.idea/
+.DS_Store
+
+# Covers app/build too
+build/
+captures/
+.externalNativeBuild
+.cxx
+
+# Local SDK path, differs per machine
+local.properties
+
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Release signing paths and passwords
+keystore.properties
+
+# Python
+__pycache__/

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morse Blink</title>
+<!--
+  Flashes a message in Morse with the whole screen, to test the receiver with
+  exact timing. Open it on a computer, aim the phone at the screen, start.
+  Click or press Esc while flashing to stop.
+-->
+<style>
+  :root { --bg: #111119; --fg: #e8e8f0; --accent: #ffc94d; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg);
+               font: 16px system-ui, sans-serif; }
+  #form { max-width: 520px; margin: 0 auto; padding: 24px 16px; display: grid; gap: 12px; }
+  textarea, input, button { font: inherit; padding: 8px; border-radius: 8px;
+                            border: 1px solid #444; background: #1b1b2a; color: var(--fg); }
+  button { background: var(--accent); color: #2b1f00; border: 0; font-weight: 600; cursor: pointer; }
+  #stage { position: fixed; inset: 0; background: #000; display: none; }
+  #stage.on { background: #fff; }
+  #status { position: fixed; left: 12px; bottom: 8px; color: #888; font: 14px monospace; }
+</style>
+</head>
+<body>
+<div id="form">
+  <h2>Morse blink</h2>
+  <textarea id="text" rows="3">HELLO WORLD</textarea>
+  <label>Speed <input id="wpm" type="number" min="3" max="20" value="8"> WPM</label>
+  <label><input id="repeat" type="checkbox"> Repeat until stopped</label>
+  <button id="go">Flash it</button>
+  <small>Aim the phone at the screen. Click or press Esc to stop.</small>
+</div>
+<div id="stage"><div id="status"></div></div>
+<script>
+const CODES = {A:".-",B:"-...",C:"-.-.",D:"-..",E:".",F:"..-.",G:"--.",H:"....",I:"..",J:".---",
+  K:"-.-",L:".-..",M:"--",N:"-.","Ñ":"--.--",O:"---",P:".--.",Q:"--.-",R:".-.",S:"...",T:"-",
+  U:"..-",V:"...-",W:".--",X:"-..-",Y:"-.--",Z:"--..","0":"-----","1":".----","2":"..---",
+  "3":"...--","4":"....-","5":".....","6":"-....","7":"--...","8":"---..","9":"----.",
+  ".":".-.-.-",",":"--..--","?":"..--..","'":".----.","!":"-.-.--","/":"-..-.","(":"-.--.",
+  ")":"-.--.-","&":".-...",":":"---...",";":"-.-.-.","=":"-...-","+":".-.-.","-":"-....-",
+  "_":"..--.-",'"':".-..-.","$":"...-..-","@":".--.-."};
+
+function normalize(text) {
+  let out = "";
+  for (const raw of text.toUpperCase()) {
+    if (/\s/.test(raw)) { if (out && !out.endsWith(" ")) out += " "; continue; }
+    const c = raw === "Ñ" ? raw : raw.normalize("NFD")[0];
+    if (CODES[c]) out += c;
+  }
+  return out.trimEnd();
+}
+
+function schedule(text) {
+  const pulses = []; let gap = 0;
+  for (const c of normalize(text)) {
+    if (c === " ") { gap = 7; continue; }
+    if (pulses.length) pulses.push([false, Math.max(gap, 3), c]);
+    [...CODES[c]].forEach((s, i) => {
+      if (i) pulses.push([false, 1, c]);
+      pulses.push([true, s === "." ? 1 : 3, c]);
+    });
+    gap = 0;
+  }
+  return pulses;
+}
+
+const stage = document.getElementById("stage");
+const status = document.getElementById("status");
+let running = false;
+
+function stop() { running = false; stage.style.display = "none"; stage.classList.remove("on"); }
+stage.addEventListener("click", stop);
+document.addEventListener("keydown", e => { if (e.key === "Escape") stop(); });
+
+document.getElementById("go").addEventListener("click", () => {
+  const pulses = schedule(document.getElementById("text").value);
+  if (!pulses.length) return;
+  const unit = 1200 / Number(document.getElementById("wpm").value || 8);
+  const repeat = document.getElementById("repeat").checked;
+  // Timeline of [start ms, on, char], plus 2 s of darkness before each pass.
+  const timeline = []; let t = 2000;
+  for (const [on, units, c] of pulses) { timeline.push([t, on, c]); t += units * unit; }
+  const pass = t + 7 * unit;
+
+  running = true;
+  stage.style.display = "block";
+  const t0 = performance.now();
+  (function frame(now) {
+    if (!running) return;
+    let elapsed = now - t0;
+    if (repeat) elapsed %= pass; else if (elapsed >= t) { stop(); return; }
+    let on = false, c = "";
+    for (const [start, isOn, ch] of timeline) { if (start > elapsed) break; on = isOn; c = ch; }
+    if (elapsed >= t) on = false;
+    stage.classList.toggle("on", on);
+    status.textContent = c;
+    requestAnimationFrame(frame);
+  })(t0);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_send">Enviar</string>
+    <string name="tab_receive">Recibir</string>
+    <string name="tab_send_secret">Cifrar</string>
+    <string name="tab_receive_secret">Descifrar</string>
+
+    <string name="message">Mensaje</string>
+    <string name="password">Contraseña maestra</string>
+    <string name="show_password">Mostrar contraseña</string>
+    <string name="hide_password">Ocultar contraseña</string>
+    <string name="speed_label">Velocidad: %1$d PPM (punto = %2$d ms)</string>
+    <string name="expected_speed">Velocidad esperada: %1$d PPM (punto = %2$d ms)</string>
+    <string name="repeat">Repetir hasta detener</string>
+    <string name="send">Emitir</string>
+    <string name="encrypt_and_send">Cifrar y emitir</string>
+    <string name="encrypting">Cifrando…</string>
+    <string name="stop">Detener</string>
+    <string name="send_duration">Unos %1$d s de emisión</string>
+    <string name="encrypted_length">Cifrado: unos %1$d caracteres</string>
+    <string name="no_flash">Este móvil no tiene linterna en la cámara trasera.</string>
+    <string name="torch_error">No se pudo usar la linterna: %1$s</string>
+    <string name="nothing_to_send">Nada de este mensaje se puede enviar en Morse.</string>
+    <string name="password_missing">Escribe primero la contraseña maestra.</string>
+    <string name="morse_preview_empty">Aquí aparecerá tu mensaje en Morse.</string>
+    <string name="cipher_preview_empty">El mensaje cifrado aparece aquí al enviarlo. Cambia cada vez.</string>
+    <string name="last_ciphertext">Último mensaje cifrado</string>
+
+    <string name="camera_permission">MorseLightCrypt necesita la cámara para ver los pulsos de luz. No se graba ni se guarda nada.</string>
+    <string name="allow_camera">Permitir cámara</string>
+    <string name="camera_open_failed">No se pudo abrir la cámara: %1$s</string>
+    <string name="calibrating">Ajustando la exposición…</string>
+    <string name="start_receiving">Empezar a recibir</string>
+    <string name="stop_receiving">Parar</string>
+    <string name="paused">En pausa: apunta a la luz y pulsa Empezar</string>
+    <string name="received_label">Recibido (puedes corregirlo)</string>
+    <string name="moving">En pausa mientras se mueve</string>
+    <string name="banner_moving">¡Deja el móvil quieto!</string>
+    <string name="banner_shaky">Pulso inestable: sujétalo más firme</string>
+    <string name="aim_at_light">Apunta el cuadrado a la luz que parpadea</string>
+    <string name="light_found">Luz encontrada, esperando pulsos</string>
+    <string name="receiving">Recibiendo, unas %1$d PPM</string>
+    <string name="received_empty">Aquí aparecerá el texto recibido.</string>
+    <string name="decrypt">Descifrar</string>
+    <string name="decrypting">Descifrando…</string>
+    <string name="decrypt_failed">No se pudo descifrar. O la contraseña no es esa o se leyó mal alguna letra: borra y recíbelo de nuevo.</string>
+    <string name="line_not_opened">La línea %1$d no se pudo descifrar: %2$s</string>
+    <string name="majority_label">Reconstruido por mayoría, suponiendo que las líneas son vueltas del mismo mensaje:</string>
+    <string name="clear">Borrar</string>
+    <string name="copy">Copiar</string>
+    <string name="recalibrate">Recalibrar</string>
+    <string name="receive_tips">Apunta el cuadrado a la luz y pellizca para hacer zoom si está lejos. Apoya el móvil: mientras se mueve no lee nada.</string>
+</resources>

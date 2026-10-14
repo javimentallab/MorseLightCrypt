@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MorseLightCrypt</string>
+
+    <string name="tab_send">Send</string>
+    <string name="tab_receive">Receive</string>
+    <string name="tab_send_secret">Encrypt</string>
+    <string name="tab_receive_secret">Decrypt</string>
+
+    <string name="message">Message</string>
+    <string name="password">Master password</string>
+    <string name="show_password">Show password</string>
+    <string name="hide_password">Hide password</string>
+    <string name="speed_label">Speed: %1$d WPM (dot = %2$d ms)</string>
+    <string name="expected_speed">Expected speed: %1$d WPM (dot = %2$d ms)</string>
+    <string name="repeat">Repeat until stopped</string>
+    <string name="send">Flash it</string>
+    <string name="encrypt_and_send">Encrypt and flash</string>
+    <string name="encrypting">Encrypting…</string>
+    <string name="stop">Stop</string>
+    <string name="send_duration">About %1$d s to send</string>
+    <string name="encrypted_length">Encrypted: about %1$d characters</string>
+    <string name="no_flash">This phone has no flashlight on the back camera.</string>
+    <string name="torch_error">Could not use the flashlight: %1$s</string>
+    <string name="nothing_to_send">Nothing in this message can be sent in Morse.</string>
+    <string name="password_missing">Type the master password first.</string>
+    <string name="morse_preview_empty">The Morse code of your message will appear here.</string>
+    <string name="cipher_preview_empty">The encrypted message appears here when you send it. It changes every time.</string>
+    <string name="last_ciphertext">Last encrypted message</string>
+
+    <string name="camera_permission">MorseLightCrypt needs the camera to see the light pulses. Nothing is recorded or stored.</string>
+    <string name="allow_camera">Allow camera</string>
+    <string name="camera_open_failed">Could not open the camera: %1$s</string>
+    <string name="calibrating">Adjusting exposure…</string>
+    <string name="start_receiving">Start receiving</string>
+    <string name="stop_receiving">Stop</string>
+    <string name="paused">Paused: aim at the light, then press Start</string>
+    <string name="received_label">Received (you can edit it)</string>
+    <string name="moving">Paused while the phone moves</string>
+    <string name="banner_moving">Hold the phone still!</string>
+    <string name="banner_shaky">Shaky: hold it steadier</string>
+    <string name="aim_at_light">Aim the square at the blinking light</string>
+    <string name="light_found">Light found, waiting for pulses</string>
+    <string name="receiving">Receiving, about %1$d WPM</string>
+    <string name="received_empty">Received text will appear here.</string>
+    <string name="decrypt">Decrypt</string>
+    <string name="decrypting">Decrypting…</string>
+    <string name="decrypt_failed">Could not decrypt. Either the password is wrong or a letter was misread: clear and receive it again.</string>
+    <string name="line_not_opened">Line %1$d did not open: %2$s</string>
+    <string name="majority_label">Rebuilt by majority vote, assuming the lines are repeats of one message:</string>
+    <string name="clear">Clear</string>
+    <string name="copy">Copy</string>
+    <string name="recalibrate">Recalibrate</string>
+    <string name="receive_tips">Aim the square at the light, and pinch to zoom if it is far. Rest the phone on something: while it moves, nothing is read.</string>
+</resources>
