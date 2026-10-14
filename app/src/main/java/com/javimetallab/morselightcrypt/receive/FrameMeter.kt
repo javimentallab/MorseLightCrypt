@@ -148,6 +148,11 @@ class LightMeter(
     }
 
     /** Share of blocks that both brightened and darkened past [motionStep], the smaller side. */
+    /**
+     * Moving edges brighten about as many blocks as they darken. A light
+     * filling the room brightens most blocks, and the camera's local tone
+     * mapping then darkens a few others: lopsided, so it does not count.
+     */
     private fun motionShare(blocks: IntArray): Float {
         var brighter = 0
         var darker = 0
@@ -155,6 +160,13 @@ class LightMeter(
             val step = blocks[i] - previous[i]
             if (step > motionStep) brighter++ else if (step < -motionStep) darker++
         }
-        return min(brighter, darker).toFloat() / blocks.size
+        val fewer = min(brighter, darker)
+        if (fewer * MOTION_BALANCE < max(brighter, darker)) return 0f
+        return fewer.toFloat() / blocks.size
+    }
+
+    private companion object {
+        /** One side may outnumber the other at most this much for it to be motion. */
+        const val MOTION_BALANCE = 3
     }
 }
