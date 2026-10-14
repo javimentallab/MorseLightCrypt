@@ -48,6 +48,28 @@ class LightMeterTest {
         assertTrue("spread ${levels.max() - levels.min()}", levels.max() - levels.min() < 20)
     }
 
+    /**
+     * A bright lamp lights the room: 60 % of the blocks brighten a lot, and
+     * the camera's tone mapping darkens 12 % a little. Lopsided: not motion,
+     * so the first flashes of a message are not thrown away.
+     */
+    @Test
+    fun roomLightingUpWithToneMappingIsNotMotion() {
+        val meter = LightMeter()
+        val dark = IntArray(1000) { 60 }
+        val lit = IntArray(1000) { i ->
+            when {
+                i < 600 -> 200
+                i < 720 -> 20
+                else -> 60
+            }
+        }
+        repeat(5) {
+            assertTrue(meter.update(dark).steady)
+            assertTrue(meter.update(lit).steady)
+        }
+    }
+
     /** A lamp lighting the whole square brightens every pixel at once: not motion. */
     @Test
     fun aLampLightingTheRoomIsNotMotion() {
