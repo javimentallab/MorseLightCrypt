@@ -26,7 +26,7 @@
     <string name="cipher_preview_empty">El mensaje cifrado aparece aquí al enviarlo. Cambia cada vez.</string>
     <string name="last_ciphertext">Último mensaje cifrado</string>
 
-    <string name="camera_permission">MorseLightCrypt necesita la cámara para ver los pulsos de luz. No se graba ni se guarda nada.</string>
+    <string name="camera_permission">MorseLightCrypt necesita la cámara para ver los pulsos de luz. No se graba ni se guarda nada. Sin ella puedes escribir abajo a mano un mensaje recibido.</string>
     <string name="allow_camera">Permitir cámara</string>
     <string name="camera_open_failed">No se pudo abrir la cámara: %1$s</string>
     <string name="calibrating">Ajustando la exposición…</string>

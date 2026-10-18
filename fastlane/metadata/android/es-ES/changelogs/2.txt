@@ -1,0 +1,1 @@
+Las pestañas Recibir y Descifrar ya no piden la cámara antes de dejar escribir a mano un mensaje recibido.
