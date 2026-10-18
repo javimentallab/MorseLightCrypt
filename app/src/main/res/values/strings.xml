@@ -28,7 +28,7 @@
     <string name="cipher_preview_empty">The encrypted message appears here when you send it. It changes every time.</string>
     <string name="last_ciphertext">Last encrypted message</string>
 
-    <string name="camera_permission">MorseLightCrypt needs the camera to see the light pulses. Nothing is recorded or stored.</string>
+    <string name="camera_permission">MorseLightCrypt needs the camera to see the light pulses. Nothing is recorded or stored. Without it you can still type a received message below.</string>
     <string name="allow_camera">Allow camera</string>
     <string name="camera_open_failed">Could not open the camera: %1$s</string>
     <string name="calibrating">Adjusting exposure…</string>

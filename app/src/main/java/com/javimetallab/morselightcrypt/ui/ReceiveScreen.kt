@@ -111,18 +111,7 @@ fun ReceiveScreen(
 ) {
     LaunchedEffect(wpm) { model.hintUnitMs = MorseTiming.unitMs(wpm).toDouble() }
 
-    if (!hasCameraPermission) {
-        Column(
-            modifier.padding(24.dp),
-            verticalArrangement = Arrangement.spacedBy(16.dp)
-        ) {
-            Text(stringResource(R.string.camera_permission))
-            Button(onClick = onRequestCamera) { Text(stringResource(R.string.allow_camera)) }
-        }
-        return
-    }
-
-    KeepScreenOn()
+    if (hasCameraPermission) KeepScreenOn()
     val state by model.state.collectAsStateWithLifecycle()
     val clipboard = LocalClipboardManager.current
     var recalibrations by remember { mutableIntStateOf(0) }
@@ -134,72 +123,82 @@ fun ReceiveScreen(
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
-        Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
-            CameraView(
-                model = model,
-                isOn = state.isOn,
-                recalibrations = recalibrations,
-                onError = { cameraError = it },
-                modifier = Modifier
-                    .height(300.dp)
-                    .aspectRatio(3f / 4f)
-                    .clip(RoundedCornerShape(16.dp))
-            )
-            // Over the bottom of the viewfinder, where the eye already is.
-            val warning = when {
-                state.moving -> R.string.banner_moving to MaterialTheme.colorScheme.error
-                state.shaky -> R.string.banner_shaky to ShakyColor
-                else -> null
-            }
-            warning?.let { (text, color) ->
-                Text(
-                    stringResource(text),
-                    color = Color.Black,
-                    style = MaterialTheme.typography.labelLarge,
+        // Without the camera a received message can still be typed in by hand.
+        if (hasCameraPermission) {
+            Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
+                CameraView(
+                    model = model,
+                    isOn = state.isOn,
+                    recalibrations = recalibrations,
+                    onError = { cameraError = it },
                     modifier = Modifier
-                        .align(Alignment.BottomCenter)
-                        .padding(bottom = 12.dp)
-                        .background(color, RoundedCornerShape(8.dp))
-                        .padding(horizontal = 12.dp, vertical = 6.dp)
+                        .height(300.dp)
+                        .aspectRatio(3f / 4f)
+                        .clip(RoundedCornerShape(16.dp))
                 )
+                // Over the bottom of the viewfinder, where the eye already is.
+                val warning = when {
+                    state.moving -> R.string.banner_moving to MaterialTheme.colorScheme.error
+                    state.shaky -> R.string.banner_shaky to ShakyColor
+                    else -> null
+                }
+                warning?.let { (text, color) ->
+                    Text(
+                        stringResource(text),
+                        color = Color.Black,
+                        style = MaterialTheme.typography.labelLarge,
+                        modifier = Modifier
+                            .align(Alignment.BottomCenter)
+                            .padding(bottom = 12.dp)
+                            .background(color, RoundedCornerShape(8.dp))
+                            .padding(horizontal = 12.dp, vertical = 6.dp)
+                    )
+                }
+            }
+
+            // Under the viewfinder, where the thumb already is.
+            Button(
+                onClick = { if (model.listening) model.stopListening() else model.startListening() },
+                colors = if (model.listening) {
+                    ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error)
+                } else {
+                    ButtonDefaults.buttonColors()
+                },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(56.dp)
+            ) {
+                Icon(if (model.listening) Icons.Filled.Stop else Icons.Filled.PlayArrow, contentDescription = null)
+                Spacer(Modifier.width(8.dp))
+                Text(stringResource(if (model.listening) R.string.stop_receiving else R.string.start_receiving))
+            }
+
+            Text(
+                text = when {
+                    cameraError != null -> cameraError.orEmpty()
+                    !model.listening -> stringResource(R.string.paused)
+                    model.calibrating -> stringResource(R.string.calibrating)
+                    state.moving -> stringResource(R.string.moving)
+                    !state.hasSignal -> stringResource(R.string.aim_at_light)
+                    state.decoded.wpm != null -> stringResource(R.string.receiving, state.decoded.wpm ?: 0)
+                    else -> stringResource(R.string.light_found)
+                },
+                color = if (cameraError != null) MaterialTheme.colorScheme.error
+                else MaterialTheme.colorScheme.onSurface,
+                style = MaterialTheme.typography.bodyLarge
+            )
+
+            SignalGraph(state)
+
+            SpeedSlider(label = R.string.expected_speed, wpm = wpm, onWpmChange = onWpmChange)
+        } else {
+            Card(Modifier.fillMaxWidth()) {
+                Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                    Text(stringResource(R.string.camera_permission))
+                    Button(onClick = onRequestCamera) { Text(stringResource(R.string.allow_camera)) }
+                }
             }
         }
-
-        // Under the viewfinder, where the thumb already is.
-        Button(
-            onClick = { if (model.listening) model.stopListening() else model.startListening() },
-            colors = if (model.listening) {
-                ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error)
-            } else {
-                ButtonDefaults.buttonColors()
-            },
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(56.dp)
-        ) {
-            Icon(if (model.listening) Icons.Filled.Stop else Icons.Filled.PlayArrow, contentDescription = null)
-            Spacer(Modifier.width(8.dp))
-            Text(stringResource(if (model.listening) R.string.stop_receiving else R.string.start_receiving))
-        }
-
-        Text(
-            text = when {
-                cameraError != null -> cameraError.orEmpty()
-                !model.listening -> stringResource(R.string.paused)
-                model.calibrating -> stringResource(R.string.calibrating)
-                state.moving -> stringResource(R.string.moving)
-                !state.hasSignal -> stringResource(R.string.aim_at_light)
-                state.decoded.wpm != null -> stringResource(R.string.receiving, state.decoded.wpm ?: 0)
-                else -> stringResource(R.string.light_found)
-            },
-            color = if (cameraError != null) MaterialTheme.colorScheme.error
-            else MaterialTheme.colorScheme.onSurface,
-            style = MaterialTheme.typography.bodyLarge
-        )
-
-        SignalGraph(state)
-
-        SpeedSlider(label = R.string.expected_speed, wpm = wpm, onWpmChange = onWpmChange)
 
         // Earlier sessions plus the one being read, each on its own line.
         val live = if (model.listening) state.decoded.text.trim() else ""
@@ -268,14 +267,18 @@ fun ReceiveScreen(
                 },
                 enabled = allText.isNotEmpty()
             ) { Text(stringResource(R.string.copy)) }
-            OutlinedButton(onClick = { recalibrations++ }) { Text(stringResource(R.string.recalibrate)) }
+            if (hasCameraPermission) {
+                OutlinedButton(onClick = { recalibrations++ }) { Text(stringResource(R.string.recalibrate)) }
+            }
         }
 
-        Text(
-            stringResource(R.string.receive_tips),
-            style = MaterialTheme.typography.bodySmall,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
-        )
+        if (hasCameraPermission) {
+            Text(
+                stringResource(R.string.receive_tips),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+        }
     }
 }
 
