@@ -8,6 +8,14 @@ text. It also works with any other blinking light: a lamp, a screen, a torch in 
 
 No network permission: nothing leaves the phone except light.
 
+## Install
+
+- **[F-Droid](https://f-droid.org/packages/com.javimetallab.morselightcrypt/)** — search for *MorseLightCrypt* in
+  the F-Droid app (or Droid-ify, Neo Store…); it keeps the app updated.
+- **APK** from the [latest release](https://github.com/javimentallab/MorseLightCrypt/releases/latest).
+  F-Droid builds it reproducibly and ships this same signed APK, so you can switch
+  between both sources and keep updating.
+
 ---
 
 ## Tabs
