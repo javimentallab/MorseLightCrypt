@@ -38,6 +38,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.Hyphens
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -124,11 +126,14 @@ private fun MorseLightCryptApp(
                         selected = tab == index,
                         onClick = { tab = index },
                         // A size down from the default, so "Descifrar" fits a quarter of a phone.
+                        // Longer words ("Verschlüsseln", "Ontsleutelen") break over two lines,
+                        // hyphenated by the language's rules, instead of being cut short.
                         text = {
                             Text(
                                 stringResource(s.label),
-                                style = MaterialTheme.typography.labelMedium,
-                                maxLines = 1,
+                                style = MaterialTheme.typography.labelMedium.copy(hyphens = Hyphens.Auto),
+                                textAlign = TextAlign.Center,
+                                maxLines = 2,
                                 overflow = TextOverflow.Ellipsis
                             )
                         },

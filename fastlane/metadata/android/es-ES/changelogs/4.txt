@@ -1,0 +1,1 @@
+Los nombres de las pestañas ya no salen cortados en alemán, neerlandés, francés y ucraniano: las palabras largas pasan a dos líneas. La elección de luz o sonido en Recibir mantiene las dos opciones a la par cuando un idioma necesita dos líneas.
