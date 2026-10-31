@@ -10,7 +10,15 @@ package com.javimetallab.morselightcrypt.receive
  */
 class LightTracker(
     private val minContrast: Float = 20f,
-    private val drift: Float = 0.01f
+    private val drift: Float = 0.01f,
+    /**
+     * When set, "on" is judged from the top instead of between the edges: on
+     * within this much of [high], off once [offDrop] below it. For sound in
+     * decibels, where a room's echo keeps a beep ringing well above the
+     * silence long after it stopped, but it does drop from the beep's level.
+     */
+    private val onDrop: Float = Float.NaN,
+    private val offDrop: Float = Float.NaN
 ) {
     var low = Float.NaN
         private set
@@ -23,7 +31,8 @@ class LightTracker(
     val hasSignal: Boolean get() = !low.isNaN() && high - low >= minContrast
 
     /** Level that turns the light on, for drawing. */
-    val onThreshold: Float get() = low + 0.6f * (high - low)
+    val onThreshold: Float
+        get() = if (onDrop.isNaN()) low + 0.6f * (high - low) else maxOf(low + minContrast, high - onDrop)
 
     /** Feeds one frame; returns true when on/off changed. */
     fun update(level: Float): Boolean {
@@ -38,6 +47,7 @@ class LightTracker(
         val contrast = high - low
         val on = when {
             contrast < minContrast -> false
+            !onDrop.isNaN() -> level > maxOf(low + minContrast, high - if (isOn) offDrop else onDrop)
             isOn -> level > low + 0.4f * contrast
             else -> level > low + 0.6f * contrast
         }

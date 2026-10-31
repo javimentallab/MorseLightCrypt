@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_send">Senden</string>
+    <string name="tab_receive">Empfangen</string>
+    <string name="tab_send_secret">Verschlüsseln</string>
+    <string name="tab_receive_secret">Entschlüsseln</string>
+    <string name="message">Nachricht</string>
+    <string name="password">Master-Passwort</string>
+    <string name="show_password">Passwort anzeigen</string>
+    <string name="hide_password">Passwort verbergen</string>
+    <string name="speed_label">Tempo: %1$d WpM (Punkt = %2$d ms)</string>
+    <string name="expected_speed">Erwartetes Tempo: %1$d WpM (Punkt = %2$d ms)</string>
+    <string name="repeat">Wiederholen bis Stopp</string>
+    <string name="send">Senden</string>
+    <string name="encrypt_and_send">Verschlüsseln und senden</string>
+    <string name="encrypting">Verschlüssele…</string>
+    <string name="stop">Stopp</string>
+    <string name="send_duration">Etwa %1$d s Sendedauer</string>
+    <string name="encrypted_length">Verschlüsselt: etwa %1$d Zeichen</string>
+    <string name="no_flash">Dieses Handy hat keine Taschenlampe an der Rückkamera.</string>
+    <string name="nothing_to_send">Nichts in dieser Nachricht lässt sich als Morsecode senden.</string>
+    <string name="password_missing">Gib zuerst das Master-Passwort ein.</string>
+    <string name="morse_preview_empty">Hier erscheint deine Nachricht als Morsecode.</string>
+    <string name="cipher_preview_empty">Die verschlüsselte Nachricht erscheint hier beim Senden. Sie ändert sich jedes Mal.</string>
+    <string name="last_ciphertext">Letzte verschlüsselte Nachricht</string>
+    <string name="camera_permission">MorseLightCrypt braucht die Kamera, um die Lichtimpulse zu sehen. Nichts wird aufgenommen oder gespeichert. Ohne sie kannst du eine empfangene Nachricht unten von Hand eingeben.</string>
+    <string name="allow_camera">Kamera erlauben</string>
+    <string name="camera_open_failed">Kamera konnte nicht geöffnet werden: %1$s</string>
+    <string name="calibrating">Belichtung wird angepasst…</string>
+    <string name="start_receiving">Empfang starten</string>
+    <string name="stop_receiving">Stopp</string>
+    <string name="paused">Pausiert: auf das Licht richten, dann Empfang starten</string>
+    <string name="received_label">Empfangen (bearbeitbar)</string>
+    <string name="moving">Pausiert, solange sich das Handy bewegt</string>
+    <string name="banner_moving">Handy ruhig halten!</string>
+    <string name="banner_shaky">Unruhige Hand: fester halten</string>
+    <string name="aim_at_light">Richte das Quadrat auf das blinkende Licht</string>
+    <string name="light_found">Licht gefunden, warte auf Impulse</string>
+    <string name="receiving">Empfange, etwa %1$d WpM</string>
+    <string name="received_empty">Hier erscheint der empfangene Text.</string>
+    <string name="decrypt">Entschlüsseln</string>
+    <string name="decrypting">Entschlüssele…</string>
+    <string name="decrypt_failed">Entschlüsseln fehlgeschlagen. Entweder stimmt das Passwort nicht oder ein Buchstabe wurde falsch gelesen: löschen und neu empfangen.</string>
+    <string name="line_not_opened">Zeile %1$d ließ sich nicht entschlüsseln: %2$s</string>
+    <string name="majority_label">Per Mehrheit rekonstruiert, unter der Annahme, dass die Zeilen Wiederholungen derselben Nachricht sind:</string>
+    <string name="clear">Löschen</string>
+    <string name="copy">Kopieren</string>
+    <string name="recalibrate">Neu kalibrieren</string>
+    <string name="receive_tips">Richte das Quadrat auf das Licht und zoome mit zwei Fingern, wenn es weit weg ist. Leg das Handy ab: Solange es sich bewegt, wird nichts gelesen.</string>
+    <string name="send_error">Senden fehlgeschlagen: %1$s</string>
+    <string name="by_light">Licht</string>
+    <string name="by_sound">Ton</string>
+    <string name="choose_light_or_sound">Wähle Licht, Ton oder beides.</string>
+    <string name="light_signal">Lichtsignal</string>
+    <string name="sound_signal">Tonsignal</string>
+    <string name="mic_permission">MorseLightCrypt braucht das Mikrofon, um die Pieptöne zu hören. Es hört nur während des Empfangs zu, und nichts wird aufgenommen oder gespeichert. Ohne es kannst du eine empfangene Nachricht unten von Hand eingeben.</string>
+    <string name="allow_mic">Mikrofon erlauben</string>
+    <string name="mic_open_failed">Mikrofon konnte nicht geöffnet werden: %1$s</string>
+    <string name="paused_sound">Pausiert: Handy nah an die Tonquelle halten, dann Empfang starten</string>
+    <string name="listen_for_tone">Horche auf einen Morseton…</string>
+    <string name="tone_found">Ton gefunden, warte auf Pieptöne</string>
+    <string name="tone_hz">%1$d Hz</string>
+    <string name="receive_tips_sound">Halte das Handy nah an den Lautsprecher und sorge für Ruhe. Es folgt dem lautesten gleichmäßigen Ton zwischen 300 und 1500 Hz.</string>
+</resources>

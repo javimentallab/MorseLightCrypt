@@ -10,9 +10,12 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.VolumeUp
+import androidx.compose.material.icons.filled.Hearing
 import androidx.compose.material.icons.filled.FlashOn
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material.icons.filled.LockOpen
@@ -47,15 +50,23 @@ import com.javimetallab.morselightcrypt.ui.SendScreen
 class MainActivity : ComponentActivity() {
 
     private var cameraGranted by mutableStateOf(false)
+    private var micGranted by mutableStateOf(false)
 
     private val requestCamera = registerForActivityResult(
         ActivityResultContracts.RequestPermission()
     ) { granted -> cameraGranted = granted }
 
+    private val requestMic = registerForActivityResult(
+        ActivityResultContracts.RequestPermission()
+    ) { granted -> micGranted = granted }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         cameraGranted = ContextCompat.checkSelfPermission(
             this, Manifest.permission.CAMERA
+        ) == PackageManager.PERMISSION_GRANTED
+        micGranted = ContextCompat.checkSelfPermission(
+            this, Manifest.permission.RECORD_AUDIO
         ) == PackageManager.PERMISSION_GRANTED
 
         enableEdgeToEdge()
@@ -63,16 +74,25 @@ class MainActivity : ComponentActivity() {
             MorseLightCryptTheme {
                 MorseLightCryptApp(
                     hasCameraPermission = cameraGranted,
-                    onRequestCamera = { requestCamera.launch(Manifest.permission.CAMERA) }
+                    onRequestCamera = { requestCamera.launch(Manifest.permission.CAMERA) },
+                    hasMicPermission = micGranted,
+                    onRequestMic = { requestMic.launch(Manifest.permission.RECORD_AUDIO) }
                 )
             }
         }
     }
 }
 
-private enum class Section(val label: Int, val icon: ImageVector, val encrypted: Boolean, val sends: Boolean) {
-    SEND(R.string.tab_send, Icons.Filled.FlashOn, encrypted = false, sends = true),
-    RECEIVE(R.string.tab_receive, Icons.Filled.Visibility, encrypted = false, sends = false),
+private enum class Section(
+    val label: Int,
+    val icon: ImageVector,
+    val encrypted: Boolean,
+    val sends: Boolean,
+    /** Second icon: the plain tabs work by light and by sound. */
+    val soundIcon: ImageVector? = null
+) {
+    SEND(R.string.tab_send, Icons.Filled.FlashOn, encrypted = false, sends = true, Icons.AutoMirrored.Filled.VolumeUp),
+    RECEIVE(R.string.tab_receive, Icons.Filled.Visibility, encrypted = false, sends = false, Icons.Filled.Hearing),
     SEND_SECRET(R.string.tab_send_secret, Icons.Filled.Lock, encrypted = true, sends = true),
     RECEIVE_SECRET(R.string.tab_receive_secret, Icons.Filled.LockOpen, encrypted = true, sends = false)
 }
@@ -80,7 +100,9 @@ private enum class Section(val label: Int, val icon: ImageVector, val encrypted:
 @Composable
 private fun MorseLightCryptApp(
     hasCameraPermission: Boolean,
-    onRequestCamera: () -> Unit
+    onRequestCamera: () -> Unit,
+    hasMicPermission: Boolean,
+    onRequestMic: () -> Unit
 ) {
     var tab by rememberSaveable { mutableIntStateOf(0) }
     val section = Section.entries[tab]
@@ -110,7 +132,12 @@ private fun MorseLightCryptApp(
                                 overflow = TextOverflow.Ellipsis
                             )
                         },
-                        icon = { Icon(s.icon, contentDescription = null) }
+                        icon = {
+                            Row {
+                                Icon(s.icon, contentDescription = null)
+                                s.soundIcon?.let { Icon(it, contentDescription = null) }
+                            }
+                        }
                     )
                 }
             }
@@ -124,6 +151,10 @@ private fun MorseLightCryptApp(
                         encrypted = section.encrypted,
                         wpm = settings.wpm,
                         onWpmChange = settings::updateWpm,
+                        light = settings.sendLight,
+                        onLightChange = settings::updateSendLight,
+                        sound = settings.sendSound,
+                        onSoundChange = settings::updateSendSound,
                         modifier = modifier
                     )
                 } else {
@@ -134,6 +165,10 @@ private fun MorseLightCryptApp(
                         onWpmChange = settings::updateWpm,
                         hasCameraPermission = hasCameraPermission,
                         onRequestCamera = onRequestCamera,
+                        sound = settings.receiveSound,
+                        onSoundChange = settings::updateReceiveSound,
+                        hasMicPermission = hasMicPermission,
+                        onRequestMic = onRequestMic,
                         modifier = modifier
                     )
                 }

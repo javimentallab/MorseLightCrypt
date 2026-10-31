@@ -1,10 +1,11 @@
-<p>Envía texto en Morse con la linterna y léelo con la cámara, cifrado con una contraseña maestra si quieres.</p>
-<p>Un móvil parpadea y otro apunta la cámara a la luz y convierte los pulsos en texto. También lee cualquier otra luz que parpadee: una lámpara, una pantalla, una linterna a lo lejos.</p>
+<p>Envía texto en Morse con la linterna o con pitidos, y léelo con la cámara o el micrófono, cifrado con una contraseña maestra si quieres.</p>
+<p>Un móvil parpadea o pita y otro mira la luz o escucha y convierte los pulsos en texto. También lee cualquier otra luz que parpadee (una lámpara, una pantalla, una linterna a lo lejos) y cualquier tono Morse (una radio, un ordenador, otro móvil, un instrumento).</p>
 <ul>
-<li><b>Enviar</b>: escribe, elige la velocidad y emite. Repite en ciclo para que quien recibe tenga tiempo de colocarse.</li>
-<li><b>Recibir</b>: apunta y pulsa Empezar. Pellizca para hacer zoom si la luz está lejos. Cada vuelta sale en su línea y el texto recibido se puede corregir a mano.</li>
+<li><b>Enviar</b>: escribe, elige la velocidad, elige luz, sonido o los dos, y emite. Repite en ciclo para que quien recibe tenga tiempo de colocarse.</li>
+<li><b>Recibir</b>: elige señal de luz o sonora y pulsa Empezar. Pellizca para hacer zoom si la luz está lejos; de oído encuentra solo el tono de quien envía. Cada vuelta sale en su línea y el texto recibido se puede corregir a mano.</li>
 <li><b>Cifrar / Descifrar</b>: AES-256 con contraseña maestra, en un formato compacto de letras y números pensado para Morse: "HOLA MUNDO" ocupa 26 caracteres.</li>
 </ul>
-<p>El receptor solo sigue lo que parpadea, así que una pantalla brillante junto a la lámpara no lo ciega. Mide solo la velocidad de quien envía, tolera el pulso de la mano y se pausa mientras el móvil se mueve.</p>
-<p>Sin permiso de red: del móvil solo sale luz. No guarda nada.</p>
-<p>Para enviar hace falta un móvil con linterna; para recibir, cámara.</p>
+<p>El receptor solo sigue lo que parpadea, así que una pantalla brillante junto a la lámpara no lo ciega, y de oído solo sigue el tono Morse, no el ruido de alrededor. Mide solo la velocidad de quien envía, tolera el pulso de la mano y se pausa mientras el móvil se mueve.</p>
+<p>Sin permiso de red: del móvil solo salen luz y sonido. El micrófono solo se abre mientras recibes por sonido y no se graba ni se guarda nada.</p>
+<p>Para enviar con luz hace falta un móvil con linterna; para recibir, cámara o micrófono.</p>
+<p>Disponible en castellano, inglés, portugués, francés, alemán, italiano, neerlandés, polaco, ruso, ucraniano, chino, japonés, coreano, tailandés e hindi.</p>

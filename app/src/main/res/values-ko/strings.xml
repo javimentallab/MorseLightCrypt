@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_send">보내기</string>
+    <string name="tab_receive">받기</string>
+    <string name="tab_send_secret">암호화</string>
+    <string name="tab_receive_secret">복호화</string>
+    <string name="message">메시지</string>
+    <string name="password">마스터 비밀번호</string>
+    <string name="show_password">비밀번호 표시</string>
+    <string name="hide_password">비밀번호 숨기기</string>
+    <string name="speed_label">속도: %1$d WPM (점 = %2$d ms)</string>
+    <string name="expected_speed">예상 속도: %1$d WPM (점 = %2$d ms)</string>
+    <string name="repeat">멈출 때까지 반복</string>
+    <string name="send">보내기</string>
+    <string name="encrypt_and_send">암호화해서 보내기</string>
+    <string name="encrypting">암호화 중…</string>
+    <string name="stop">중지</string>
+    <string name="send_duration">전송에 약 %1$d초</string>
+    <string name="encrypted_length">암호문: 약 %1$d자</string>
+    <string name="no_flash">이 휴대폰은 후면 카메라에 플래시가 없습니다.</string>
+    <string name="nothing_to_send">이 메시지에는 모스 부호로 보낼 수 있는 내용이 없습니다.</string>
+    <string name="password_missing">먼저 마스터 비밀번호를 입력하세요.</string>
+    <string name="morse_preview_empty">메시지의 모스 부호가 여기에 표시됩니다.</string>
+    <string name="cipher_preview_empty">보내면 암호화된 메시지가 여기에 표시됩니다. 매번 달라집니다.</string>
+    <string name="last_ciphertext">마지막 암호화 메시지</string>
+    <string name="camera_permission">MorseLightCrypt는 빛 펄스를 보기 위해 카메라가 필요합니다. 아무것도 녹화하거나 저장하지 않습니다. 카메라 없이도 받은 메시지를 아래에 직접 입력할 수 있습니다.</string>
+    <string name="allow_camera">카메라 허용</string>
+    <string name="camera_open_failed">카메라를 열 수 없습니다: %1$s</string>
+    <string name="calibrating">노출 조정 중…</string>
+    <string name="start_receiving">받기 시작</string>
+    <string name="stop_receiving">중지</string>
+    <string name="paused">일시 중지됨: 빛을 겨누고 ‘받기 시작’을 누르세요</string>
+    <string name="received_label">받은 내용 (수정 가능)</string>
+    <string name="moving">휴대폰이 움직이는 동안 일시 중지</string>
+    <string name="banner_moving">휴대폰을 움직이지 마세요!</string>
+    <string name="banner_shaky">손이 떨립니다: 더 단단히 잡으세요</string>
+    <string name="aim_at_light">사각형을 깜박이는 빛에 맞추세요</string>
+    <string name="light_found">빛을 찾았습니다. 펄스를 기다리는 중</string>
+    <string name="receiving">받는 중, 약 %1$d WPM</string>
+    <string name="received_empty">받은 텍스트가 여기에 표시됩니다.</string>
+    <string name="decrypt">복호화</string>
+    <string name="decrypting">복호화 중…</string>
+    <string name="decrypt_failed">복호화할 수 없습니다. 비밀번호가 틀렸거나 글자를 잘못 읽었습니다. 지우고 다시 받으세요.</string>
+    <string name="line_not_opened">%1$d번째 줄을 복호화할 수 없습니다: %2$s</string>
+    <string name="majority_label">각 줄이 같은 메시지의 반복이라고 보고 다수결로 복원했습니다:</string>
+    <string name="clear">지우기</string>
+    <string name="copy">복사</string>
+    <string name="recalibrate">다시 보정</string>
+    <string name="receive_tips">사각형을 빛에 맞추고, 멀리 있으면 두 손가락으로 확대하세요. 휴대폰을 고정해 두세요. 움직이는 동안에는 읽지 않습니다.</string>
+    <string name="send_error">보낼 수 없습니다: %1$s</string>
+    <string name="by_light">빛</string>
+    <string name="by_sound">소리</string>
+    <string name="choose_light_or_sound">빛, 소리 또는 둘 다 선택하세요.</string>
+    <string name="light_signal">빛 신호</string>
+    <string name="sound_signal">소리 신호</string>
+    <string name="mic_permission">MorseLightCrypt는 삐 소리를 듣기 위해 마이크가 필요합니다. 받는 동안에만 듣고, 아무것도 녹음하거나 저장하지 않습니다. 마이크 없이도 받은 메시지를 아래에 직접 입력할 수 있습니다.</string>
+    <string name="allow_mic">마이크 허용</string>
+    <string name="mic_open_failed">마이크를 열 수 없습니다: %1$s</string>
+    <string name="paused_sound">일시 중지됨: 휴대폰을 소리 가까이 두고 ‘받기 시작’을 누르세요</string>
+    <string name="listen_for_tone">모스 신호음을 듣는 중…</string>
+    <string name="tone_found">신호음을 찾았습니다. 삐 소리를 기다리는 중</string>
+    <string name="tone_hz">%1$d Hz</string>
+    <string name="receive_tips_sound">휴대폰을 스피커 가까이 두고 주변을 조용히 해 주세요. 300~1500 Hz 사이에서 가장 크고 일정한 소리를 따라갑니다.</string>
+</resources>

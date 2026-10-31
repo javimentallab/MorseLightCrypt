@@ -1,0 +1,2 @@
+Morse by sound: send as beeps (alone or together with the flashlight) and receive with the microphone, which finds the sender's pitch by itself and copes with a room's echo. Encrypted messages work by sound too.
+New languages: Portuguese, French, German, Italian, Dutch, Polish, Russian, Ukrainian, Chinese, Japanese, Korean, Thai and Hindi.

@@ -1,0 +1,10 @@
+<p>Envie texto em código Morse com a lanterna ou com bipes, e leia-o com a câmera ou o microfone, cifrado com uma senha mestra se quiser.</p>
+<p>Um celular pisca ou apita, outro olha a luz ou escuta e transforma os pulsos de volta em texto. Também lê qualquer outra luz que pisque (uma lâmpada, uma tela, uma lanterna ao longe) e qualquer tom Morse (um rádio, um computador, outro celular, um instrumento).</p>
+<ul>
+<li><b>Enviar</b>: escreva, escolha a velocidade, escolha luz, som ou os dois, e envie. Repita em ciclo para que quem recebe tenha tempo de se posicionar.</li>
+<li><b>Receber</b>: escolha sinal de luz ou sonoro e toque em Começar. Faça zoom com os dedos em luzes distantes; de ouvido, encontra sozinho o tom de quem envia. Cada repetição fica em sua própria linha, e o texto recebido pode ser corrigido à mão.</li>
+<li><b>Cifrar / Decifrar</b>: AES-256 com senha mestra, num formato compacto de letras e números pensado para Morse: “HOLA MUNDO” vira 26 caracteres.</li>
+</ul>
+<p>O receptor segue só o que pisca, então uma tela brilhante ao lado da lâmpada não o ofusca, e de ouvido segue só o tom Morse, não o ruído em volta. Mede sozinho a velocidade de quem envia, tolera a mão segurando o celular e pausa enquanto o celular se move.</p>
+<p>Sem permissão de rede: do celular só saem luz e som. O microfone só é aberto enquanto você recebe por som, e nada é gravado nem guardado.</p>
+<p>Para enviar com luz é preciso um celular com lanterna; para receber, câmera ou microfone.</p>

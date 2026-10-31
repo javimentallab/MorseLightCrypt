@@ -1,0 +1,1 @@
+Código Morse com luz e som, cifrado se quiser. Sem rede.

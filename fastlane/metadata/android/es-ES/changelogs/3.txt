@@ -1,0 +1,2 @@
+Morse por sonido: emite en pitidos (solo o a la vez que la linterna) y recibe con el micrófono, que encuentra solo el tono de quien envía y aguanta el eco de la habitación. Los mensajes cifrados también van por sonido.
+Idiomas nuevos: portugués, francés, alemán, italiano, neerlandés, polaco, ruso, ucraniano, chino, japonés, coreano, tailandés e hindi.

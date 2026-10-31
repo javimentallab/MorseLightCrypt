@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_send">Wyślij</string>
+    <string name="tab_receive">Odbierz</string>
+    <string name="tab_send_secret">Szyfruj</string>
+    <string name="tab_receive_secret">Odszyfruj</string>
+    <string name="message">Wiadomość</string>
+    <string name="password">Hasło główne</string>
+    <string name="show_password">Pokaż hasło</string>
+    <string name="hide_password">Ukryj hasło</string>
+    <string name="speed_label">Prędkość: %1$d WPM (kropka = %2$d ms)</string>
+    <string name="expected_speed">Oczekiwana prędkość: %1$d WPM (kropka = %2$d ms)</string>
+    <string name="repeat">Powtarzaj do zatrzymania</string>
+    <string name="send">Wyślij</string>
+    <string name="encrypt_and_send">Zaszyfruj i wyślij</string>
+    <string name="encrypting">Szyfrowanie…</string>
+    <string name="stop">Zatrzymaj</string>
+    <string name="send_duration">Około %1$d s nadawania</string>
+    <string name="encrypted_length">Zaszyfrowane: około %1$d znaków</string>
+    <string name="no_flash">Ten telefon nie ma latarki przy tylnym aparacie.</string>
+    <string name="nothing_to_send">Niczego z tej wiadomości nie da się wysłać alfabetem Morse’a.</string>
+    <string name="password_missing">Najpierw wpisz hasło główne.</string>
+    <string name="morse_preview_empty">Tu pojawi się twoja wiadomość alfabetem Morse’a.</string>
+    <string name="cipher_preview_empty">Zaszyfrowana wiadomość pojawi się tu po wysłaniu. Za każdym razem jest inna.</string>
+    <string name="last_ciphertext">Ostatnia zaszyfrowana wiadomość</string>
+    <string name="camera_permission">MorseLightCrypt potrzebuje aparatu, aby widzieć impulsy światła. Nic nie jest nagrywane ani zapisywane. Bez niego możesz wpisać poniżej odebraną wiadomość ręcznie.</string>
+    <string name="allow_camera">Zezwól na aparat</string>
+    <string name="camera_open_failed">Nie udało się otworzyć aparatu: %1$s</string>
+    <string name="calibrating">Dostosowywanie ekspozycji…</string>
+    <string name="start_receiving">Zacznij odbierać</string>
+    <string name="stop_receiving">Zatrzymaj</string>
+    <string name="paused">Wstrzymano: wyceluj w światło i naciśnij Zacznij</string>
+    <string name="received_label">Odebrano (możesz poprawić)</string>
+    <string name="moving">Wstrzymano, dopóki telefon się porusza</string>
+    <string name="banner_moving">Trzymaj telefon nieruchomo!</string>
+    <string name="banner_shaky">Drżąca ręka: trzymaj pewniej</string>
+    <string name="aim_at_light">Wyceluj kwadrat w migające światło</string>
+    <string name="light_found">Znaleziono światło, czekam na impulsy</string>
+    <string name="receiving">Odbieranie, około %1$d WPM</string>
+    <string name="received_empty">Tu pojawi się odebrany tekst.</string>
+    <string name="decrypt">Odszyfruj</string>
+    <string name="decrypting">Odszyfrowywanie…</string>
+    <string name="decrypt_failed">Nie udało się odszyfrować. Albo hasło jest złe, albo jakaś litera została źle odczytana: wyczyść i odbierz ponownie.</string>
+    <string name="line_not_opened">Nie udało się odszyfrować wiersza %1$d: %2$s</string>
+    <string name="majority_label">Odtworzono większością głosów, zakładając, że wiersze to powtórzenia tej samej wiadomości:</string>
+    <string name="clear">Wyczyść</string>
+    <string name="copy">Kopiuj</string>
+    <string name="recalibrate">Kalibruj ponownie</string>
+    <string name="receive_tips">Wyceluj kwadrat w światło i rozsuń palce, aby przybliżyć, jeśli jest daleko. Oprzyj telefon: gdy się porusza, nic nie jest odczytywane.</string>
+    <string name="send_error">Nie udało się wysłać: %1$s</string>
+    <string name="by_light">Światło</string>
+    <string name="by_sound">Dźwięk</string>
+    <string name="choose_light_or_sound">Wybierz światło, dźwięk lub oba.</string>
+    <string name="light_signal">Sygnał świetlny</string>
+    <string name="sound_signal">Sygnał dźwiękowy</string>
+    <string name="mic_permission">MorseLightCrypt potrzebuje mikrofonu, aby słyszeć sygnały. Słucha tylko podczas odbioru i nic nie jest nagrywane ani zapisywane. Bez niego możesz wpisać poniżej odebraną wiadomość ręcznie.</string>
+    <string name="allow_mic">Zezwól na mikrofon</string>
+    <string name="mic_open_failed">Nie udało się otworzyć mikrofonu: %1$s</string>
+    <string name="paused_sound">Wstrzymano: zbliż telefon do źródła dźwięku i naciśnij Zacznij</string>
+    <string name="listen_for_tone">Nasłuchiwanie tonu Morse’a…</string>
+    <string name="tone_found">Znaleziono ton, czekam na sygnały</string>
+    <string name="tone_hz">%1$d Hz</string>
+    <string name="receive_tips_sound">Trzymaj telefon blisko głośnika i zadbaj o ciszę wokół. Śledzi najgłośniejszy stały ton między 300 a 1500 Hz.</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_send">Envoyer</string>
+    <string name="tab_receive">Recevoir</string>
+    <string name="tab_send_secret">Chiffrer</string>
+    <string name="tab_receive_secret">Déchiffrer</string>
+    <string name="message">Message</string>
+    <string name="password">Mot de passe maître</string>
+    <string name="show_password">Afficher le mot de passe</string>
+    <string name="hide_password">Masquer le mot de passe</string>
+    <string name="speed_label">Vitesse : %1$d MPM (point = %2$d ms)</string>
+    <string name="expected_speed">Vitesse attendue : %1$d MPM (point = %2$d ms)</string>
+    <string name="repeat">Répéter jusqu\'à l\'arrêt</string>
+    <string name="send">Envoyer</string>
+    <string name="encrypt_and_send">Chiffrer et envoyer</string>
+    <string name="encrypting">Chiffrement…</string>
+    <string name="stop">Arrêter</string>
+    <string name="send_duration">Environ %1$d s d\'émission</string>
+    <string name="encrypted_length">Chiffré : environ %1$d caractères</string>
+    <string name="no_flash">Ce téléphone n\'a pas de lampe torche sur la caméra arrière.</string>
+    <string name="nothing_to_send">Rien dans ce message ne peut être envoyé en Morse.</string>
+    <string name="password_missing">Saisissez d\'abord le mot de passe maître.</string>
+    <string name="morse_preview_empty">Le code Morse de votre message apparaîtra ici.</string>
+    <string name="cipher_preview_empty">Le message chiffré apparaît ici à l\'envoi. Il change à chaque fois.</string>
+    <string name="last_ciphertext">Dernier message chiffré</string>
+    <string name="camera_permission">MorseLightCrypt a besoin de la caméra pour voir les impulsions lumineuses. Rien n\'est enregistré ni conservé. Sans elle, vous pouvez quand même saisir ci-dessous un message reçu.</string>
+    <string name="allow_camera">Autoriser la caméra</string>
+    <string name="camera_open_failed">Impossible d\'ouvrir la caméra : %1$s</string>
+    <string name="calibrating">Réglage de l\'exposition…</string>
+    <string name="start_receiving">Commencer à recevoir</string>
+    <string name="stop_receiving">Arrêter</string>
+    <string name="paused">En pause : visez la lumière puis appuyez sur Commencer</string>
+    <string name="received_label">Reçu (modifiable)</string>
+    <string name="moving">En pause tant que le téléphone bouge</string>
+    <string name="banner_moving">Ne bougez plus le téléphone !</string>
+    <string name="banner_shaky">Main instable : tenez-le plus fermement</string>
+    <string name="aim_at_light">Placez le carré sur la lumière qui clignote</string>
+    <string name="light_found">Lumière trouvée, en attente d\'impulsions</string>
+    <string name="receiving">Réception, environ %1$d MPM</string>
+    <string name="received_empty">Le texte reçu apparaîtra ici.</string>
+    <string name="decrypt">Déchiffrer</string>
+    <string name="decrypting">Déchiffrement…</string>
+    <string name="decrypt_failed">Impossible de déchiffrer. Soit le mot de passe est faux, soit une lettre a été mal lue : effacez et recevez-le à nouveau.</string>
+    <string name="line_not_opened">La ligne %1$d n\'a pas pu être déchiffrée : %2$s</string>
+    <string name="majority_label">Reconstitué par vote majoritaire, en supposant que les lignes sont des répétitions du même message :</string>
+    <string name="clear">Effacer</string>
+    <string name="copy">Copier</string>
+    <string name="recalibrate">Recalibrer</string>
+    <string name="receive_tips">Placez le carré sur la lumière et écartez deux doigts pour zoomer si elle est loin. Posez le téléphone : tant qu\'il bouge, rien n\'est lu.</string>
+    <string name="send_error">Envoi impossible : %1$s</string>
+    <string name="by_light">Lumière</string>
+    <string name="by_sound">Son</string>
+    <string name="choose_light_or_sound">Choisissez la lumière, le son ou les deux.</string>
+    <string name="light_signal">Signal lumineux</string>
+    <string name="sound_signal">Signal sonore</string>
+    <string name="mic_permission">MorseLightCrypt a besoin du micro pour entendre les bips. Il n\'écoute que pendant la réception, et rien n\'est enregistré ni conservé. Sans lui, vous pouvez saisir ci-dessous un message reçu.</string>
+    <string name="allow_mic">Autoriser le micro</string>
+    <string name="mic_open_failed">Impossible d\'ouvrir le micro : %1$s</string>
+    <string name="paused_sound">En pause : approchez le téléphone du son et appuyez sur Commencer</string>
+    <string name="listen_for_tone">À l\'écoute d\'une tonalité Morse…</string>
+    <string name="tone_found">Tonalité trouvée, en attente de bips</string>
+    <string name="tone_hz">%1$d Hz</string>
+    <string name="receive_tips_sound">Approchez le téléphone du haut-parleur et faites le silence autour. Il suit la tonalité stable la plus forte entre 300 et 1500 Hz.</string>
+</resources>

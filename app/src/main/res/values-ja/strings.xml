@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_send">送信</string>
+    <string name="tab_receive">受信</string>
+    <string name="tab_send_secret">暗号化</string>
+    <string name="tab_receive_secret">復号</string>
+    <string name="message">メッセージ</string>
+    <string name="password">マスターパスワード</string>
+    <string name="show_password">パスワードを表示</string>
+    <string name="hide_password">パスワードを隠す</string>
+    <string name="speed_label">速度：%1$d WPM（短点 = %2$d ms）</string>
+    <string name="expected_speed">想定速度：%1$d WPM（短点 = %2$d ms）</string>
+    <string name="repeat">停止するまで繰り返す</string>
+    <string name="send">送信</string>
+    <string name="encrypt_and_send">暗号化して送信</string>
+    <string name="encrypting">暗号化中…</string>
+    <string name="stop">停止</string>
+    <string name="send_duration">送信に約 %1$d 秒</string>
+    <string name="encrypted_length">暗号文：約 %1$d 文字</string>
+    <string name="no_flash">このスマートフォンには背面カメラのライトがありません。</string>
+    <string name="nothing_to_send">このメッセージにはモールス信号で送れる文字がありません。</string>
+    <string name="password_missing">先にマスターパスワードを入力してください。</string>
+    <string name="morse_preview_empty">メッセージのモールス信号がここに表示されます。</string>
+    <string name="cipher_preview_empty">送信すると暗号化されたメッセージがここに表示されます。毎回変わります。</string>
+    <string name="last_ciphertext">最後の暗号化メッセージ</string>
+    <string name="camera_permission">MorseLightCrypt は光のパルスを見るためにカメラを使います。録画や保存は一切しません。カメラなしでも、受信したメッセージを下に手入力できます。</string>
+    <string name="allow_camera">カメラを許可</string>
+    <string name="camera_open_failed">カメラを開けませんでした：%1$s</string>
+    <string name="calibrating">露出を調整中…</string>
+    <string name="start_receiving">受信を開始</string>
+    <string name="stop_receiving">停止</string>
+    <string name="paused">一時停止中：光に向けて「受信を開始」を押してください</string>
+    <string name="received_label">受信した内容（編集できます）</string>
+    <string name="moving">スマートフォンが動いている間は一時停止</string>
+    <string name="banner_moving">スマートフォンを動かさないで！</string>
+    <string name="banner_shaky">手ぶれしています：しっかり持ってください</string>
+    <string name="aim_at_light">四角を点滅する光に合わせてください</string>
+    <string name="light_found">光を検出しました。パルスを待っています</string>
+    <string name="receiving">受信中、約 %1$d WPM</string>
+    <string name="received_empty">受信したテキストがここに表示されます。</string>
+    <string name="decrypt">復号</string>
+    <string name="decrypting">復号中…</string>
+    <string name="decrypt_failed">復号できませんでした。パスワードが違うか、文字の読み取りに誤りがあります。消去してもう一度受信してください。</string>
+    <string name="line_not_opened">%1$d 行目は復号できませんでした：%2$s</string>
+    <string name="majority_label">各行が同じメッセージの繰り返しとみなし、多数決で復元しました：</string>
+    <string name="clear">消去</string>
+    <string name="copy">コピー</string>
+    <string name="recalibrate">再調整</string>
+    <string name="receive_tips">四角を光に合わせ、遠い場合はピンチでズームします。スマートフォンを置いて固定してください。動いている間は読み取りません。</string>
+    <string name="send_error">送信できませんでした：%1$s</string>
+    <string name="by_light">光</string>
+    <string name="by_sound">音</string>
+    <string name="choose_light_or_sound">光、音、または両方を選んでください。</string>
+    <string name="light_signal">光の信号</string>
+    <string name="sound_signal">音の信号</string>
+    <string name="mic_permission">MorseLightCrypt はビープ音を聞くためにマイクを使います。受信中だけ音を聞き、録音や保存は一切しません。マイクなしでも、受信したメッセージを下に手入力できます。</string>
+    <string name="allow_mic">マイクを許可</string>
+    <string name="mic_open_failed">マイクを開けませんでした：%1$s</string>
+    <string name="paused_sound">一時停止中：スマートフォンを音に近づけて「受信を開始」を押してください</string>
+    <string name="listen_for_tone">モールス信号の音を探しています…</string>
+    <string name="tone_found">音を検出しました。ビープ音を待っています</string>
+    <string name="tone_hz">%1$d Hz</string>
+    <string name="receive_tips_sound">スマートフォンをスピーカーに近づけ、周りを静かにしてください。300〜1500 Hz の中でいちばん大きく安定した音を追います。</string>
+</resources>

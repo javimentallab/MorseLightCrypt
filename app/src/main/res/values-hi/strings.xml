@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_send">भेजें</string>
+    <string name="tab_receive">पाएँ</string>
+    <string name="tab_send_secret">एन्क्रिप्ट</string>
+    <string name="tab_receive_secret">डिक्रिप्ट</string>
+    <string name="message">संदेश</string>
+    <string name="password">मास्टर पासवर्ड</string>
+    <string name="show_password">पासवर्ड दिखाएँ</string>
+    <string name="hide_password">पासवर्ड छिपाएँ</string>
+    <string name="speed_label">गति: %1$d WPM (बिंदु = %2$d ms)</string>
+    <string name="expected_speed">अपेक्षित गति: %1$d WPM (बिंदु = %2$d ms)</string>
+    <string name="repeat">रोकने तक दोहराएँ</string>
+    <string name="send">भेजें</string>
+    <string name="encrypt_and_send">एन्क्रिप्ट करके भेजें</string>
+    <string name="encrypting">एन्क्रिप्ट हो रहा है…</string>
+    <string name="stop">रोकें</string>
+    <string name="send_duration">भेजने में लगभग %1$d सेकंड</string>
+    <string name="encrypted_length">एन्क्रिप्टेड: लगभग %1$d अक्षर</string>
+    <string name="no_flash">इस फ़ोन के पिछले कैमरे पर फ़्लैशलाइट नहीं है।</string>
+    <string name="nothing_to_send">इस संदेश का कोई भी हिस्सा मोर्स में नहीं भेजा जा सकता।</string>
+    <string name="password_missing">पहले मास्टर पासवर्ड लिखें।</string>
+    <string name="morse_preview_empty">आपके संदेश का मोर्स कोड यहाँ दिखेगा।</string>
+    <string name="cipher_preview_empty">भेजते समय एन्क्रिप्टेड संदेश यहाँ दिखता है। यह हर बार बदलता है।</string>
+    <string name="last_ciphertext">पिछला एन्क्रिप्टेड संदेश</string>
+    <string name="camera_permission">MorseLightCrypt को रोशनी की पल्स देखने के लिए कैमरा चाहिए। कुछ भी रिकॉर्ड या सेव नहीं होता। इसके बिना भी आप नीचे मिला हुआ संदेश हाथ से लिख सकते हैं।</string>
+    <string name="allow_camera">कैमरे की अनुमति दें</string>
+    <string name="camera_open_failed">कैमरा नहीं खुल सका: %1$s</string>
+    <string name="calibrating">एक्सपोज़र ठीक किया जा रहा है…</string>
+    <string name="start_receiving">पाना शुरू करें</string>
+    <string name="stop_receiving">रोकें</string>
+    <string name="paused">रुका हुआ: रोशनी की ओर करें और “पाना शुरू करें” दबाएँ</string>
+    <string name="received_label">मिला हुआ (आप ठीक कर सकते हैं)</string>
+    <string name="moving">फ़ोन हिलते समय रुका हुआ</string>
+    <string name="banner_moving">फ़ोन को स्थिर रखें!</string>
+    <string name="banner_shaky">हाथ काँप रहा है: मज़बूती से पकड़ें</string>
+    <string name="aim_at_light">चौकोर को टिमटिमाती रोशनी पर रखें</string>
+    <string name="light_found">रोशनी मिल गई, पल्स का इंतज़ार</string>
+    <string name="receiving">मिल रहा है, लगभग %1$d WPM</string>
+    <string name="received_empty">मिला हुआ टेक्स्ट यहाँ दिखेगा।</string>
+    <string name="decrypt">डिक्रिप्ट</string>
+    <string name="decrypting">डिक्रिप्ट हो रहा है…</string>
+    <string name="decrypt_failed">डिक्रिप्ट नहीं हो सका। या तो पासवर्ड गलत है या कोई अक्षर गलत पढ़ा गया: साफ़ करें और फिर से पाएँ।</string>
+    <string name="line_not_opened">पंक्ति %1$d डिक्रिप्ट नहीं हो सकी: %2$s</string>
+    <string name="majority_label">बहुमत से दोबारा बनाया गया, यह मानकर कि पंक्तियाँ एक ही संदेश की दोहराई हैं:</string>
+    <string name="clear">साफ़ करें</string>
+    <string name="copy">कॉपी करें</string>
+    <string name="recalibrate">फिर से कैलिब्रेट करें</string>
+    <string name="receive_tips">चौकोर को रोशनी पर रखें, और दूर हो तो दो उँगलियों से ज़ूम करें। फ़ोन को टिका कर रखें: हिलते समय कुछ नहीं पढ़ा जाता।</string>
+    <string name="send_error">भेजा नहीं जा सका: %1$s</string>
+    <string name="by_light">रोशनी</string>
+    <string name="by_sound">आवाज़</string>
+    <string name="choose_light_or_sound">रोशनी, आवाज़ या दोनों चुनें।</string>
+    <string name="light_signal">रोशनी का सिग्नल</string>
+    <string name="sound_signal">आवाज़ का सिग्नल</string>
+    <string name="mic_permission">MorseLightCrypt को बीप सुनने के लिए माइक्रोफ़ोन चाहिए। यह सिर्फ़ पाते समय सुनता है, और कुछ भी रिकॉर्ड या सेव नहीं होता। इसके बिना भी आप नीचे मिला हुआ संदेश हाथ से लिख सकते हैं।</string>
+    <string name="allow_mic">माइक्रोफ़ोन की अनुमति दें</string>
+    <string name="mic_open_failed">माइक्रोफ़ोन नहीं खुल सका: %1$s</string>
+    <string name="paused_sound">रुका हुआ: फ़ोन को आवाज़ के पास लाएँ और “पाना शुरू करें” दबाएँ</string>
+    <string name="listen_for_tone">मोर्स टोन सुन रहा है…</string>
+    <string name="tone_found">टोन मिल गई, बीप का इंतज़ार</string>
+    <string name="tone_hz">%1$d Hz</string>
+    <string name="receive_tips_sound">फ़ोन को स्पीकर के पास रखें और आसपास शांति रखें। यह 300 से 1500 Hz के बीच सबसे तेज़ स्थिर टोन को पकड़ता है।</string>
+</resources>

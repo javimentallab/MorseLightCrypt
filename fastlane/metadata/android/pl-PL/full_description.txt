@@ -1,0 +1,10 @@
+<p>Wysyłaj tekst alfabetem Morse’a latarką albo sygnałami dźwiękowymi i odczytuj go aparatem lub mikrofonem, opcjonalnie zaszyfrowany hasłem głównym.</p>
+<p>Jeden telefon miga lub pika, drugi patrzy na światło lub słucha i zamienia impulsy z powrotem w tekst. Odczytuje też każde inne migające światło (lampę, ekran, latarkę w oddali) i każdy ton Morse’a (radio, komputer, inny telefon, instrument).</p>
+<ul>
+<li><b>Wyślij</b>: wpisz tekst, wybierz prędkość, wybierz światło, dźwięk lub oba i wyślij. Powtarzaj w pętli, żeby odbiorca zdążył się ustawić.</li>
+<li><b>Odbierz</b>: wybierz sygnał świetlny lub dźwiękowy i naciśnij Zacznij. Przybliżaj palcami odległe światła; ze słuchu sam znajduje ton nadawcy. Każde powtórzenie trafia do osobnego wiersza, a odebrany tekst można poprawić ręcznie.</li>
+<li><b>Szyfruj / Odszyfruj</b>: AES-256 z hasłem głównym, w zwięzłym formacie liter i cyfr stworzonym dla Morse’a: „HOLA MUNDO” zajmuje 26 znaków.</li>
+</ul>
+<p>Odbiornik śledzi tylko to, co miga, więc jasny ekran obok lampy go nie oślepia, a ze słuchu śledzi tylko ton Morse’a, nie hałas wokół. Sam mierzy prędkość nadawcy, znosi drżenie ręki trzymającej telefon i wstrzymuje się, gdy telefon się porusza.</p>
+<p>Bez uprawnień sieciowych: z telefonu wychodzi tylko światło i dźwięk. Mikrofon jest otwarty tylko podczas odbioru dźwiękiem i nic nie jest nagrywane ani zapisywane.</p>
+<p>Do wysyłania światłem potrzebny jest telefon z latarką; do odbioru aparat lub mikrofon.</p>

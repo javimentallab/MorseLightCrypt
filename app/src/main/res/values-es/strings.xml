@@ -19,7 +19,6 @@
     <string name="send_duration">Unos %1$d s de emisión</string>
     <string name="encrypted_length">Cifrado: unos %1$d caracteres</string>
     <string name="no_flash">Este móvil no tiene linterna en la cámara trasera.</string>
-    <string name="torch_error">No se pudo usar la linterna: %1$s</string>
     <string name="nothing_to_send">Nada de este mensaje se puede enviar en Morse.</string>
     <string name="password_missing">Escribe primero la contraseña maestra.</string>
     <string name="morse_preview_empty">Aquí aparecerá tu mensaje en Morse.</string>
@@ -50,4 +49,19 @@
     <string name="copy">Copiar</string>
     <string name="recalibrate">Recalibrar</string>
     <string name="receive_tips">Apunta el cuadrado a la luz y pellizca para hacer zoom si está lejos. Apoya el móvil: mientras se mueve no lee nada.</string>
+
+    <string name="send_error">No se pudo emitir: %1$s</string>
+    <string name="by_light">Luz</string>
+    <string name="by_sound">Sonido</string>
+    <string name="choose_light_or_sound">Elige luz, sonido o los dos.</string>
+    <string name="light_signal">Señal de luz</string>
+    <string name="sound_signal">Señal sonora</string>
+    <string name="mic_permission">MorseLightCrypt necesita el micrófono para oír los pitidos. Solo escucha mientras recibes y no se graba ni se guarda nada. Sin él puedes escribir abajo a mano un mensaje recibido.</string>
+    <string name="allow_mic">Permitir micrófono</string>
+    <string name="mic_open_failed">No se pudo abrir el micrófono: %1$s</string>
+    <string name="paused_sound">En pausa: acerca el móvil al sonido y pulsa Empezar</string>
+    <string name="listen_for_tone">Escuchando un tono Morse…</string>
+    <string name="tone_found">Tono encontrado, esperando pitidos</string>
+    <string name="tone_hz">%1$d Hz</string>
+    <string name="receive_tips_sound">Acerca el móvil al altavoz y que haya silencio alrededor. Sigue el tono constante más fuerte entre 300 y 1500 Hz.</string>
 </resources>

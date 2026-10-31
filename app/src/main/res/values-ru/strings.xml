@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_send">Отправка</string>
+    <string name="tab_receive">Приём</string>
+    <string name="tab_send_secret">Шифр</string>
+    <string name="tab_receive_secret">Дешифр</string>
+    <string name="message">Сообщение</string>
+    <string name="password">Мастер-пароль</string>
+    <string name="show_password">Показать пароль</string>
+    <string name="hide_password">Скрыть пароль</string>
+    <string name="speed_label">Скорость: %1$d сл/мин (точка = %2$d мс)</string>
+    <string name="expected_speed">Ожидаемая скорость: %1$d сл/мин (точка = %2$d мс)</string>
+    <string name="repeat">Повторять до остановки</string>
+    <string name="send">Передать</string>
+    <string name="encrypt_and_send">Зашифровать и передать</string>
+    <string name="encrypting">Шифрование…</string>
+    <string name="stop">Стоп</string>
+    <string name="send_duration">Около %1$d с передачи</string>
+    <string name="encrypted_length">Шифр: около %1$d символов</string>
+    <string name="no_flash">У этого телефона нет вспышки на задней камере.</string>
+    <string name="nothing_to_send">Ничего из этого сообщения нельзя передать азбукой Морзе.</string>
+    <string name="password_missing">Сначала введите мастер-пароль.</string>
+    <string name="morse_preview_empty">Здесь появится ваше сообщение азбукой Морзе.</string>
+    <string name="cipher_preview_empty">Зашифрованное сообщение появится здесь при передаче. Каждый раз оно другое.</string>
+    <string name="last_ciphertext">Последнее зашифрованное сообщение</string>
+    <string name="camera_permission">MorseLightCrypt нужна камера, чтобы видеть световые импульсы. Ничего не записывается и не сохраняется. Без неё можно ввести принятое сообщение вручную ниже.</string>
+    <string name="allow_camera">Разрешить камеру</string>
+    <string name="camera_open_failed">Не удалось открыть камеру: %1$s</string>
+    <string name="calibrating">Настройка экспозиции…</string>
+    <string name="start_receiving">Начать приём</string>
+    <string name="stop_receiving">Стоп</string>
+    <string name="paused">Пауза: наведите на свет и нажмите «Начать приём»</string>
+    <string name="received_label">Принято (можно исправить)</string>
+    <string name="moving">Пауза, пока телефон движется</string>
+    <string name="banner_moving">Держите телефон неподвижно!</string>
+    <string name="banner_shaky">Рука дрожит: держите крепче</string>
+    <string name="aim_at_light">Наведите квадрат на мигающий свет</string>
+    <string name="light_found">Свет найден, жду импульсов</string>
+    <string name="receiving">Приём, около %1$d сл/мин</string>
+    <string name="received_empty">Здесь появится принятый текст.</string>
+    <string name="decrypt">Расшифровать</string>
+    <string name="decrypting">Расшифровка…</string>
+    <string name="decrypt_failed">Не удалось расшифровать. Либо пароль неверный, либо какая-то буква прочитана с ошибкой: очистите и примите заново.</string>
+    <string name="line_not_opened">Строку %1$d не удалось расшифровать: %2$s</string>
+    <string name="majority_label">Восстановлено по большинству, если считать строки повторами одного сообщения:</string>
+    <string name="clear">Очистить</string>
+    <string name="copy">Копировать</string>
+    <string name="recalibrate">Перекалибровать</string>
+    <string name="receive_tips">Наведите квадрат на свет и разведите пальцы, чтобы приблизить, если он далеко. Положите телефон: пока он движется, ничего не читается.</string>
+    <string name="send_error">Не удалось передать: %1$s</string>
+    <string name="by_light">Свет</string>
+    <string name="by_sound">Звук</string>
+    <string name="choose_light_or_sound">Выберите свет, звук или оба.</string>
+    <string name="light_signal">Световой сигнал</string>
+    <string name="sound_signal">Звуковой сигнал</string>
+    <string name="mic_permission">MorseLightCrypt нужен микрофон, чтобы слышать сигналы. Он слушает только во время приёма, ничего не записывается и не сохраняется. Без него можно ввести принятое сообщение вручную ниже.</string>
+    <string name="allow_mic">Разрешить микрофон</string>
+    <string name="mic_open_failed">Не удалось открыть микрофон: %1$s</string>
+    <string name="paused_sound">Пауза: поднесите телефон к источнику звука и нажмите «Начать приём»</string>
+    <string name="listen_for_tone">Слушаю тон Морзе…</string>
+    <string name="tone_found">Тон найден, жду сигналов</string>
+    <string name="tone_hz">%1$d Гц</string>
+    <string name="receive_tips_sound">Держите телефон ближе к динамику, вокруг должно быть тихо. Он следит за самым громким ровным тоном от 300 до 1500 Гц.</string>
+</resources>

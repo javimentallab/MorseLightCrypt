@@ -1,1 +1,1 @@
-Morse con la linterna y la cámara, cifrado si quieres. Sin red.
+Morse con luz y sonido, cifrado si quieres. Sin red.

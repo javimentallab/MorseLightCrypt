@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_send">Enviar</string>
+    <string name="tab_receive">Receber</string>
+    <string name="tab_send_secret">Cifrar</string>
+    <string name="tab_receive_secret">Decifrar</string>
+    <string name="message">Mensagem</string>
+    <string name="password">Senha mestra</string>
+    <string name="show_password">Mostrar senha</string>
+    <string name="hide_password">Ocultar senha</string>
+    <string name="speed_label">Velocidade: %1$d PPM (ponto = %2$d ms)</string>
+    <string name="expected_speed">Velocidade esperada: %1$d PPM (ponto = %2$d ms)</string>
+    <string name="repeat">Repetir até parar</string>
+    <string name="send">Enviar</string>
+    <string name="encrypt_and_send">Cifrar e enviar</string>
+    <string name="encrypting">Cifrando…</string>
+    <string name="stop">Parar</string>
+    <string name="send_duration">Cerca de %1$d s de envio</string>
+    <string name="encrypted_length">Cifrado: cerca de %1$d caracteres</string>
+    <string name="no_flash">Este celular não tem lanterna na câmera traseira.</string>
+    <string name="nothing_to_send">Nada nesta mensagem pode ser enviado em Morse.</string>
+    <string name="password_missing">Digite primeiro a senha mestra.</string>
+    <string name="morse_preview_empty">O código Morse da sua mensagem aparecerá aqui.</string>
+    <string name="cipher_preview_empty">A mensagem cifrada aparece aqui ao enviá-la. Muda a cada vez.</string>
+    <string name="last_ciphertext">Última mensagem cifrada</string>
+    <string name="camera_permission">O MorseLightCrypt precisa da câmera para ver os pulsos de luz. Nada é gravado nem guardado. Sem ela, você ainda pode digitar abaixo uma mensagem recebida.</string>
+    <string name="allow_camera">Permitir câmera</string>
+    <string name="camera_open_failed">Não foi possível abrir a câmera: %1$s</string>
+    <string name="calibrating">Ajustando a exposição…</string>
+    <string name="start_receiving">Começar a receber</string>
+    <string name="stop_receiving">Parar</string>
+    <string name="paused">Em pausa: aponte para a luz e toque em Começar</string>
+    <string name="received_label">Recebido (você pode corrigir)</string>
+    <string name="moving">Em pausa enquanto o celular se move</string>
+    <string name="banner_moving">Deixe o celular parado!</string>
+    <string name="banner_shaky">Mão instável: segure com mais firmeza</string>
+    <string name="aim_at_light">Aponte o quadrado para a luz que pisca</string>
+    <string name="light_found">Luz encontrada, esperando pulsos</string>
+    <string name="receiving">Recebendo, cerca de %1$d PPM</string>
+    <string name="received_empty">O texto recebido aparecerá aqui.</string>
+    <string name="decrypt">Decifrar</string>
+    <string name="decrypting">Decifrando…</string>
+    <string name="decrypt_failed">Não foi possível decifrar. Ou a senha está errada ou alguma letra foi mal lida: apague e receba de novo.</string>
+    <string name="line_not_opened">A linha %1$d não pôde ser decifrada: %2$s</string>
+    <string name="majority_label">Reconstruído por maioria, supondo que as linhas são repetições da mesma mensagem:</string>
+    <string name="clear">Apagar</string>
+    <string name="copy">Copiar</string>
+    <string name="recalibrate">Recalibrar</string>
+    <string name="receive_tips">Aponte o quadrado para a luz e afaste dois dedos para dar zoom se estiver longe. Apoie o celular: enquanto ele se move, nada é lido.</string>
+    <string name="send_error">Não foi possível enviar: %1$s</string>
+    <string name="by_light">Luz</string>
+    <string name="by_sound">Som</string>
+    <string name="choose_light_or_sound">Escolha luz, som ou os dois.</string>
+    <string name="light_signal">Sinal de luz</string>
+    <string name="sound_signal">Sinal sonoro</string>
+    <string name="mic_permission">O MorseLightCrypt precisa do microfone para ouvir os bipes. Ele só escuta enquanto você recebe, e nada é gravado nem guardado. Sem ele, você pode digitar abaixo uma mensagem recebida.</string>
+    <string name="allow_mic">Permitir microfone</string>
+    <string name="mic_open_failed">Não foi possível abrir o microfone: %1$s</string>
+    <string name="paused_sound">Em pausa: aproxime o celular do som e toque em Começar</string>
+    <string name="listen_for_tone">Escutando um tom Morse…</string>
+    <string name="tone_found">Tom encontrado, esperando bipes</string>
+    <string name="tone_hz">%1$d Hz</string>
+    <string name="receive_tips_sound">Aproxime o celular do alto-falante e mantenha o ambiente em silêncio. Ele segue o tom constante mais forte entre 300 e 1500 Hz.</string>
+</resources>

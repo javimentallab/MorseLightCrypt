@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Receiving only. Switching the torch needs no permission. -->
+    <!-- Receiving only. Switching the torch or beeping needs no permission. -->
     <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Receiving by sound, only while listening; nothing is recorded. -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <uses-feature android:name="android.hardware.camera.any" android:required="false" />
     <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
 
-    <!-- No INTERNET permission: nothing leaves the phone except light. -->
+    <!-- No INTERNET permission: nothing leaves the phone except light and sound. -->
 
     <application
         android:allowBackup="false"

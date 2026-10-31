@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.Context
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
 
@@ -25,5 +26,30 @@ class SettingsViewModel(app: Application) : AndroidViewModel(app) {
     fun updateWpm(value: Int) {
         wpm = value.coerceIn(MIN_WPM, MAX_WPM)
         prefs.edit().putInt("wpm", wpm).apply()
+    }
+
+    /** Send with the torch. With [sendSound] too, both go out together. */
+    var sendLight by mutableStateOf(prefs.getBoolean("send_light", true))
+        private set
+    /** Send as beeps through the speaker. */
+    var sendSound by mutableStateOf(prefs.getBoolean("send_sound", false))
+        private set
+    /** Receive by ear (microphone) instead of by eye (camera). */
+    var receiveSound by mutableStateOf(prefs.getBoolean("receive_sound", false))
+        private set
+
+    fun updateSendLight(on: Boolean) {
+        sendLight = on
+        prefs.edit().putBoolean("send_light", on).apply()
+    }
+
+    fun updateSendSound(on: Boolean) {
+        sendSound = on
+        prefs.edit().putBoolean("send_sound", on).apply()
+    }
+
+    fun updateReceiveSound(on: Boolean) {
+        receiveSound = on
+        prefs.edit().putBoolean("receive_sound", on).apply()
     }
 }

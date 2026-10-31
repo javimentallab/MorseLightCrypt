@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_send">发送</string>
+    <string name="tab_receive">接收</string>
+    <string name="tab_send_secret">加密</string>
+    <string name="tab_receive_secret">解密</string>
+    <string name="message">消息</string>
+    <string name="password">主密码</string>
+    <string name="show_password">显示密码</string>
+    <string name="hide_password">隐藏密码</string>
+    <string name="speed_label">速度：%1$d WPM（点 = %2$d 毫秒）</string>
+    <string name="expected_speed">预期速度：%1$d WPM（点 = %2$d 毫秒）</string>
+    <string name="repeat">重复直到停止</string>
+    <string name="send">发送</string>
+    <string name="encrypt_and_send">加密并发送</string>
+    <string name="encrypting">正在加密…</string>
+    <string name="stop">停止</string>
+    <string name="send_duration">发送约需 %1$d 秒</string>
+    <string name="encrypted_length">密文：约 %1$d 个字符</string>
+    <string name="no_flash">此手机的后置摄像头没有闪光灯。</string>
+    <string name="nothing_to_send">此消息中没有可以用摩尔斯电码发送的内容。</string>
+    <string name="password_missing">请先输入主密码。</string>
+    <string name="morse_preview_empty">消息的摩尔斯电码将显示在这里。</string>
+    <string name="cipher_preview_empty">发送时，加密后的消息会显示在这里。每次都不同。</string>
+    <string name="last_ciphertext">上一条加密消息</string>
+    <string name="camera_permission">MorseLightCrypt 需要相机来看到光脉冲。不会录制或保存任何内容。没有相机时，你仍可以在下方手动输入收到的消息。</string>
+    <string name="allow_camera">允许使用相机</string>
+    <string name="camera_open_failed">无法打开相机：%1$s</string>
+    <string name="calibrating">正在调整曝光…</string>
+    <string name="start_receiving">开始接收</string>
+    <string name="stop_receiving">停止</string>
+    <string name="paused">已暂停：对准光源，然后点按“开始接收”</string>
+    <string name="received_label">已接收（可编辑）</string>
+    <string name="moving">手机移动时暂停</string>
+    <string name="banner_moving">请保持手机不动！</string>
+    <string name="banner_shaky">手在抖动：请拿稳</string>
+    <string name="aim_at_light">将方框对准闪烁的光</string>
+    <string name="light_found">已找到光源，正在等待脉冲</string>
+    <string name="receiving">正在接收，约 %1$d WPM</string>
+    <string name="received_empty">接收到的文字将显示在这里。</string>
+    <string name="decrypt">解密</string>
+    <string name="decrypting">正在解密…</string>
+    <string name="decrypt_failed">无法解密。可能是密码错误，或有字母读错了：请清除后重新接收。</string>
+    <string name="line_not_opened">第 %1$d 行无法解密：%2$s</string>
+    <string name="majority_label">按多数结果重建（假设各行是同一消息的重复）：</string>
+    <string name="clear">清除</string>
+    <string name="copy">复制</string>
+    <string name="recalibrate">重新校准</string>
+    <string name="receive_tips">将方框对准光源，光源较远时双指张开可放大。请把手机放稳：手机移动时不会读取任何内容。</string>
+    <string name="send_error">无法发送：%1$s</string>
+    <string name="by_light">光</string>
+    <string name="by_sound">声音</string>
+    <string name="choose_light_or_sound">请选择光、声音或两者。</string>
+    <string name="light_signal">光信号</string>
+    <string name="sound_signal">声音信号</string>
+    <string name="mic_permission">MorseLightCrypt 需要麦克风来听到哔声。它只在接收时收听，不会录制或保存任何内容。没有麦克风时，你可以在下方手动输入收到的消息。</string>
+    <string name="allow_mic">允许使用麦克风</string>
+    <string name="mic_open_failed">无法打开麦克风：%1$s</string>
+    <string name="paused_sound">已暂停：将手机靠近声源，然后点按“开始接收”</string>
+    <string name="listen_for_tone">正在收听摩尔斯音调…</string>
+    <string name="tone_found">已找到音调，正在等待哔声</string>
+    <string name="tone_hz">%1$d Hz</string>
+    <string name="receive_tips_sound">请让手机靠近扬声器，并保持周围安静。它会跟随 300 到 1500 Hz 之间最响的稳定音调。</string>
+</resources>

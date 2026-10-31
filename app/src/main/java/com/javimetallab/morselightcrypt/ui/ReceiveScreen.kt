@@ -48,6 +48,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
@@ -80,10 +81,12 @@ import com.javimetallab.morselightcrypt.R
 import com.javimetallab.morselightcrypt.crypto.SecretCodec
 import com.javimetallab.morselightcrypt.morse.MorseTiming
 import com.javimetallab.morselightcrypt.receive.LightMeter
+import com.javimetallab.morselightcrypt.receive.Microphone
 import com.javimetallab.morselightcrypt.receive.ROI_FRACTION
 import com.javimetallab.morselightcrypt.receive.ReceiveState
 import com.javimetallab.morselightcrypt.receive.ReceiveViewModel
 import java.util.concurrent.Executors
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.delay
 
 /** Amber of the "hold it steadier" warning: still reading, unlike the red one. */
@@ -96,7 +99,8 @@ private const val ZOOM_SETTLE_MS = 700L
 private const val EXPOSURE_SETTLE_MS = 1500L
 
 /**
- * Points the camera at a blinking light and reads it. With [encrypted] the
+ * Points the camera at a blinking light and reads it, or with [sound] listens
+ * for beeps with the microphone. With [encrypted] the
  * received text can then be decrypted with a password.
  */
 @Composable
@@ -107,15 +111,39 @@ fun ReceiveScreen(
     onWpmChange: (Int) -> Unit,
     hasCameraPermission: Boolean,
     onRequestCamera: () -> Unit,
+    sound: Boolean,
+    onSoundChange: (Boolean) -> Unit,
+    hasMicPermission: Boolean,
+    onRequestMic: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     LaunchedEffect(wpm) { model.hintUnitMs = MorseTiming.unitMs(wpm).toDouble() }
+    // Before anything is drawn, so a switch never feeds the wrong engine.
+    model.soundMode = sound
 
-    if (hasCameraPermission) KeepScreenOn()
+    val canSense = if (sound) hasMicPermission else hasCameraPermission
+    if (if (sound) model.listening else hasCameraPermission) KeepScreenOn()
     val state by model.state.collectAsStateWithLifecycle()
     val clipboard = LocalClipboardManager.current
     var recalibrations by remember { mutableIntStateOf(0) }
     var cameraError by remember { mutableStateOf<String?>(null) }
+    var micError by remember(sound) { mutableStateOf<String?>(null) }
+    val context = LocalContext.current
+
+    // The microphone is open only while listening: nothing is heard while paused.
+    if (sound && hasMicPermission && model.listening) {
+        LaunchedEffect(Unit) {
+            micError = null
+            try {
+                Microphone.listen(context, model::onTone)
+            } catch (e: CancellationException) {
+                throw e
+            } catch (e: Exception) {
+                micError = context.getString(R.string.mic_open_failed, e.message ?: e.javaClass.simpleName)
+                model.stopListening()
+            }
+        }
+    }
 
     Column(
         modifier
@@ -123,8 +151,23 @@ fun ReceiveScreen(
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
-        // Without the camera a received message can still be typed in by hand.
-        if (hasCameraPermission) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            RadioButton(selected = !sound, onClick = { onSoundChange(false) })
+            Text(stringResource(R.string.light_signal))
+            Spacer(Modifier.width(16.dp))
+            RadioButton(selected = sound, onClick = { onSoundChange(true) })
+            Text(stringResource(R.string.sound_signal))
+        }
+
+        // Without the camera or microphone a received message can still be typed in by hand.
+        if (sound && hasMicPermission) {
+            SignalGraph(
+                state,
+                modifier = Modifier.fillMaxWidth().height(200.dp),
+                label = state.toneHz?.takeIf { model.listening && state.hasSignal }
+                    ?.let { stringResource(R.string.tone_hz, it) }
+            )
+        } else if (!sound && hasCameraPermission) {
             Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
                 CameraView(
                     model = model,
@@ -155,7 +198,9 @@ fun ReceiveScreen(
                     )
                 }
             }
+        }
 
+        if (canSense) {
             // Under the viewfinder, where the thumb already is.
             Button(
                 onClick = { if (model.listening) model.stopListening() else model.startListening() },
@@ -173,29 +218,38 @@ fun ReceiveScreen(
                 Text(stringResource(if (model.listening) R.string.stop_receiving else R.string.start_receiving))
             }
 
+            val error = if (sound) micError else cameraError
             Text(
                 text = when {
-                    cameraError != null -> cameraError.orEmpty()
+                    error != null -> error
+                    sound && !model.listening -> stringResource(R.string.paused_sound)
+                    sound && !state.hasSignal -> stringResource(R.string.listen_for_tone)
+                    sound && state.decoded.wpm == null -> stringResource(R.string.tone_found)
                     !model.listening -> stringResource(R.string.paused)
-                    model.calibrating -> stringResource(R.string.calibrating)
+                    !sound && model.calibrating -> stringResource(R.string.calibrating)
                     state.moving -> stringResource(R.string.moving)
                     !state.hasSignal -> stringResource(R.string.aim_at_light)
                     state.decoded.wpm != null -> stringResource(R.string.receiving, state.decoded.wpm ?: 0)
                     else -> stringResource(R.string.light_found)
                 },
-                color = if (cameraError != null) MaterialTheme.colorScheme.error
+                color = if (error != null) MaterialTheme.colorScheme.error
                 else MaterialTheme.colorScheme.onSurface,
                 style = MaterialTheme.typography.bodyLarge
             )
 
-            SignalGraph(state)
+            if (!sound) SignalGraph(state)
 
             SpeedSlider(label = R.string.expected_speed, wpm = wpm, onWpmChange = onWpmChange)
         } else {
             Card(Modifier.fillMaxWidth()) {
                 Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                    Text(stringResource(R.string.camera_permission))
-                    Button(onClick = onRequestCamera) { Text(stringResource(R.string.allow_camera)) }
+                    if (sound) {
+                        Text(stringResource(R.string.mic_permission))
+                        Button(onClick = onRequestMic) { Text(stringResource(R.string.allow_mic)) }
+                    } else {
+                        Text(stringResource(R.string.camera_permission))
+                        Button(onClick = onRequestCamera) { Text(stringResource(R.string.allow_camera)) }
+                    }
                 }
             }
         }
@@ -267,14 +321,14 @@ fun ReceiveScreen(
                 },
                 enabled = allText.isNotEmpty()
             ) { Text(stringResource(R.string.copy)) }
-            if (hasCameraPermission) {
+            if (!sound && hasCameraPermission) {
                 OutlinedButton(onClick = { recalibrations++ }) { Text(stringResource(R.string.recalibrate)) }
             }
         }
 
-        if (hasCameraPermission) {
+        if (canSense) {
             Text(
-                stringResource(R.string.receive_tips),
+                stringResource(if (sound) R.string.receive_tips_sound else R.string.receive_tips),
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
@@ -484,15 +538,22 @@ private fun DecryptionCard(result: SecretCodec.Result) {
     }
 }
 
-/** Brightness over the last few seconds, with the on threshold. */
+/**
+ * Brightness (or loudness of the tone) over the last few seconds, with the on
+ * threshold. By ear it stands in for the viewfinder, with the pitch as [label].
+ */
 @Composable
-private fun SignalGraph(state: ReceiveState) {
-    val line = MaterialTheme.colorScheme.primary
+private fun SignalGraph(
+    state: ReceiveState,
+    modifier: Modifier = Modifier.fillMaxWidth().height(72.dp),
+    label: String? = null
+) {
+    val line = if (state.isOn) LampColor else MaterialTheme.colorScheme.primary
     val threshold = MaterialTheme.colorScheme.secondary
+    Box(modifier) {
     Canvas(
         Modifier
-            .fillMaxWidth()
-            .height(72.dp)
+            .fillMaxSize()
             .clip(RoundedCornerShape(12.dp))
             .background(MaterialTheme.colorScheme.surfaceVariant)
     ) {
@@ -511,5 +572,18 @@ private fun SignalGraph(state: ReceiveState) {
             val ty = y(state.threshold)
             drawLine(threshold, Offset(0f, ty), Offset(size.width, ty), strokeWidth = 1.dp.toPx())
         }
+    }
+    label?.let {
+        Text(
+            it,
+            color = Color.White,
+            style = MaterialTheme.typography.labelLarge,
+            modifier = Modifier
+                .align(Alignment.TopStart)
+                .padding(10.dp)
+                .background(Color.Black.copy(alpha = 0.5f), RoundedCornerShape(6.dp))
+                .padding(horizontal = 6.dp, vertical = 2.dp)
+        )
+    }
     }
 }
