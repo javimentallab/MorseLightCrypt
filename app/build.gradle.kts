@@ -8,14 +8,14 @@ plugins {
 
 android {
     namespace = "com.javimetallab.morselightcrypt"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.javimetallab.morselightcrypt"
         minSdk = 26
-        targetSdk = 35
-        versionCode = 4
-        versionName = "1.1.1"
+        targetSdk = 36
+        versionCode = 5
+        versionName = "1.1.2"
     }
 
     // The release key lives outside the repo; keystore.properties (gitignored)
