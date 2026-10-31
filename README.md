@@ -1,5 +1,15 @@
 # MorseLightCrypt
 
+<p align="center">
+  <img src="fastlane/metadata/android/en-US/images/featureGraphic.png" alt="MorseLightCrypt" width="720">
+</p>
+<p align="center">
+  <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/1.png" alt="Send" width="180">
+  <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/2.png" alt="Receive" width="180">
+  <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/3.png" alt="Encrypt" width="180">
+  <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/4.png" alt="Decrypt" width="180">
+</p>
+
 Android app that sends text as **Morse code with the flashlight or as beeps** and reads it back
 **with the camera or the microphone**, optionally **encrypted** with a master password.
 
