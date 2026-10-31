@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_send">ส่ง</string>
+    <string name="tab_receive">รับ</string>
+    <string name="tab_send_secret">เข้ารหัส</string>
+    <string name="tab_receive_secret">ถอดรหัส</string>
+    <string name="message">ข้อความ</string>
+    <string name="password">รหัสผ่านหลัก</string>
+    <string name="show_password">แสดงรหัสผ่าน</string>
+    <string name="hide_password">ซ่อนรหัสผ่าน</string>
+    <string name="speed_label">ความเร็ว: %1$d WPM (จุด = %2$d มิลลิวินาที)</string>
+    <string name="expected_speed">ความเร็วที่คาดไว้: %1$d WPM (จุด = %2$d มิลลิวินาที)</string>
+    <string name="repeat">ทำซ้ำจนกว่าจะหยุด</string>
+    <string name="send">ส่ง</string>
+    <string name="encrypt_and_send">เข้ารหัสแล้วส่ง</string>
+    <string name="encrypting">กำลังเข้ารหัส…</string>
+    <string name="stop">หยุด</string>
+    <string name="send_duration">ใช้เวลาส่งประมาณ %1$d วินาที</string>
+    <string name="encrypted_length">เข้ารหัสแล้ว: ประมาณ %1$d ตัวอักษร</string>
+    <string name="no_flash">โทรศัพท์เครื่องนี้ไม่มีไฟแฟลชที่กล้องหลัง</string>
+    <string name="nothing_to_send">ไม่มีส่วนใดของข้อความนี้ที่ส่งเป็นรหัสมอร์สได้</string>
+    <string name="password_missing">พิมพ์รหัสผ่านหลักก่อน</string>
+    <string name="morse_preview_empty">รหัสมอร์สของข้อความจะแสดงที่นี่</string>
+    <string name="cipher_preview_empty">ข้อความที่เข้ารหัสจะแสดงที่นี่เมื่อส่ง และจะเปลี่ยนทุกครั้ง</string>
+    <string name="last_ciphertext">ข้อความเข้ารหัสล่าสุด</string>
+    <string name="camera_permission">MorseLightCrypt ต้องใช้กล้องเพื่อมองเห็นสัญญาณไฟ ไม่มีการบันทึกหรือเก็บสิ่งใดไว้ หากไม่มีกล้อง คุณยังพิมพ์ข้อความที่ได้รับเองด้านล่างได้</string>
+    <string name="allow_camera">อนุญาตกล้อง</string>
+    <string name="camera_open_failed">เปิดกล้องไม่ได้: %1$s</string>
+    <string name="calibrating">กำลังปรับค่าแสง…</string>
+    <string name="start_receiving">เริ่มรับ</string>
+    <string name="stop_receiving">หยุด</string>
+    <string name="paused">หยุดชั่วคราว: เล็งไปที่แสงแล้วกด “เริ่มรับ”</string>
+    <string name="received_label">ที่ได้รับ (แก้ไขได้)</string>
+    <string name="moving">หยุดชั่วคราวขณะโทรศัพท์เคลื่อนที่</string>
+    <string name="banner_moving">ถือโทรศัพท์ให้นิ่ง!</string>
+    <string name="banner_shaky">มือสั่น: ถือให้มั่นกว่านี้</string>
+    <string name="aim_at_light">เล็งกรอบสี่เหลี่ยมไปที่แสงที่กะพริบ</string>
+    <string name="light_found">พบแสงแล้ว กำลังรอสัญญาณ</string>
+    <string name="receiving">กำลังรับ ประมาณ %1$d WPM</string>
+    <string name="received_empty">ข้อความที่ได้รับจะแสดงที่นี่</string>
+    <string name="decrypt">ถอดรหัส</string>
+    <string name="decrypting">กำลังถอดรหัส…</string>
+    <string name="decrypt_failed">ถอดรหัสไม่ได้ อาจเป็นเพราะรหัสผ่านไม่ถูกต้องหรืออ่านตัวอักษรผิด: ล้างแล้วรับใหม่อีกครั้ง</string>
+    <string name="line_not_opened">ถอดรหัสบรรทัดที่ %1$d ไม่ได้: %2$s</string>
+    <string name="majority_label">สร้างใหม่ตามเสียงข้างมาก โดยถือว่าแต่ละบรรทัดเป็นข้อความเดียวกันที่ส่งซ้ำ:</string>
+    <string name="clear">ล้าง</string>
+    <string name="copy">คัดลอก</string>
+    <string name="recalibrate">ปรับเทียบใหม่</string>
+    <string name="receive_tips">เล็งกรอบสี่เหลี่ยมไปที่แสง และใช้สองนิ้วขยายหากแสงอยู่ไกล วางโทรศัพท์ให้นิ่ง: ขณะเคลื่อนที่จะไม่อ่านสิ่งใด</string>
+    <string name="send_error">ส่งไม่ได้: %1$s</string>
+    <string name="by_light">แสง</string>
+    <string name="by_sound">เสียง</string>
+    <string name="choose_light_or_sound">เลือกแสง เสียง หรือทั้งสองอย่าง</string>
+    <string name="light_signal">สัญญาณแสง</string>
+    <string name="sound_signal">สัญญาณเสียง</string>
+    <string name="mic_permission">MorseLightCrypt ต้องใช้ไมโครโฟนเพื่อฟังเสียงบี๊บ จะฟังเฉพาะขณะรับ และไม่มีการบันทึกหรือเก็บสิ่งใดไว้ หากไม่มีไมโครโฟน คุณยังพิมพ์ข้อความที่ได้รับเองด้านล่างได้</string>
+    <string name="allow_mic">อนุญาตไมโครโฟน</string>
+    <string name="mic_open_failed">เปิดไมโครโฟนไม่ได้: %1$s</string>
+    <string name="paused_sound">หยุดชั่วคราว: นำโทรศัพท์เข้าใกล้เสียงแล้วกด “เริ่มรับ”</string>
+    <string name="listen_for_tone">กำลังฟังเสียงรหัสมอร์ส…</string>
+    <string name="tone_found">พบเสียงแล้ว กำลังรอเสียงบี๊บ</string>
+    <string name="tone_hz">%1$d Hz</string>
+    <string name="receive_tips_sound">ถือโทรศัพท์ใกล้ลำโพงและให้รอบข้างเงียบ แอปจะตามเสียงคงที่ที่ดังที่สุดระหว่าง 300 ถึง 1500 Hz</string>
+</resources>

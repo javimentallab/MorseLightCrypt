@@ -1,0 +1,10 @@
+<p>Invia testo in codice Morse con la torcia o con dei bip, e rileggilo con la fotocamera o il microfono, cifrato con una password principale se vuoi.</p>
+<p>Un telefono lampeggia o suona, un altro guarda la luce o ascolta e ritrasforma gli impulsi in testo. Legge anche qualsiasi altra luce che lampeggia (una lampada, uno schermo, una torcia in lontananza) e qualsiasi tono Morse (una radio, un computer, un altro telefono, uno strumento).</p>
+<ul>
+<li><b>Invia</b>: scrivi, scegli la velocità, scegli luce, suono o entrambi, e invia. Ripeti in ciclo perché chi riceve abbia il tempo di sistemarsi.</li>
+<li><b>Ricevi</b>: scegli segnale luminoso o sonoro e premi Inizia. Zooma con le dita sulle luci lontane; a orecchio trova da solo il tono di chi invia. Ogni ripetizione finisce su una riga a sé, e il testo ricevuto si può correggere a mano.</li>
+<li><b>Cifra / Decifra</b>: AES-256 con password principale, in un formato compatto di lettere e cifre pensato per il Morse: «HOLA MUNDO» diventa 26 caratteri.</li>
+</ul>
+<p>Il ricevitore segue solo ciò che lampeggia, quindi uno schermo luminoso accanto alla lampada non lo abbaglia, e a orecchio segue solo il tono Morse, non il rumore intorno. Misura da solo la velocità di chi invia, tollera una mano che regge il telefono e si mette in pausa mentre il telefono si muove.</p>
+<p>Nessun permesso di rete: dal telefono escono solo luce e suono. Il microfono è aperto solo mentre ricevi a suono, e non viene registrato né salvato nulla.</p>
+<p>Per inviare con la luce serve un telefono con torcia; per ricevere, una fotocamera o un microfono.</p>

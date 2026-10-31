@@ -1,12 +1,17 @@
 # MorseLightCrypt
 
-Android app that sends text as **Morse code with the flashlight** and reads it back
-**with the camera**, optionally **encrypted** with a master password.
+Android app that sends text as **Morse code with the flashlight or as beeps** and reads it back
+**with the camera or the microphone**, optionally **encrypted** with a master password.
 
-One phone flashes, another one points its camera at the light and turns the pulses back into
-text. It also works with any other blinking light: a lamp, a screen, a torch in the distance.
+One phone flashes or beeps, another one watches the light or listens and turns the pulses back
+into text. It also works with any other blinking light (a lamp, a screen, a torch in the
+distance) and any Morse tone (a radio, a computer, another phone, an instrument).
 
-No network permission: nothing leaves the phone except light.
+No network permission: nothing leaves the phone except light and sound. The microphone is open
+only while receiving by sound; nothing is recorded or stored.
+
+In English, Spanish, Portuguese, French, German, Italian, Dutch, Polish, Russian, Ukrainian,
+Chinese, Japanese, Korean, Thai and Hindi.
 
 ## Install
 
@@ -20,16 +25,17 @@ No network permission: nothing leaves the phone except light.
 
 ## Tabs
 
-**Send** → type a message, pick the speed, *Flash it*. The screen shows which letter is going
-out. *Repeat until stopped* sends it in a loop, with a longer pause between repeats, so the
-receiver has time to get settled.
+**Send** → type a message, pick the speed, tick *Light*, *Sound* or both, *Send*. The screen
+shows which letter is going out. *Repeat until stopped* sends it in a loop, with a longer pause
+between repeats, so the receiver has time to get settled.
 
-**Receive** → aim the square at the light and press *Start receiving*. The text appears as it
+**Receive** → choose *Light signal* or *Sound signal*. By light, aim the square at the light; by
+sound, bring the phone near the beeps. Then press *Start receiving*. The text appears as it
 comes in, each repeat of a looped message on its own line. *Stop* when done: the received text
 can then be edited by hand, to delete stray letters or fix a misread one.
 
 **Encrypt** → the same as Send, but the message is first encrypted with a master password and
-what goes out by light is the ciphertext: letters and digits in groups of five.
+what goes out by light or sound is the ciphertext: letters and digits in groups of five.
 
 **Decrypt** → receive, type the master password, *Decrypt*. Every received line is decrypted on
 its own and shown in order; a line that does not open says so. Nothing is merged or dropped.
@@ -50,6 +56,16 @@ its own and shown in order; a line that does not open says so. Nothing is merged
 Tested with the phone's flashlight and with a smart bulb from 100 % down to 2 % brightness,
 close up and across a room at 10× zoom, held by hand.
 
+By sound:
+
+- **Bring the phone near the speaker** and keep the room quiet. Voices, coughs and knocks are
+  mostly ignored, but a word spoken over a beep can spoil a letter; *Repeat* helps here too.
+- **Any pitch between 300 and 1500 Hz** works: the app finds the sender's tone by itself. It
+  sends at 700 Hz, a usual sidetone.
+
+Tested both ways between a phone and a computer's speakers and microphone, plain and
+encrypted, in an ordinary room with its echo.
+
 ## How it works
 
 The camera runs at a fixed 30 fps with the exposure set dark and locked, so a light switching on
@@ -59,6 +75,14 @@ blocks that swing the most. A blinking light swings, a steady bright screen does
 
 Blocks that brighten *and* darken in the same frame mean the phone moved, not the light: reading
 pauses and starts over once it is still, keeping the text read so far.
+
+By sound, the microphone (unprocessed where the phone offers it, so no automatic gain) is
+measured every 10 ms over 20 ms windows by a bank of Goertzel filters from 300 to 1500 Hz. The
+app follows the pitch whose recent peaks stand well above the rest of the spectrum, and counts a
+beep only while that pitch is a narrow peak clearly above the noise: a click or a cough is wide.
+A beep is "on" while it stays within a few decibels of its own loudness, not halfway between
+silence and loudness, because a room's echo keeps it ringing well above the silence after it
+stopped and would otherwise swallow the gaps between dots.
 
 On/off durations go to the decoder, which re-decodes the whole recording each time:
 
@@ -70,7 +94,7 @@ On/off durations go to the decoder, which re-decodes the whole recording each ti
 
 ## Encryption
 
-Every character sent by light costs seconds, so the format is as short as it can be while
+Every character sent by light or sound costs seconds, so the format is as short as it can be while
 staying sound for personal use:
 
 ```

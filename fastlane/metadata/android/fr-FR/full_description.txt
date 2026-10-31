@@ -1,0 +1,10 @@
+<p>Envoyez du texte en code Morse avec la lampe torche ou en bips, et relisez-le avec la caméra ou le micro, chiffré avec un mot de passe maître si vous le souhaitez.</p>
+<p>Un téléphone clignote ou bipe, un autre regarde la lumière ou écoute et retransforme les impulsions en texte. Il lit aussi n'importe quelle autre lumière qui clignote (une lampe, un écran, une torche au loin) et n'importe quelle tonalité Morse (une radio, un ordinateur, un autre téléphone, un instrument).</p>
+<ul>
+<li><b>Envoyer</b> : écrivez, choisissez la vitesse, choisissez lumière, son ou les deux, et envoyez. Répétez en boucle pour laisser au destinataire le temps de se placer.</li>
+<li><b>Recevoir</b> : choisissez le signal lumineux ou sonore et appuyez sur Commencer. Zoomez avec les doigts sur les lumières lointaines ; à l'oreille, il trouve seul la tonalité de l'expéditeur. Chaque répétition arrive sur sa propre ligne, et le texte reçu peut être corrigé à la main.</li>
+<li><b>Chiffrer / Déchiffrer</b> : AES-256 avec un mot de passe maître, dans un format compact de lettres et de chiffres pensé pour le Morse : « HOLA MUNDO » tient en 26 caractères.</li>
+</ul>
+<p>Le récepteur ne suit que ce qui clignote, si bien qu'un écran lumineux à côté de la lampe ne l'éblouit pas, et à l'oreille il ne suit que la tonalité Morse, pas le bruit autour. Il mesure seul la vitesse de l'expéditeur, tolère une main qui tient le téléphone et se met en pause quand le téléphone bouge.</p>
+<p>Aucune permission réseau : rien ne sort du téléphone, sauf de la lumière et du son. Le micro n'est ouvert que pendant la réception par le son, et rien n'est enregistré ni conservé.</p>
+<p>Pour envoyer par la lumière, il faut un téléphone avec lampe torche ; pour recevoir, une caméra ou un micro.</p>

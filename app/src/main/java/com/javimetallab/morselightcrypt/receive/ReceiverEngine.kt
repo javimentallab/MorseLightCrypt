@@ -17,7 +17,9 @@ data class ReceiveState(
     /** The phone is moving: nothing is being read. */
     val moving: Boolean = false,
     /** The hand trembles: still read, but worth a warning. */
-    val shaky: Boolean = false
+    val shaky: Boolean = false,
+    /** By ear: pitch of the tone being followed. */
+    val toneHz: Int? = null
 )
 
 /**
@@ -34,11 +36,12 @@ data class ReceiveState(
  */
 class ReceiverEngine(
     private val historySize: Int = 150,
+    /** On/off decision; the microphone needs other thresholds than the camera. */
+    private val tracker: LightTracker = LightTracker(),
     /** Called with every finished stretch, for diagnostics. */
     private val onSegment: (Segment, level: Float) -> Unit = { _, _ -> }
 ) {
 
-    private val tracker = LightTracker()
     private val segments = ArrayList<Segment>()
     private val levels = ArrayDeque<Float>(historySize)
     private var currentOn = false

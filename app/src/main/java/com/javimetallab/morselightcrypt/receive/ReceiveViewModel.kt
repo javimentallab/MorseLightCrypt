@@ -9,6 +9,7 @@ import androidx.lifecycle.viewModelScope
 import com.javimetallab.morselightcrypt.BuildConfig
 import com.javimetallab.morselightcrypt.crypto.SecretCodec
 import com.javimetallab.morselightcrypt.morse.Decoded
+import com.javimetallab.morselightcrypt.morse.Segment
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -24,11 +25,31 @@ import kotlinx.coroutines.withContext
  */
 class ReceiveViewModel : ViewModel() {
 
-    private val engine = ReceiverEngine { segment, level ->
+    private val logSegment = { segment: Segment, level: Float ->
         if (BuildConfig.DEBUG) {
             Log.d("MorseLight", "%s %.0f ms (level %.0f)".format(if (segment.on) "ON " else "off", segment.ms, level))
         }
     }
+    private val lightEngine = ReceiverEngine(onSegment = logSegment)
+
+    /** By ear: a reading every 10 ms, so a longer history for the same seconds on the graph. */
+    private val soundEngine = ReceiverEngine(
+        historySize = 400,
+        tracker = ToneMeter.tracker(),
+        onSegment = logSegment
+    )
+
+    /** Listening to the microphone instead of watching the camera. Set by the screen. */
+    @Volatile
+    var soundMode = false
+        set(value) {
+            if (field == value) return
+            stopListening()
+            field = value
+            _state.value = ReceiveState()
+        }
+
+    private val engine: ReceiverEngine get() = if (soundMode) soundEngine else lightEngine
     private val lock = Any()
 
     private val _state = MutableStateFlow(ReceiveState())
@@ -111,8 +132,18 @@ class ReceiveViewModel : ViewModel() {
         }
     }
 
+    /** One 10 ms reading of the microphone, in [soundMode]. */
+    fun onTone(reading: ToneMeter.Reading, timestampNs: Long) {
+        if (!listening || !soundMode) return
+        val next = synchronized(lock) {
+            soundEngine.onFrame(reading.level, timestampNs, learnedUnitMs ?: hintUnitMs)
+        }
+        if (next.decoded.measured) learnedUnitMs = next.decoded.unitMs
+        _state.value = next.copy(toneHz = reading.toneHz)
+    }
+
     fun onFrame(reading: LightMeter.Reading, timestampNs: Long) {
-        if (!listening) return
+        if (!listening || soundMode) return
         if (BuildConfig.DEBUG) {
             // Largest motion share every half second, to tune the thresholds.
             motionPeak = maxOf(motionPeak, reading.motion)
@@ -123,7 +154,7 @@ class ReceiveViewModel : ViewModel() {
             }
         }
         val next = synchronized(lock) {
-            engine.onFrame(reading.level, timestampNs, learnedUnitMs ?: hintUnitMs, reading.steady, reading.shaky)
+            lightEngine.onFrame(reading.level, timestampNs, learnedUnitMs ?: hintUnitMs, reading.steady, reading.shaky)
         }
         if (next.decoded.measured) learnedUnitMs = next.decoded.unitMs
         if (BuildConfig.DEBUG) {

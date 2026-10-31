@@ -1,1 +1,1 @@
-Morse code by flashlight and camera, optionally encrypted. No network.
+Morse code by light and sound, optionally encrypted. No network.

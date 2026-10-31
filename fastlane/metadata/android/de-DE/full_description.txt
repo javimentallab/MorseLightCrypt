@@ -1,0 +1,10 @@
+<p>Sende Text als Morsecode mit der Taschenlampe oder als Pieptöne und lies ihn mit der Kamera oder dem Mikrofon wieder ein, auf Wunsch mit einem Master-Passwort verschlüsselt.</p>
+<p>Ein Handy blinkt oder piept, ein anderes schaut auf das Licht oder hört zu und macht aus den Impulsen wieder Text. Es liest auch jedes andere blinkende Licht (eine Lampe, einen Bildschirm, eine Taschenlampe in der Ferne) und jeden Morseton (ein Funkgerät, einen Computer, ein anderes Handy, ein Instrument).</p>
+<ul>
+<li><b>Senden</b>: Text eingeben, Tempo wählen, Licht, Ton oder beides wählen und senden. In Schleife wiederholen, damit der Empfänger Zeit hat, sich einzurichten.</li>
+<li><b>Empfangen</b>: Licht- oder Tonsignal wählen und Start drücken. Mit zwei Fingern auf ferne Lichter zoomen; nach Gehör findet es die Tonhöhe des Senders selbst. Jede Wiederholung landet in einer eigenen Zeile, und der empfangene Text lässt sich von Hand korrigieren.</li>
+<li><b>Verschlüsseln / Entschlüsseln</b>: AES-256 mit Master-Passwort, in einem kompakten Format aus Buchstaben und Ziffern für Morse: „HOLA MUNDO“ wird zu 26 Zeichen.</li>
+</ul>
+<p>Der Empfänger folgt nur dem, was blinkt, sodass ein heller Bildschirm neben der Lampe ihn nicht blendet, und nach Gehör folgt er nur dem Morseton, nicht dem Lärm drumherum. Er misst das Tempo des Senders selbst, verträgt eine Hand, die das Handy hält, und pausiert, solange sich das Handy bewegt.</p>
+<p>Keine Netzwerkberechtigung: Nichts verlässt das Handy außer Licht und Ton. Das Mikrofon ist nur beim Empfang per Ton offen, und nichts wird aufgenommen oder gespeichert.</p>
+<p>Zum Senden per Licht braucht es ein Handy mit Taschenlampe; zum Empfangen eine Kamera oder ein Mikrofon.</p>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_send">Verzenden</string>
+    <string name="tab_receive">Ontvangen</string>
+    <string name="tab_send_secret">Versleutelen</string>
+    <string name="tab_receive_secret">Ontsleutelen</string>
+    <string name="message">Bericht</string>
+    <string name="password">Hoofdwachtwoord</string>
+    <string name="show_password">Wachtwoord tonen</string>
+    <string name="hide_password">Wachtwoord verbergen</string>
+    <string name="speed_label">Snelheid: %1$d WPM (punt = %2$d ms)</string>
+    <string name="expected_speed">Verwachte snelheid: %1$d WPM (punt = %2$d ms)</string>
+    <string name="repeat">Herhalen tot stop</string>
+    <string name="send">Verzenden</string>
+    <string name="encrypt_and_send">Versleutelen en verzenden</string>
+    <string name="encrypting">Versleutelen…</string>
+    <string name="stop">Stoppen</string>
+    <string name="send_duration">Ongeveer %1$d s zenden</string>
+    <string name="encrypted_length">Versleuteld: ongeveer %1$d tekens</string>
+    <string name="no_flash">Deze telefoon heeft geen zaklamp bij de achtercamera.</string>
+    <string name="nothing_to_send">Niets in dit bericht kan in morse worden verzonden.</string>
+    <string name="password_missing">Typ eerst het hoofdwachtwoord.</string>
+    <string name="morse_preview_empty">Hier verschijnt je bericht in morse.</string>
+    <string name="cipher_preview_empty">Het versleutelde bericht verschijnt hier bij het verzenden. Het verandert elke keer.</string>
+    <string name="last_ciphertext">Laatste versleutelde bericht</string>
+    <string name="camera_permission">MorseLightCrypt heeft de camera nodig om de lichtpulsen te zien. Er wordt niets opgenomen of bewaard. Zonder camera kun je een ontvangen bericht hieronder met de hand typen.</string>
+    <string name="allow_camera">Camera toestaan</string>
+    <string name="camera_open_failed">Kan de camera niet openen: %1$s</string>
+    <string name="calibrating">Belichting aanpassen…</string>
+    <string name="start_receiving">Begin met ontvangen</string>
+    <string name="stop_receiving">Stoppen</string>
+    <string name="paused">Gepauzeerd: richt op het licht en druk op Begin</string>
+    <string name="received_label">Ontvangen (je kunt het aanpassen)</string>
+    <string name="moving">Gepauzeerd zolang de telefoon beweegt</string>
+    <string name="banner_moving">Houd de telefoon stil!</string>
+    <string name="banner_shaky">Onrustige hand: houd hem steviger vast</string>
+    <string name="aim_at_light">Richt het vierkant op het knipperende licht</string>
+    <string name="light_found">Licht gevonden, wachten op pulsen</string>
+    <string name="receiving">Ontvangen, ongeveer %1$d WPM</string>
+    <string name="received_empty">Hier verschijnt de ontvangen tekst.</string>
+    <string name="decrypt">Ontsleutelen</string>
+    <string name="decrypting">Ontsleutelen…</string>
+    <string name="decrypt_failed">Ontsleutelen mislukt. Het wachtwoord klopt niet of een letter is verkeerd gelezen: wis het en ontvang het opnieuw.</string>
+    <string name="line_not_opened">Regel %1$d kon niet worden ontsleuteld: %2$s</string>
+    <string name="majority_label">Bij meerderheid herbouwd, ervan uitgaande dat de regels herhalingen van hetzelfde bericht zijn:</string>
+    <string name="clear">Wissen</string>
+    <string name="copy">Kopiëren</string>
+    <string name="recalibrate">Opnieuw kalibreren</string>
+    <string name="receive_tips">Richt het vierkant op het licht en zoom met twee vingers in als het ver weg is. Leg de telefoon neer: zolang hij beweegt, wordt er niets gelezen.</string>
+    <string name="send_error">Verzenden mislukt: %1$s</string>
+    <string name="by_light">Licht</string>
+    <string name="by_sound">Geluid</string>
+    <string name="choose_light_or_sound">Kies licht, geluid of allebei.</string>
+    <string name="light_signal">Lichtsignaal</string>
+    <string name="sound_signal">Geluidssignaal</string>
+    <string name="mic_permission">MorseLightCrypt heeft de microfoon nodig om de piepjes te horen. Hij luistert alleen tijdens het ontvangen en er wordt niets opgenomen of bewaard. Zonder microfoon kun je een ontvangen bericht hieronder met de hand typen.</string>
+    <string name="allow_mic">Microfoon toestaan</string>
+    <string name="mic_open_failed">Kan de microfoon niet openen: %1$s</string>
+    <string name="paused_sound">Gepauzeerd: houd de telefoon bij het geluid en druk op Begin</string>
+    <string name="listen_for_tone">Luisteren naar een morsetoon…</string>
+    <string name="tone_found">Toon gevonden, wachten op piepjes</string>
+    <string name="tone_hz">%1$d Hz</string>
+    <string name="receive_tips_sound">Houd de telefoon dicht bij de luidspreker en zorg voor stilte. Hij volgt de luidste constante toon tussen 300 en 1500 Hz.</string>
+</resources>

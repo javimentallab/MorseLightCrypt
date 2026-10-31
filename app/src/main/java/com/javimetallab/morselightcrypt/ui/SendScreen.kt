@@ -6,9 +6,11 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.text.selection.SelectionContainer
@@ -35,7 +37,7 @@ import com.javimetallab.morselightcrypt.morse.MorseTiming
 import com.javimetallab.morselightcrypt.send.SendViewModel
 
 /**
- * Types a message and flashes it with the torch. With [encrypted] the message
+ * Types a message and sends it by torch, by beeps or both. With [encrypted] the message
  * is encrypted with a password first and the ciphertext is what gets flashed.
  */
 @Composable
@@ -44,6 +46,10 @@ fun SendScreen(
     encrypted: Boolean,
     wpm: Int,
     onWpmChange: (Int) -> Unit,
+    light: Boolean,
+    onLightChange: (Boolean) -> Unit,
+    sound: Boolean,
+    onSoundChange: (Boolean) -> Unit,
     modifier: Modifier = Modifier
 ) {
     // Leaving the tab ends the transmission: the receiver tabs need the camera
@@ -102,6 +108,22 @@ fun SendScreen(
 
         Row(verticalAlignment = Alignment.CenterVertically) {
             Checkbox(
+                checked = light && model.hasFlash,
+                onCheckedChange = onLightChange,
+                enabled = !model.sending && model.hasFlash
+            )
+            Text(stringResource(R.string.by_light))
+            Spacer(Modifier.width(16.dp))
+            Checkbox(
+                checked = sound,
+                onCheckedChange = onSoundChange,
+                enabled = !model.sending
+            )
+            Text(stringResource(R.string.by_sound))
+        }
+
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Checkbox(
                 checked = model.repeat,
                 onCheckedChange = { model.repeat = it },
                 enabled = !model.sending
@@ -114,8 +136,8 @@ fun SendScreen(
             horizontalArrangement = Arrangement.spacedBy(16.dp)
         ) {
             Button(
-                onClick = { if (model.sending) model.stop() else model.start(wpm, encrypted) },
-                enabled = model.hasFlash,
+                onClick = { if (model.sending) model.stop() else model.start(wpm, encrypted, light, sound) },
+                enabled = model.sending || (light && model.hasFlash) || sound,
                 modifier = Modifier.weight(1f)
             ) {
                 Text(

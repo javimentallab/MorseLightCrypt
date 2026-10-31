@@ -1,0 +1,10 @@
+<p>Verstuur tekst in morse met de zaklamp of als piepjes, en lees hem terug met de camera of de microfoon, desgewenst versleuteld met een hoofdwachtwoord.</p>
+<p>De ene telefoon knippert of piept, de andere kijkt naar het licht of luistert en maakt van de pulsen weer tekst. Hij leest ook elk ander knipperend licht (een lamp, een scherm, een zaklamp in de verte) en elke morsetoon (een radio, een computer, een andere telefoon, een instrument).</p>
+<ul>
+<li><b>Verzenden</b>: typ, kies de snelheid, kies licht, geluid of allebei, en verzend. Herhaal in een lus zodat de ontvanger tijd heeft om zich op te stellen.</li>
+<li><b>Ontvangen</b>: kies licht- of geluidssignaal en druk op Begin. Zoom met twee vingers in op verre lichten; op het gehoor vindt hij zelf de toonhoogte van de zender. Elke herhaling komt op een eigen regel, en de ontvangen tekst kun je met de hand verbeteren.</li>
+<li><b>Versleutelen / Ontsleutelen</b>: AES-256 met hoofdwachtwoord, in een compact formaat van letters en cijfers gemaakt voor morse: ‘HOLA MUNDO’ wordt 26 tekens.</li>
+</ul>
+<p>De ontvanger volgt alleen wat knippert, dus een fel scherm naast de lamp verblindt hem niet, en op het gehoor volgt hij alleen de morsetoon, niet het lawaai eromheen. Hij meet zelf de snelheid van de zender, verdraagt een hand die de telefoon vasthoudt en pauzeert zolang de telefoon beweegt.</p>
+<p>Geen netwerkrechten: er verlaat niets de telefoon behalve licht en geluid. De microfoon staat alleen open tijdens ontvangen via geluid, en er wordt niets opgenomen of bewaard.</p>
+<p>Verzenden met licht vraagt een telefoon met zaklamp; ontvangen een camera of microfoon.</p>

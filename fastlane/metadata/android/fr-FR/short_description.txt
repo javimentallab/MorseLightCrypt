@@ -1,0 +1,1 @@
+Code Morse par la lumière et le son, chiffré si besoin. Sans réseau.

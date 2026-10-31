@@ -1,0 +1,1 @@
+Alfabet Morse’a światłem i dźwiękiem, opcjonalnie szyfrowany. Bez sieci.

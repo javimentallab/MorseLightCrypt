@@ -13,22 +13,25 @@ import com.javimetallab.morselightcrypt.R
 import com.javimetallab.morselightcrypt.crypto.SecretCodec
 import com.javimetallab.morselightcrypt.morse.MorseCode
 import com.javimetallab.morselightcrypt.morse.MorseTiming
+import com.javimetallab.morselightcrypt.morse.Pulse
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 /**
- * Sends a message by torch. The encrypted tab uses its own instance and
+ * Sends a message by torch, by beeps or both at once. The encrypted tab uses its own instance and
  * starts it with `encrypted = true`: the message is then encrypted with
  * [password] first and what goes out by light is the ciphertext.
  */
 class SendViewModel(app: Application) : AndroidViewModel(app) {
 
     private val torch = Torch(app)
+    private val beeper = Beeper()
     private var job: Job? = null
 
     val hasFlash: Boolean get() = torch.isAvailable
@@ -58,8 +61,13 @@ class SendViewModel(app: Application) : AndroidViewModel(app) {
     var error by mutableStateOf<String?>(null)
         private set
 
-    fun start(wpm: Int, encrypted: Boolean) {
+    fun start(wpm: Int, encrypted: Boolean, light: Boolean, sound: Boolean) {
         val app = getApplication<Application>()
+        val useLight = light && hasFlash
+        if (!useLight && !sound) {
+            error = app.getString(R.string.choose_light_or_sound)
+            return
+        }
         if (encrypted && password.isEmpty()) {
             error = app.getString(R.string.password_missing)
             return
@@ -92,9 +100,14 @@ class SendViewModel(app: Application) : AndroidViewModel(app) {
                 outgoing = MorseCode.normalize(message)
                 val pulses = MorseTiming.schedule(outgoing)
                 do {
-                    torch.play(pulses, unitMs) { pulse ->
+                    val show = { pulse: Pulse ->
                         lit = pulse.on
                         currentIndex = pulse.charIndex
+                    }
+                    // Both at once when both are chosen; the screen follows the torch then.
+                    coroutineScope {
+                        if (useLight) launch { torch.play(pulses, unitMs, show) }
+                        if (sound) launch { beeper.play(pulses, unitMs, if (useLight) ({}) else show) }
                     }
                     lit = false
                     // A long gap between repeats: the receiver puts each on its own line.
@@ -104,7 +117,7 @@ class SendViewModel(app: Application) : AndroidViewModel(app) {
                 throw e
             } catch (e: Exception) {
                 error = getApplication<Application>()
-                    .getString(R.string.torch_error, e.message ?: e.javaClass.simpleName)
+                    .getString(R.string.send_error, e.message ?: e.javaClass.simpleName)
             } finally {
                 encrypting = false
                 sending = false
