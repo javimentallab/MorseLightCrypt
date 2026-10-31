@@ -152,11 +152,15 @@ fun ReceiveScreen(
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
         Row(verticalAlignment = Alignment.CenterVertically) {
-            RadioButton(selected = !sound, onClick = { onSoundChange(false) })
-            Text(stringResource(R.string.light_signal))
-            Spacer(Modifier.width(16.dp))
-            RadioButton(selected = sound, onClick = { onSoundChange(true) })
-            Text(stringResource(R.string.sound_signal))
+            // Half the width each: where a language needs two lines, both wrap alike.
+            Row(Modifier.weight(1f), verticalAlignment = Alignment.CenterVertically) {
+                RadioButton(selected = !sound, onClick = { onSoundChange(false) })
+                Text(stringResource(R.string.light_signal))
+            }
+            Row(Modifier.weight(1f), verticalAlignment = Alignment.CenterVertically) {
+                RadioButton(selected = sound, onClick = { onSoundChange(true) })
+                Text(stringResource(R.string.sound_signal))
+            }
         }
 
         // Without the camera or microphone a received message can still be typed in by hand.

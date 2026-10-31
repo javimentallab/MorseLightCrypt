@@ -1,0 +1,1 @@
+Tab names no longer get cut short in German, Dutch, French and Ukrainian: long words now wrap over two lines. The light/sound choice in Receive keeps both options level when a language needs two lines.

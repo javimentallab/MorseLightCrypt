@@ -2,8 +2,8 @@
 <resources>
     <string name="tab_send">Senden</string>
     <string name="tab_receive">Empfangen</string>
-    <string name="tab_send_secret">Verschlüsseln</string>
-    <string name="tab_receive_secret">Entschlüsseln</string>
+    <string name="tab_send_secret">Chiffrieren</string>
+    <string name="tab_receive_secret">Dechiffrieren</string>
     <string name="message">Nachricht</string>
     <string name="password">Master-Passwort</string>
     <string name="show_password">Passwort anzeigen</string>
