@@ -1,5 +1,7 @@
 # MorseLightCrypt
 
+<p align="center">English · <a href="README.es.md">Español</a></p>
+
 <p align="center">
   <img src="fastlane/metadata/android/en-US/images/featureGraphic.png" alt="MorseLightCrypt" width="720">
 </p>
@@ -135,7 +137,7 @@ In [`tools/`](tools), for testing the receiver without a second phone:
 
 ## Building
 
-JDK 17 or 21, Android SDK 35:
+JDK 17 or 21, Android SDK 36:
 
 ```
 ./gradlew testDebugUnitTest assembleDebug
@@ -146,4 +148,4 @@ the key.
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE). Third-party licences are in [NOTICE](NOTICE).

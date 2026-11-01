@@ -1,0 +1,87 @@
+MorseLightCrypt
+Copyright (c) 2026 javimentallab
+Licensed under the MIT License (see LICENSE).
+
+Third-party software in the APK
+-------------------------------
+The release APK contains the libraries below, each under its own licence. The list is
+the release runtime classpath of version 1.1.2. R8 removes unused code, so not every
+class of these libraries ends up in the APK.
+
+Apache License 2.0 (https://www.apache.org/licenses/LICENSE-2.0)
+
+  AndroidX, Copyright The Android Open Source Project
+  https://developer.android.com/jetpack/androidx
+    activity, annotation, appcompat, arch.core, autofill, collection,
+    concurrent-futures, core, cursoradapter, customview, drawerlayout, emoji2,
+    exifinterface, fragment, graphics-path, interpolator, lifecycle, loader,
+    profileinstaller, savedstate, startup, tracing, vectordrawable,
+    versionedparcelable, viewpager
+
+  Jetpack Compose, Copyright The Android Open Source Project
+  https://developer.android.com/jetpack/compose
+    animation, foundation, material-icons-core, material-icons-extended,
+    material-ripple, material3, runtime, ui
+
+  CameraX, Copyright The Android Open Source Project
+  https://developer.android.com/jetpack/androidx/releases/camera
+    camera-camera2, camera-core, camera-lifecycle, camera-video, camera-view
+
+  Kotlin standard library
+  Copyright 2010-2024 JetBrains s.r.o and respective authors and developers
+  https://github.com/JetBrains/kotlin
+
+  kotlinx.coroutines, Copyright JetBrains s.r.o and contributors
+  https://github.com/Kotlin/kotlinx.coroutines
+
+  JetBrains Java Annotations, Copyright JetBrains s.r.o
+  https://github.com/JetBrains/java-annotations
+
+  Guava ListenableFuture, Copyright The Guava Authors
+  https://github.com/google/guava
+
+  AutoValue Annotations, Copyright Google LLC
+  https://github.com/google/auto
+
+BSD 3-Clause License
+
+  libyuv: native code that CameraX's camera-core bundles in
+  libimage_processing_util_jni.so. https://chromium.googlesource.com/libyuv/libyuv
+
+  Copyright 2011 The LibYuv Project Authors. All rights reserved.
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions are
+  met:
+
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in
+      the documentation and/or other materials provided with the
+      distribution.
+
+    * Neither the name of Google nor the names of its contributors may
+      be used to endorse or promote products derived from this software
+      without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Not in the APK
+--------------
+  Gradle Wrapper (gradle/wrapper/gradle-wrapper.jar, used to build): Apache License 2.0,
+  https://gradle.org
+
+  tools/secret_codec.py needs the Python package cryptography when you run it, on your
+  own computer: Apache-2.0 OR BSD-3-Clause, https://github.com/pyca/cryptography
