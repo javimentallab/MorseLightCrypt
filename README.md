@@ -50,7 +50,11 @@ can then be edited by hand, to delete stray letters or fix a misread one.
 what goes out by light or sound is the ciphertext: letters and digits in groups of five.
 
 **Decrypt** → receive, type the master password, *Decrypt*. Every received line is decrypted on
-its own and shown in order; a line that does not open says so. Nothing is merged or dropped.
+its own and shown in order; a line that does not open says so. Nothing is merged or dropped. If a
+line fails and at least three lines have the same length, the app also tries a letter-by-letter
+majority vote over them and, if that opens, shows it underneath as a guess.
+
+*Encrypt* and *Decrypt* do not allow screenshots and show no thumbnail in the recent apps.
 
 > ⚠️ The master password has no recovery. Forget it and no message can be opened.
 
@@ -137,7 +141,7 @@ In [`tools/`](tools), for testing the receiver without a second phone:
 
 ## Building
 
-JDK 17 or 21, Android SDK 36:
+JDK 21, Android SDK 36:
 
 ```
 ./gradlew testDebugUnitTest assembleDebug

@@ -51,7 +51,10 @@ sale por luz o sonido es el texto cifrado: letras y números en grupos de cinco.
 
 **Descifrar** → recibe, escribe la contraseña maestra y pulsa *Descifrar*. Cada línea recibida se
 descifra por separado y se muestra en orden; si una línea no se abre, lo dice. No se mezcla ni se
-descarta nada.
+descarta nada. Si falla una línea y al menos tres tienen la misma longitud, la app también prueba una
+votación por mayoría, letra a letra, entre ellas y, si eso se abre, lo enseña debajo como suposición.
+
+*Cifrar* y *Descifrar* no permiten capturas de pantalla ni muestran miniatura en las apps recientes.
 
 > ⚠️ La contraseña maestra no se puede recuperar. Si la olvidas, no podrás abrir ningún mensaje.
 
@@ -142,7 +145,7 @@ En [`tools/`](tools), para probar el receptor sin un segundo móvil:
 
 ## Compilar
 
-JDK 17 o 21, Android SDK 36:
+JDK 21, Android SDK 36:
 
 ```
 ./gradlew testDebugUnitTest assembleDebug
