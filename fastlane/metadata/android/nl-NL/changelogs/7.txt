@@ -1,0 +1,1 @@
+Nieuwe schermafbeeldingen die verzenden en ontvangen via geluid laten zien. De werking van de app verandert niet.
