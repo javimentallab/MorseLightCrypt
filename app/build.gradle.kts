@@ -14,8 +14,8 @@ android {
         applicationId = "com.javimetallab.morselightcrypt"
         minSdk = 26
         targetSdk = 36
-        versionCode = 7
-        versionName = "1.1.4"
+        versionCode = 8
+        versionName = "1.1.5"
     }
 
     // The release key lives outside the repo; keystore.properties (gitignored)
