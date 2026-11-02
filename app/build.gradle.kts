@@ -65,6 +65,29 @@ android {
     }
 }
 
+// The licences of the bundled libraries ask for their notices to travel with the binary:
+// the root NOTICE goes into the APK as assets/NOTICE.
+abstract class NoticeAsset : DefaultTask() {
+    @get:InputFile
+    @get:PathSensitive(PathSensitivity.NONE)
+    abstract val notice: RegularFileProperty
+
+    @get:OutputDirectory
+    abstract val outputDir: DirectoryProperty
+
+    @TaskAction
+    fun copy() {
+        notice.get().asFile.copyTo(outputDir.file("NOTICE").get().asFile, overwrite = true)
+    }
+}
+
+androidComponents.onVariants { variant ->
+    val task = tasks.register<NoticeAsset>("${variant.name}NoticeAsset") {
+        notice.set(rootProject.layout.projectDirectory.file("NOTICE"))
+    }
+    variant.sources.assets?.addGeneratedSourceDirectory(task, NoticeAsset::outputDir)
+}
+
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
