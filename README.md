@@ -146,6 +146,10 @@ JDK 17 or 21, Android SDK 36:
 Release builds are signed when a `keystore.properties` file (not in the repository) points at
 the key.
 
+## Contributing
+
+See [CONTRIBUTING](CONTRIBUTING.md). To report a security problem privately, see [SECURITY](SECURITY.md).
+
 ## License
 
 [MIT](LICENSE). Third-party licences are in [NOTICE](NOTICE).

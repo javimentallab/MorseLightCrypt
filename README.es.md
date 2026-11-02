@@ -151,6 +151,10 @@ JDK 17 o 21, Android SDK 36:
 Las versiones de release se firman si un fichero `keystore.properties` (que no está en el repositorio)
 apunta a la clave.
 
+## Contribuir
+
+Consulta [CONTRIBUTING](CONTRIBUTING.md), en inglés. Para avisar en privado de un problema de seguridad, consulta [SECURITY](SECURITY.md).
+
 ## Licencia
 
 [MIT](LICENSE). Las licencias de terceros están en [NOTICE](NOTICE).
