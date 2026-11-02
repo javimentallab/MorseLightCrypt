@@ -20,7 +20,9 @@ into text. It also works with any other blinking light (a lamp, a screen, a torc
 distance) and any Morse tone (a radio, a computer, another phone, an instrument).
 
 No network permission: nothing leaves the phone except light and sound. The microphone is open
-only while receiving by sound; nothing is recorded or stored.
+only while receiving by sound; nothing is recorded or stored. The [privacy policy](PRIVACY.md)
+can also be read inside the app, in all its languages, from a button at the bottom of the *Send*
+and *Encrypt* tabs.
 
 In English, Spanish, Portuguese, French, German, Italian, Dutch, Polish, Russian, Ukrainian,
 Chinese, Japanese, Korean, Thai and Hindi.

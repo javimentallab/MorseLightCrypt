@@ -20,7 +20,9 @@ También funciona con cualquier otra luz que parpadee (una lámpara, una pantall
 lo lejos) y con cualquier tono Morse (una radio, un ordenador, otro móvil, un instrumento).
 
 Sin permiso de red: del móvil solo salen luz y sonido. El micrófono solo está abierto mientras
-recibes por sonido; no se graba ni se guarda nada.
+recibes por sonido; no se graba ni se guarda nada. La [política de privacidad](PRIVACY.md), en
+inglés, también se puede leer dentro de la app, en todos sus idiomas, con un botón al final de las
+pestañas *Enviar* y *Cifrar*.
 
 En inglés, castellano, portugués, francés, alemán, italiano, neerlandés, polaco, ruso, ucraniano,
 chino, japonés, coreano, tailandés e hindi.
