@@ -13,6 +13,9 @@ captures/
 # Local SDK path, differs per machine
 local.properties
 
+# Left empty by --write-locks; only app/gradle.lockfile matters
+settings-gradle.lockfile
+
 *.apk
 *.aab
 *.keystore
