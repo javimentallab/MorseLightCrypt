@@ -160,6 +160,8 @@ fun SendScreen(
         model.error?.let { Text(it, color = MaterialTheme.colorScheme.error) }
 
         Progress(model, encrypted)
+
+        PrivacyPolicy()
     }
 }
 

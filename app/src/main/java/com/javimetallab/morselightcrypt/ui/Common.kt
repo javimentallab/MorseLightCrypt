@@ -1,15 +1,20 @@
 package com.javimetallab.morselightcrypt.ui
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Visibility
 import androidx.compose.material.icons.filled.VisibilityOff
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Slider
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
@@ -22,7 +27,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
-import androidx.compose.foundation.text.KeyboardOptions
 import com.javimetallab.morselightcrypt.MAX_WPM
 import com.javimetallab.morselightcrypt.MIN_WPM
 import com.javimetallab.morselightcrypt.R
@@ -88,5 +92,31 @@ fun KeepScreenOn() {
     DisposableEffect(view) {
         view.keepScreenOn = true
         onDispose { view.keepScreenOn = false }
+    }
+}
+
+/**
+ * The privacy policy, as text: the app has no Internet permission, and a policy is the last thing
+ * that should change that. Keep it in step with PRIVACY.md.
+ */
+@Composable
+fun PrivacyPolicy(modifier: Modifier = Modifier) {
+    var open by remember { mutableStateOf(false) }
+    TextButton(onClick = { open = true }, modifier = modifier) {
+        Text(stringResource(R.string.privacy_policy), style = MaterialTheme.typography.bodySmall)
+    }
+    if (open) {
+        AlertDialog(
+            onDismissRequest = { open = false },
+            title = { Text(stringResource(R.string.privacy_policy)) },
+            text = {
+                Column(Modifier.verticalScroll(rememberScrollState())) {
+                    Text(stringResource(R.string.privacy_text))
+                }
+            },
+            confirmButton = {
+                TextButton(onClick = { open = false }) { Text(stringResource(android.R.string.ok)) }
+            }
+        )
     }
 }

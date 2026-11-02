@@ -61,4 +61,7 @@
     <string name="tone_found">신호음을 찾았습니다. 삐 소리를 기다리는 중</string>
     <string name="tone_hz">%1$d Hz</string>
     <string name="receive_tips_sound">휴대폰을 스피커 가까이 두고 주변을 조용히 해 주세요. 300~1500 Hz 사이에서 가장 크고 일정한 소리를 따라갑니다.</string>
+
+    <string name="privacy_policy">개인정보처리방침</string>
+    <string name="privacy_text">MorseLightCrypt(javimentallab)는 개인 정보를 수집하지 않습니다. 계정, 광고, 분석, 충돌 보고가 없으며 인터넷 권한을 요청하지 않기 때문에 어디로도 아무것도 보낼 수 없습니다.\n\n카메라: 받기 또는 복호화 탭이 열려 있고 빛으로 설정된 동안에만 사용합니다. 받기를 시작하기 전에도 조준할 수 있도록 사용합니다. 화면은 들어오는 대로 기기에서 분석되며 저장하거나 전송하지 않습니다.\n\n마이크: 소리로 모스 부호를 받는 동안에만 사용합니다. 앱이 듣는 동안에만 열려 있으며, 오디오는 기기에서 분석되고 녹음, 저장, 전송되지 않습니다.\n\n손전등과 스피커: 입력한 메시지를 보내는 데 사용합니다.\n\n기기에 저장되는 것: 설정뿐입니다. 속도와, 빛과 소리 중 무엇으로 보내고 받는지입니다. 메시지와 비밀번호는 메모리에만 있으며 앱을 닫으면 사라집니다. 앱 백업은 꺼져 있습니다.\n\n클립보드: 복사를 누르면 텍스트가 Android 클립보드로 들어가며, 허용한 다른 앱이 읽을 수 있습니다.\n\n이 방침에 관한 문의: https://github.com/javimentallab/MorseLightCrypt/issues 에서 이슈를 등록하세요</string>
 </resources>

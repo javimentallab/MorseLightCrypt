@@ -61,4 +61,7 @@
     <string name="tone_found">Tom encontrado, esperando bipes</string>
     <string name="tone_hz">%1$d Hz</string>
     <string name="receive_tips_sound">Aproxime o celular do alto-falante e mantenha o ambiente em silêncio. Ele segue o tom constante mais forte entre 300 e 1500 Hz.</string>
+
+    <string name="privacy_policy">Política de privacidade</string>
+    <string name="privacy_text">O MorseLightCrypt, da javimentallab, não coleta dados pessoais. Não tem contas, anúncios, análises nem relatórios de falhas, e não pede a permissão de Internet, então não pode enviar nada para lugar nenhum.\n\nCâmera: usada só com a aba Receber ou Decifrar aberta e no modo luz, também antes de começar a receber, para você poder apontar. As imagens são analisadas no dispositivo conforme chegam e nunca são salvas nem enviadas.\n\nMicrofone: usado só enquanto você recebe Morse por som. Só fica aberto enquanto o app escuta; o áudio é analisado no dispositivo e nunca é gravado, salvo nem enviado.\n\nLanterna e alto-falante: usados para enviar a mensagem que você escreveu.\n\nO que fica salvo no dispositivo: só as suas configurações, que são a velocidade e se você envia e recebe por luz ou por som. Mensagens e senhas ficam só na memória e somem ao fechar o app. O backup do app está desativado.\n\nÁrea de transferência: se você tocar em Copiar, o texto vai para a área de transferência do Android, onde outros apps que você permitir podem lê-lo.\n\nDúvidas sobre esta política: abra um chamado em https://github.com/javimentallab/MorseLightCrypt/issues</string>
 </resources>

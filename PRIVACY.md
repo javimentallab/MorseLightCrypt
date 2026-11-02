@@ -1,15 +1,16 @@
 # Privacy policy — MorseLightCrypt
 
-*Last updated: 31 October 2026*
+*Last updated: 2 November 2026*
 
-MorseLightCrypt collects no personal data. It has no accounts, no ads, no analytics
-and no crash reporting, and it does not request the Internet permission, so it cannot
-send anything anywhere.
+MorseLightCrypt, by javimentallab, collects no personal data. It has no accounts, no
+ads, no analytics and no crash reporting, and it does not request the Internet
+permission, so it cannot send anything anywhere.
 
 ## Permissions
 
-- **Camera** — used only while you are receiving Morse by light. The frames are
-  analysed on the device as they arrive and are never saved or sent.
+- **Camera** — used only while the Receive or Decrypt tab is open and set to light,
+  including before you start receiving, so you can aim. The frames are analysed on the
+  device as they arrive and are never saved or sent.
 - **Microphone** — used only while you are receiving Morse by sound. The microphone is
   open only while the app is listening; the audio is analysed on the device and is
   never recorded, saved or sent.

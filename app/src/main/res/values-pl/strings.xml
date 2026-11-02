@@ -61,4 +61,7 @@
     <string name="tone_found">Znaleziono ton, czekam na sygnały</string>
     <string name="tone_hz">%1$d Hz</string>
     <string name="receive_tips_sound">Trzymaj telefon blisko głośnika i zadbaj o ciszę wokół. Śledzi najgłośniejszy stały ton między 300 a 1500 Hz.</string>
+
+    <string name="privacy_policy">Polityka prywatności</string>
+    <string name="privacy_text">MorseLightCrypt od javimentallab nie zbiera danych osobowych. Nie ma kont, reklam, analityki ani raportów o awariach i nie prosi o uprawnienie do internetu, więc nie może niczego nigdzie wysłać.\n\nAparat: używany tylko, gdy otwarta jest karta Odbierz lub Odszyfruj ustawiona na światło, także przed rozpoczęciem odbioru, żeby można było wycelować. Obraz jest analizowany na urządzeniu na bieżąco i nigdy nie jest zapisywany ani wysyłany.\n\nMikrofon: używany tylko podczas odbierania Morse\'a dźwiękiem. Jest otwarty tylko wtedy, gdy aplikacja nasłuchuje; dźwięk jest analizowany na urządzeniu i nigdy nie jest nagrywany, zapisywany ani wysyłany.\n\nLatarka i głośnik: służą do wysyłania napisanej wiadomości.\n\nNa urządzeniu zapisywane są tylko ustawienia, czyli prędkość oraz to, czy wysyłasz i odbierasz światłem, czy dźwiękiem. Wiadomości i hasła są tylko w pamięci i znikają po zamknięciu aplikacji. Kopia zapasowa aplikacji jest wyłączona.\n\nSchowek: gdy dotkniesz Kopiuj, tekst trafia do schowka Androida, gdzie mogą go odczytać inne aplikacje, którym na to pozwolisz.\n\nPytania o tę politykę: zgłoś je na https://github.com/javimentallab/MorseLightCrypt/issues</string>
 </resources>

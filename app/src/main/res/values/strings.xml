@@ -66,4 +66,7 @@
     <string name="tone_found">Tone found, waiting for beeps</string>
     <string name="tone_hz">%1$d Hz</string>
     <string name="receive_tips_sound">Hold the phone close to the speaker and keep the room quiet. It follows the loudest steady tone between 300 and 1500 Hz.</string>
+
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="privacy_text">MorseLightCrypt, by javimentallab, collects no personal data. It has no accounts, no ads, no analytics and no crash reporting, and it does not request the Internet permission, so it cannot send anything anywhere.\n\nCamera: used only while the Receive or Decrypt tab is open and set to light, including before you start receiving, so you can aim. The frames are analysed on the device as they arrive and are never saved or sent.\n\nMicrophone: used only while you are receiving Morse by sound. It is open only while the app is listening; the audio is analysed on the device and is never recorded, saved or sent.\n\nTorch and speaker: used to send the message you typed.\n\nStored on the device: only your settings, which are the speed and whether you send and receive by light or by sound. Messages and passwords are kept in memory only and are gone when you close the app. App backup is disabled.\n\nClipboard: if you tap Copy, the text goes to the Android clipboard, where other apps you allow can read it.\n\nQuestions about this policy: open an issue at https://github.com/javimentallab/MorseLightCrypt/issues</string>
 </resources>

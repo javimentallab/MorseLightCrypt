@@ -61,4 +61,7 @@
     <string name="tone_found">已找到音调，正在等待哔声</string>
     <string name="tone_hz">%1$d Hz</string>
     <string name="receive_tips_sound">请让手机靠近扬声器，并保持周围安静。它会跟随 300 到 1500 Hz 之间最响的稳定音调。</string>
+
+    <string name="privacy_policy">隐私政策</string>
+    <string name="privacy_text">MorseLightCrypt（javimentallab 出品）不收集任何个人数据。它没有账户、广告、分析和崩溃报告，也不请求互联网权限，因此无法向任何地方发送任何内容。\n\n相机：仅在“接收”或“解密”标签页打开并设为光时使用，包括开始接收之前，以便你对准。画面在设备上实时分析，绝不会保存或发送。\n\n麦克风：仅在你通过声音接收摩尔斯码时使用。只有应用在监听时才打开；音频在设备上分析，绝不会录制、保存或发送。\n\n手电筒和扬声器：用于发送你输入的消息。\n\n设备上存储的内容：只有你的设置，即速度以及通过光还是声音收发。消息和密码只保存在内存中，关闭应用后即消失。应用备份已停用。\n\n剪贴板：如果你点按“复制”，文本会进入 Android 剪贴板，你允许的其他应用可以读取它。\n\n关于本政策的问题：请在 https://github.com/javimentallab/MorseLightCrypt/issues 提交问题</string>
 </resources>
