@@ -1,0 +1,11 @@
+<p>Envía texto en Morse coa lanterna ou con pitidos, e recíbeo coa cámara ou o micrófono, cifrado cun contrasinal mestre se queres.</p>
+<p>Un móbil pestanexa ou pita e outro mira a luz ou escoita e converte os pulsos en texto. Tamén le calquera outra luz que pestanexe (unha lámpada, unha pantalla, unha lanterna ao lonxe) e calquera ton Morse (unha radio, un ordenador, outro móbil, un instrumento).</p>
+<ul>
+<li><b>Enviar</b>: escribe, escolle a velocidade, escolle luz, son ou os dous, e emite. Repite en bucle para que quen recibe teña tempo de colocarse.</li>
+<li><b>Recibir</b>: escolle sinal de luz ou sonoro e preme Comezar. Belisca para facer zoom se a luz está lonxe; de oído atopa só o ton de quen envía. Cada volta sae na súa liña e o texto recibido pódese corrixir a man.</li>
+<li><b>Cifrar / Descifrar</b>: AES-256 con contrasinal mestre, nun formato compacto de letras e números pensado para Morse: "HOLA MUNDO" ocupa 26 caracteres.</li>
+</ul>
+<p>O receptor só segue o que pestanexa, así que unha pantalla brillante xunto á lámpada non o cega, e de oído só segue o ton Morse, non o ruído de arredor. Mide só a velocidade de quen envía, tolera o pulso da man e ponse en pausa mentres o móbil se move.</p>
+<p>Sen permiso de rede: do móbil só saen luz e son. O micrófono só se abre mentres recibes por son e non se grava nin se garda nada.</p>
+<p>Para enviar con luz cómpre un móbil con lanterna; para recibir, cámara ou micrófono.</p>
+<p>Dispoñible en galego, castelán, inglés, catalán, éuscaro, portugués, francés, alemán, italiano, neerlandés, polaco, ruso, ucraíno, chinés, xaponés, coreano, tailandés e hindi.</p>

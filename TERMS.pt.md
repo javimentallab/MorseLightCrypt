@@ -2,7 +2,7 @@
 
 *Última atualização: 8 de novembro de 2026*
 
-*[English](TERMS.md) · [Español](TERMS.es.md) · [Deutsch](TERMS.de.md) · [Français](TERMS.fr.md) · [Italiano](TERMS.it.md) · [Nederlands](TERMS.nl.md) · [Polski](TERMS.pl.md) · [Português](TERMS.pt.md) · [Русский](TERMS.ru.md) · [Українська](TERMS.uk.md) · [简体中文](TERMS.zh-CN.md) · [日本語](TERMS.ja.md) · [한국어](TERMS.ko.md) · [ไทย](TERMS.th.md) · [हिन्दी](TERMS.hi.md)*
+*[English](TERMS.md) · [Español](TERMS.es.md) · [Deutsch](TERMS.de.md) · [Français](TERMS.fr.md) · [Italiano](TERMS.it.md) · [Nederlands](TERMS.nl.md) · [Polski](TERMS.pl.md) · [Português](TERMS.pt.md) · [Русский](TERMS.ru.md) · [Українська](TERMS.uk.md) · [简体中文](TERMS.zh-CN.md) · [日本語](TERMS.ja.md) · [한국어](TERMS.ko.md) · [ไทย](TERMS.th.md) · [हिन्दी](TERMS.hi.md) · [Català](TERMS.ca.md) · [Galego](TERMS.gl.md) · [Euskara](TERMS.eu.md)*
 
 **1. Identificação do Fornecedor.** A aplicação MorseLightCrypt (a «Aplicação») é disponibilizada no Google Play por Javier Comyn Pérez, com domicílio em calle Olivos, número 36, 28670 Villaviciosa de Odón, Madrid, España (o «Fornecedor»). Qualquer comunicação relativa aos presentes termos pode ser dirigida ao Fornecedor através de jotacomyn@gmail.com ou de https://github.com/javimentallab/MorseLightCrypt/issues.
 

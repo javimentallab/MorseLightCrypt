@@ -2,7 +2,7 @@
 
 *최종 업데이트: 2026년 11월 8일*
 
-*[English](TERMS.md) · [Español](TERMS.es.md) · [Deutsch](TERMS.de.md) · [Français](TERMS.fr.md) · [Italiano](TERMS.it.md) · [Nederlands](TERMS.nl.md) · [Polski](TERMS.pl.md) · [Português](TERMS.pt.md) · [Русский](TERMS.ru.md) · [Українська](TERMS.uk.md) · [简体中文](TERMS.zh-CN.md) · [日本語](TERMS.ja.md) · [한국어](TERMS.ko.md) · [ไทย](TERMS.th.md) · [हिन्दी](TERMS.hi.md)*
+*[English](TERMS.md) · [Español](TERMS.es.md) · [Deutsch](TERMS.de.md) · [Français](TERMS.fr.md) · [Italiano](TERMS.it.md) · [Nederlands](TERMS.nl.md) · [Polski](TERMS.pl.md) · [Português](TERMS.pt.md) · [Русский](TERMS.ru.md) · [Українська](TERMS.uk.md) · [简体中文](TERMS.zh-CN.md) · [日本語](TERMS.ja.md) · [한국어](TERMS.ko.md) · [ไทย](TERMS.th.md) · [हिन्दी](TERMS.hi.md) · [Català](TERMS.ca.md) · [Galego](TERMS.gl.md) · [Euskara](TERMS.eu.md)*
 
 **1. 제공자 식별 정보.** MorseLightCrypt 애플리케이션(이하 “본 앱”)은 calle Olivos, número 36, 28670 Villaviciosa de Odón, Madrid, España에 주소를 둔 Javier Comyn Pérez(이하 “제공자”)가 Google Play에서 제공합니다. 본 약관에 관한 모든 연락은 jotacomyn@gmail.com 또는 https://github.com/javimentallab/MorseLightCrypt/issues 를 통해 제공자에게 할 수 있습니다.
 

@@ -1,0 +1,11 @@
+<p>Envia text en Morse amb la llanterna o amb xiulets, i llegeix-lo amb la càmera o el micròfon, xifrat amb una contrasenya mestra si vols.</p>
+<p>Un mòbil parpelleja o xiula i un altre mira la llum o escolta i converteix els polsos en text. També llegeix qualsevol altra llum que parpellegi (una làmpada, una pantalla, una llanterna a la llunyania) i qualsevol to Morse (una ràdio, un ordinador, un altre mòbil, un instrument).</p>
+<ul>
+<li><b>Enviar</b>: escriu, tria la velocitat, tria llum, so o tots dos, i emet. Repeteix en cicle perquè qui rep tingui temps de col·locar-se.</li>
+<li><b>Rebre</b>: tria senyal de llum o sonor i prem Comença. Pessiga per fer zoom si la llum és lluny; d'oïda troba tot sol el to de qui envia. Cada repetició surt a la seva línia i el text rebut es pot corregir a mà.</li>
+<li><b>Xifrar / Desxifrar</b>: AES-256 amb contrasenya mestra, en un format compacte de lletres i xifres pensat per a Morse: "HOLA MUNDO" ocupa 26 caràcters.</li>
+</ul>
+<p>El receptor només segueix el que parpelleja, així que una pantalla brillant al costat de la làmpada no l'encega, i d'oïda només segueix el to Morse, no el soroll del voltant. Mesura tot sol la velocitat de qui envia, tolera el pols de la mà i es posa en pausa mentre el mòbil es mou.</p>
+<p>Sense permís de xarxa: del mòbil només surten llum i so. El micròfon només s'obre mentre reps per so i no es grava ni es desa res.</p>
+<p>Per enviar amb llum cal un mòbil amb llanterna; per rebre, càmera o micròfon.</p>
+<p>Disponible en català, castellà, anglès, gallec, basc, portuguès, francès, alemany, italià, neerlandès, polonès, rus, ucraïnès, xinès, japonès, coreà, tai i hindi.</p>

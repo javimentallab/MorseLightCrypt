@@ -2,7 +2,7 @@
 
 *最終更新日：2026年11月8日*
 
-*[English](TERMS.md) · [Español](TERMS.es.md) · [Deutsch](TERMS.de.md) · [Français](TERMS.fr.md) · [Italiano](TERMS.it.md) · [Nederlands](TERMS.nl.md) · [Polski](TERMS.pl.md) · [Português](TERMS.pt.md) · [Русский](TERMS.ru.md) · [Українська](TERMS.uk.md) · [简体中文](TERMS.zh-CN.md) · [日本語](TERMS.ja.md) · [한국어](TERMS.ko.md) · [ไทย](TERMS.th.md) · [हिन्दी](TERMS.hi.md)*
+*[English](TERMS.md) · [Español](TERMS.es.md) · [Deutsch](TERMS.de.md) · [Français](TERMS.fr.md) · [Italiano](TERMS.it.md) · [Nederlands](TERMS.nl.md) · [Polski](TERMS.pl.md) · [Português](TERMS.pt.md) · [Русский](TERMS.ru.md) · [Українська](TERMS.uk.md) · [简体中文](TERMS.zh-CN.md) · [日本語](TERMS.ja.md) · [한국어](TERMS.ko.md) · [ไทย](TERMS.th.md) · [हिन्दी](TERMS.hi.md) · [Català](TERMS.ca.md) · [Galego](TERMS.gl.md) · [Euskara](TERMS.eu.md)*
 
 **1. 提供者の表示。** アプリケーション MorseLightCrypt（以下「本アプリ」という。）は、Javier Comyn Pérez（住所：calle Olivos, número 36, 28670 Villaviciosa de Odón, Madrid, España。以下「提供者」という。）が Google Play において提供するものである。本規約に関する連絡は、jotacomyn@gmail.com 宛てに、又は https://github.com/javimentallab/MorseLightCrypt/issues を通じて、提供者に対して行うことができる。
 

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_send">Enviar</string>
+    <string name="tab_receive">Recibir</string>
+    <string name="tab_send_secret">Cifrar</string>
+    <string name="tab_receive_secret">Descifrar</string>
+
+    <string name="message">Mensaxe</string>
+    <string name="password">Contrasinal mestre</string>
+    <string name="show_password">Amosar contrasinal</string>
+    <string name="hide_password">Agochar contrasinal</string>
+    <string name="speed_label">Velocidade: %1$d PPM (punto = %2$d ms)</string>
+    <string name="expected_speed">Velocidade esperada: %1$d PPM (punto = %2$d ms)</string>
+    <string name="repeat">Repetir ata deter</string>
+    <string name="send">Emitir</string>
+    <string name="encrypt_and_send">Cifrar e emitir</string>
+    <string name="encrypting">Cifrando…</string>
+    <string name="stop">Deter</string>
+    <string name="send_duration">Uns %1$d s de emisión</string>
+    <string name="encrypted_length">Cifrado: uns %1$d caracteres</string>
+    <string name="no_flash">Este móbil non ten lanterna na cámara traseira.</string>
+    <string name="nothing_to_send">Nada desta mensaxe se pode enviar en Morse.</string>
+    <string name="password_missing">Escribe primeiro o contrasinal mestre.</string>
+    <string name="morse_preview_empty">Aquí aparecerá a túa mensaxe en Morse.</string>
+    <string name="cipher_preview_empty">A mensaxe cifrada aparece aquí ao enviala. Cambia cada vez.</string>
+    <string name="last_ciphertext">Última mensaxe cifrada</string>
+
+    <string name="camera_permission">MorseLightCrypt necesita a cámara para ver os pulsos de luz. Non se grava nin se garda nada. Sen ela podes escribir abaixo a man unha mensaxe recibida.</string>
+    <string name="allow_camera">Permitir cámara</string>
+    <string name="camera_open_failed">Non se puido abrir a cámara: %1$s</string>
+    <string name="calibrating">Axustando a exposición…</string>
+    <string name="start_receiving">Comezar a recibir</string>
+    <string name="stop_receiving">Parar</string>
+    <string name="paused">En pausa: apunta á luz e preme Comezar</string>
+    <string name="received_label">Recibido (podes corrixilo)</string>
+    <string name="moving">En pausa mentres se move</string>
+    <string name="banner_moving">Deixa o móbil quieto!</string>
+    <string name="banner_shaky">Pulso inestable: suxéitao máis firme</string>
+    <string name="aim_at_light">Apunta o cadrado á luz que pestanexa</string>
+    <string name="light_found">Luz atopada, agardando pulsos</string>
+    <string name="receiving">Recibindo, unhas %1$d PPM</string>
+    <string name="received_empty">Aquí aparecerá o texto recibido.</string>
+    <string name="decrypt">Descifrar</string>
+    <string name="decrypting">Descifrando…</string>
+    <string name="decrypt_failed">Non se puido descifrar. Ou o contrasinal non é ese ou leuse mal algunha letra: borra e recíbea de novo.</string>
+    <string name="line_not_opened">A liña %1$d non se puido descifrar: %2$s</string>
+    <string name="majority_label">Reconstruído por maioría, supoñendo que as liñas son voltas da mesma mensaxe:</string>
+    <string name="clear">Borrar</string>
+    <string name="copy">Copiar</string>
+    <string name="recalibrate">Recalibrar</string>
+    <string name="receive_tips">Apunta o cadrado á luz e belisca para facer zoom se está lonxe. Apoia o móbil: mentres se move non le nada.</string>
+
+    <string name="send_error">Non se puido emitir: %1$s</string>
+    <string name="by_light">Luz</string>
+    <string name="by_sound">Son</string>
+    <string name="choose_light_or_sound">Escolle luz, son ou os dous.</string>
+    <string name="light_signal">Sinal de luz</string>
+    <string name="sound_signal">Sinal sonoro</string>
+    <string name="mic_permission">MorseLightCrypt necesita o micrófono para oír os pitidos. Só escoita mentres recibes e non se grava nin se garda nada. Sen el podes escribir abaixo a man unha mensaxe recibida.</string>
+    <string name="allow_mic">Permitir micrófono</string>
+    <string name="mic_open_failed">Non se puido abrir o micrófono: %1$s</string>
+    <string name="paused_sound">En pausa: achega o móbil ao son e preme Comezar</string>
+    <string name="listen_for_tone">Escoitando un ton Morse…</string>
+    <string name="tone_found">Ton atopado, agardando pitidos</string>
+    <string name="tone_hz">%1$d Hz</string>
+    <string name="receive_tips_sound">Achega o móbil ao altofalante e que haxa silencio arredor. Segue o ton constante máis forte entre 300 e 1500 Hz.</string>
+
+    <string name="privacy_policy">Política de privacidade</string>
+    <string name="privacy_text">1. Responsable do tratamento\n\nA aplicación MorseLightCrypt (a «Aplicación») é publicada en Google Play por Javier Comyn Pérez, con domicilio en calle Olivos, número 36, 28670 Villaviciosa de Odón, Madrid, España (o «Prestador»), baixo o nome de desenvolvedor javimentallab. O Prestador é o responsable do tratamento dos datos persoais a que se refire esta política, e o Usuario pode contactar co Prestador no enderezo jotacomyn@gmail.com.\n\n2. Ausencia de tratamento de datos persoais na Aplicación\n\nA Aplicación non recolle nin trata ningún dato persoal do Usuario. A Aplicación non dispón de contas de usuario, publicidade, ferramentas de analítica nin sistemas de informes de erros, e non solicita o permiso de acceso a Internet, polo que non pode transmitir datos a terceiros. Os únicos datos persoais que trata o Prestador son os relativos á compra da Aplicación, descritos no apartado 6.\n\n3. Permisos\n\nCámara: utilízase unicamente mentres está aberta a lapela Recibir ou Descifrar en modo luz, incluído o período previo ao inicio da recepción, co fin de que o Usuario poida orientar o dispositivo. As imaxes analízanse no propio dispositivo a medida que se captan, non se almacenan nin se transmiten, e ningunha persoa ten acceso a elas.\n\nMicrófono: utilízase unicamente durante a recepción de mensaxes Morse por son e só permanece activo mentres a Aplicación está á escoita. O audio analízase no propio dispositivo e non se grava, almacena nin transmite.\n\nLanterna e altofalante: utilízanse exclusivamente para emitir a mensaxe redactada polo Usuario.\n\n4. Datos almacenados no dispositivo\n\nA Aplicación almacena unicamente os axustes do Usuario: a velocidade de transmisión e o modo de envío e recepción, por luz ou por son. As mensaxes e os contrasinais consérvanse unicamente na memoria do dispositivo e elimínanse ao pechar a Aplicación. A copia de seguranza da Aplicación está desactivada e non se activará.\n\n5. Portapapeis\n\nSe o Usuario utiliza a función Copiar, o texto transfírese ao portapapeis de Android, ao que poden acceder outras aplicacións autorizadas polo Usuario.\n\n6. Datos de compra\n\nA Aplicación adquírese a través de Google Play, que xestiona o pagamento conforme ás súas propias condicións e á súa política de privacidade. O Prestador non recibe os datos de pagamento do Usuario. Por cada pedido, Google facilita ao Prestador datos limitados, como o número de pedido, a data, o importe e o país do comprador.\n\nConforme ao exixido polo artigo 13 do Regulamento (UE) 2016/679 do Parlamento Europeo e do Consello, do 27 de abril de 2016 (Regulamento xeral de protección de datos), facilítase a seguinte información:\n\nFinalidade: xestionar os pedidos e os reembolsos e cumprir as obrigas contables e fiscais do Prestador.\n\nBase xurídica: a execución do contrato de compra (artigo 6.1.b) do Regulamento xeral de protección de datos) e o cumprimento das obrigas legais do Prestador (artigo 6.1.c)).\n\nPrazo de conservación: o prazo exixido pola normativa tributaria; con carácter xeral, catro anos (artigo 66 da Lei xeral tributaria española). Transcorrido ese prazo, os datos suprímense.\n\nDestinatarios: os datos non se comunican a terceiros, agás cando o exixa a lei.\n\n7. Dereitos do Usuario\n\nO Usuario pode exercer os dereitos de acceso, rectificación, supresión, limitación do tratamento, oposición e portabilidade, conforme aos artigos 15 a 22 do Regulamento xeral de protección de datos, dirixíndose ao Prestador en jotacomyn@gmail.com. O Usuario tamén pode presentar unha reclamación ante a Axencia Española de Protección de Datos (www.aepd.es).\n\n8. Contacto\n\nAs consultas sobre esta política poden dirixirse ao Prestador en jotacomyn@gmail.com ou abrindo unha incidencia en https://github.com/javimentallab/MorseLightCrypt/issues.</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_send">Enviar</string>
+    <string name="tab_receive">Rebre</string>
+    <string name="tab_send_secret">Xifrar</string>
+    <string name="tab_receive_secret">Desxifrar</string>
+
+    <string name="message">Missatge</string>
+    <string name="password">Contrasenya mestra</string>
+    <string name="show_password">Mostra la contrasenya</string>
+    <string name="hide_password">Amaga la contrasenya</string>
+    <string name="speed_label">Velocitat: %1$d PPM (punt = %2$d ms)</string>
+    <string name="expected_speed">Velocitat esperada: %1$d PPM (punt = %2$d ms)</string>
+    <string name="repeat">Repeteix fins a aturar-lo</string>
+    <string name="send">Emet</string>
+    <string name="encrypt_and_send">Xifra i emet</string>
+    <string name="encrypting">Xifrant…</string>
+    <string name="stop">Atura</string>
+    <string name="send_duration">Uns %1$d s d\'emissió</string>
+    <string name="encrypted_length">Xifrat: uns %1$d caràcters</string>
+    <string name="no_flash">Aquest mòbil no té llanterna a la càmera posterior.</string>
+    <string name="nothing_to_send">Res d\'aquest missatge no es pot enviar en Morse.</string>
+    <string name="password_missing">Escriu primer la contrasenya mestra.</string>
+    <string name="morse_preview_empty">Aquí apareixerà el teu missatge en Morse.</string>
+    <string name="cipher_preview_empty">El missatge xifrat apareix aquí en enviar-lo. Canvia cada vegada.</string>
+    <string name="last_ciphertext">Últim missatge xifrat</string>
+
+    <string name="camera_permission">MorseLightCrypt necessita la càmera per veure els polsos de llum. No es grava ni es desa res. Sense la càmera, pots escriure a mà un missatge rebut aquí sota.</string>
+    <string name="allow_camera">Permet la càmera</string>
+    <string name="camera_open_failed">No s\'ha pogut obrir la càmera: %1$s</string>
+    <string name="calibrating">Ajustant l\'exposició…</string>
+    <string name="start_receiving">Comença a rebre</string>
+    <string name="stop_receiving">Para</string>
+    <string name="paused">En pausa: apunta a la llum i prem Comença</string>
+    <string name="received_label">Rebut (el pots corregir)</string>
+    <string name="moving">En pausa mentre es mou</string>
+    <string name="banner_moving">Deixa el mòbil quiet!</string>
+    <string name="banner_shaky">Pols inestable: agafa\'l més ferm</string>
+    <string name="aim_at_light">Apunta el quadrat a la llum que parpelleja</string>
+    <string name="light_found">Llum trobada, esperant polsos</string>
+    <string name="receiving">Rebent, unes %1$d PPM</string>
+    <string name="received_empty">Aquí apareixerà el text rebut.</string>
+    <string name="decrypt">Desxifra</string>
+    <string name="decrypting">Desxifrant…</string>
+    <string name="decrypt_failed">No s\'ha pogut desxifrar. O la contrasenya no és aquesta o s\'ha llegit malament alguna lletra: esborra-ho i torna a rebre-ho.</string>
+    <string name="line_not_opened">La línia %1$d no s\'ha pogut desxifrar: %2$s</string>
+    <string name="majority_label">Reconstruït per majoria, suposant que les línies són repeticions del mateix missatge:</string>
+    <string name="clear">Esborra</string>
+    <string name="copy">Copia</string>
+    <string name="recalibrate">Recalibra</string>
+    <string name="receive_tips">Apunta el quadrat a la llum i pessiga per fer zoom si és lluny. Recolza el mòbil: mentre es mou no llegeix res.</string>
+
+    <string name="send_error">No s\'ha pogut emetre: %1$s</string>
+    <string name="by_light">Llum</string>
+    <string name="by_sound">So</string>
+    <string name="choose_light_or_sound">Tria llum, so o tots dos.</string>
+    <string name="light_signal">Senyal de llum</string>
+    <string name="sound_signal">Senyal sonor</string>
+    <string name="mic_permission">MorseLightCrypt necessita el micròfon per sentir els xiulets. Només escolta mentre reps i no es grava ni es desa res. Sense el micròfon, pots escriure a mà un missatge rebut aquí sota.</string>
+    <string name="allow_mic">Permet el micròfon</string>
+    <string name="mic_open_failed">No s\'ha pogut obrir el micròfon: %1$s</string>
+    <string name="paused_sound">En pausa: acosta el mòbil al so i prem Comença</string>
+    <string name="listen_for_tone">Escoltant un to Morse…</string>
+    <string name="tone_found">To trobat, esperant xiulets</string>
+    <string name="tone_hz">%1$d Hz</string>
+    <string name="receive_tips_sound">Acosta el mòbil a l\'altaveu i que hi hagi silenci al voltant. Segueix el to constant més fort entre 300 i 1500 Hz.</string>
+
+    <string name="privacy_policy">Política de privadesa</string>
+    <string name="privacy_text">1. Responsable del tractament\n\nL\'aplicació MorseLightCrypt (l\'«Aplicació») és publicada a Google Play per Javier Comyn Pérez, amb domicili a calle Olivos, número 36, 28670 Villaviciosa de Odón, Madrid, España (el «Prestador»), sota el nom de desenvolupador javimentallab. El Prestador és el responsable del tractament de les dades personals a què es refereix aquesta política, i l\'Usuari pot contactar amb el Prestador a l\'adreça jotacomyn@gmail.com.\n\n2. Absència de tractament de dades personals a l\'Aplicació\n\nL\'Aplicació no recull ni tracta cap dada personal de l\'Usuari. L\'Aplicació no disposa de comptes d\'usuari, publicitat, eines d\'analítica ni sistemes d\'informe d\'errors, i no sol·licita el permís d\'accés a Internet, de manera que no pot transmetre dades a tercers. Les úniques dades personals que tracta el Prestador són les relatives a la compra de l\'Aplicació, descrites a l\'apartat 6.\n\n3. Permisos\n\nCàmera: s\'utilitza únicament mentre està oberta la pestanya Rebre o Desxifrar en mode llum, inclòs el període previ a l\'inici de la recepció, a fi que l\'Usuari pugui orientar el dispositiu. Les imatges s\'analitzen al mateix dispositiu a mesura que es capten, no s\'emmagatzemen ni es transmeten, i cap persona no hi té accés.\n\nMicròfon: s\'utilitza únicament durant la recepció de missatges Morse per so i només roman actiu mentre l\'Aplicació està a l\'escolta. L\'àudio s\'analitza al mateix dispositiu i no es grava, emmagatzema ni transmet.\n\nLlanterna i altaveu: s\'utilitzen exclusivament per emetre el missatge redactat per l\'Usuari.\n\n4. Dades emmagatzemades al dispositiu\n\nL\'Aplicació emmagatzema únicament la configuració de l\'Usuari: la velocitat de transmissió i el mode d\'enviament i recepció, per llum o per so. Els missatges i les contrasenyes es conserven únicament a la memòria del dispositiu i s\'eliminen en tancar l\'Aplicació. La còpia de seguretat de l\'Aplicació està desactivada i no s\'activarà.\n\n5. Porta-retalls\n\nSi l\'Usuari utilitza la funció Copia, el text es transfereix al porta-retalls d\'Android, al qual poden accedir altres aplicacions autoritzades per l\'Usuari.\n\n6. Dades de compra\n\nL\'Aplicació s\'adquireix a través de Google Play, que gestiona el pagament d\'acord amb les seves pròpies condicions i la seva política de privadesa. El Prestador no rep les dades de pagament de l\'Usuari. Per a cada comanda, Google facilita al Prestador dades limitades, com ara el número de comanda, la data, l\'import i el país del comprador.\n\nD\'acord amb el que exigeix l\'article 13 del Reglament (UE) 2016/679 del Parlament Europeu i del Consell, de 27 d\'abril de 2016 (Reglament general de protecció de dades), es facilita la informació següent:\n\nFinalitat: gestionar les comandes i els reemborsaments i complir les obligacions comptables i fiscals del Prestador.\n\nBase jurídica: l\'execució del contracte de compra (article 6.1.b) del Reglament general de protecció de dades) i el compliment de les obligacions legals del Prestador (article 6.1.c)).\n\nTermini de conservació: el termini exigit per la normativa tributària; amb caràcter general, quatre anys (article 66 de la Llei general tributària espanyola). Transcorregut aquest termini, les dades se suprimeixen.\n\nDestinataris: les dades no es comuniquen a tercers, excepte quan ho exigeixi la llei.\n\n7. Drets de l\'Usuari\n\nL\'Usuari pot exercir els drets d\'accés, rectificació, supressió, limitació del tractament, oposició i portabilitat, d\'acord amb els articles 15 a 22 del Reglament general de protecció de dades, adreçant-se al Prestador a jotacomyn@gmail.com. L\'Usuari també pot presentar una reclamació davant l\'Agència Espanyola de Protecció de Dades (www.aepd.es).\n\n8. Contacte\n\nLes consultes sobre aquesta política es poden adreçar al Prestador a jotacomyn@gmail.com o obrint una incidència a https://github.com/javimentallab/MorseLightCrypt/issues.</string>
+</resources>

@@ -2,7 +2,7 @@
 
 *Laatst bijgewerkt: 8 november 2026*
 
-*[English](TERMS.md) · [Español](TERMS.es.md) · [Deutsch](TERMS.de.md) · [Français](TERMS.fr.md) · [Italiano](TERMS.it.md) · [Nederlands](TERMS.nl.md) · [Polski](TERMS.pl.md) · [Português](TERMS.pt.md) · [Русский](TERMS.ru.md) · [Українська](TERMS.uk.md) · [简体中文](TERMS.zh-CN.md) · [日本語](TERMS.ja.md) · [한국어](TERMS.ko.md) · [ไทย](TERMS.th.md) · [हिन्दी](TERMS.hi.md)*
+*[English](TERMS.md) · [Español](TERMS.es.md) · [Deutsch](TERMS.de.md) · [Français](TERMS.fr.md) · [Italiano](TERMS.it.md) · [Nederlands](TERMS.nl.md) · [Polski](TERMS.pl.md) · [Português](TERMS.pt.md) · [Русский](TERMS.ru.md) · [Українська](TERMS.uk.md) · [简体中文](TERMS.zh-CN.md) · [日本語](TERMS.ja.md) · [한국어](TERMS.ko.md) · [ไทย](TERMS.th.md) · [हिन्दी](TERMS.hi.md) · [Català](TERMS.ca.md) · [Galego](TERMS.gl.md) · [Euskara](TERMS.eu.md)*
 
 **1. Identificatie van de Aanbieder.** De applicatie MorseLightCrypt (de “App”) wordt op Google Play aangeboden door Javier Comyn Pérez, met adres te calle Olivos, número 36, 28670 Villaviciosa de Odón, Madrid, España (de “Aanbieder”). Elke mededeling met betrekking tot deze voorwaarden kan aan de Aanbieder worden gericht via jotacomyn@gmail.com of via https://github.com/javimentallab/MorseLightCrypt/issues.
 

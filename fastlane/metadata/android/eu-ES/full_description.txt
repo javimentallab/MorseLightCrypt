@@ -1,0 +1,11 @@
+<p>Bidali testua Morsez linternarekin edo bip-soinuekin, eta irakurri kamerarekin edo mikrofonoarekin, pasahitz nagusi batekin zifratuta, nahi baduzu.</p>
+<p>Mugikor batek argi-keinuak edo bip-soinuak egiten ditu, eta beste batek argiari begiratzen dio edo entzun egiten du, eta pultsuak testu bihurtzen ditu. Keinuka ari den beste edozein argi ere irakurtzen du (lanpara bat, pantaila bat, urruneko linterna bat) eta edozein Morse tonu (irrati bat, ordenagailu bat, beste mugikor bat, musika-tresna bat).</p>
+<ul>
+<li><b>Bidali</b>: idatzi, aukeratu abiadura, aukeratu argia, soinua edo biak, eta igorri. Errepikatu begizta batean, jasotzen duenak kokatzeko denbora izan dezan.</li>
+<li><b>Jaso</b>: aukeratu argi-seinalea edo soinu-seinalea eta sakatu Hasi. Atximurkatu zooma egiteko argia urrun badago; entzumenez, bidaltzen duenaren tonua berez aurkitzen du. Errepikapen bakoitza bere lerroan ateratzen da, eta jasotako testua eskuz zuzen daiteke.</li>
+<li><b>Zifratu / Deszifratu</b>: AES-256 pasahitz nagusiarekin, Morserako pentsatutako letra eta zenbakien formatu trinkoan: "HOLA MUNDO" testuak 26 karaktere hartzen ditu.</li>
+</ul>
+<p>Hargailuak keinuka ari denari baino ez dio jarraitzen; beraz, lanpararen ondoko pantaila distiratsu batek ez du itsutzen, eta entzumenez Morse tonuari baino ez dio jarraitzen, ez inguruko zaratari. Bidaltzen duenaren abiadura berak neurtzen du, eskuaren dardara onartzen du eta pausatu egiten da mugikorra mugitzen den bitartean.</p>
+<p>Sare-baimenik ez: mugikorretik argia eta soinua baino ez dira ateratzen. Mikrofonoa soinu bidez jasotzen ari zaren bitartean baino ez da irekitzen, eta ez da ezer grabatzen ezta gordetzen ere.</p>
+<p>Argiarekin bidaltzeko, linterna duen mugikor bat behar da; jasotzeko, kamera edo mikrofonoa.</p>
+<p>Euskaraz, gaztelaniaz, ingelesez, katalanez, galizieraz, portugesez, frantsesez, alemanez, italieraz, nederlanderaz, polonieraz, errusieraz, ukraineraz, txineraz, japonieraz, koreeraz, thailanderaz eta hindiz eskuragarri.</p>

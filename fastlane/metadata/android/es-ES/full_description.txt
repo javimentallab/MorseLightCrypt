@@ -8,4 +8,4 @@
 <p>El receptor solo sigue lo que parpadea, así que una pantalla brillante junto a la lámpara no lo ciega, y de oído solo sigue el tono Morse, no el ruido de alrededor. Mide solo la velocidad de quien envía, tolera el pulso de la mano y se pausa mientras el móvil se mueve.</p>
 <p>Sin permiso de red: del móvil solo salen luz y sonido. El micrófono solo se abre mientras recibes por sonido y no se graba ni se guarda nada.</p>
 <p>Para enviar con luz hace falta un móvil con linterna; para recibir, cámara o micrófono.</p>
-<p>Disponible en castellano, inglés, portugués, francés, alemán, italiano, neerlandés, polaco, ruso, ucraniano, chino, japonés, coreano, tailandés e hindi.</p>
+<p>Disponible en castellano, inglés, catalán, gallego, euskera, portugués, francés, alemán, italiano, neerlandés, polaco, ruso, ucraniano, chino, japonés, coreano, tailandés e hindi.</p>

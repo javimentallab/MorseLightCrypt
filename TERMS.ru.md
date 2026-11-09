@@ -2,7 +2,7 @@
 
 *Последнее обновление: 8 ноября 2026 г.*
 
-*[English](TERMS.md) · [Español](TERMS.es.md) · [Deutsch](TERMS.de.md) · [Français](TERMS.fr.md) · [Italiano](TERMS.it.md) · [Nederlands](TERMS.nl.md) · [Polski](TERMS.pl.md) · [Português](TERMS.pt.md) · [Русский](TERMS.ru.md) · [Українська](TERMS.uk.md) · [简体中文](TERMS.zh-CN.md) · [日本語](TERMS.ja.md) · [한국어](TERMS.ko.md) · [ไทย](TERMS.th.md) · [हिन्दी](TERMS.hi.md)*
+*[English](TERMS.md) · [Español](TERMS.es.md) · [Deutsch](TERMS.de.md) · [Français](TERMS.fr.md) · [Italiano](TERMS.it.md) · [Nederlands](TERMS.nl.md) · [Polski](TERMS.pl.md) · [Português](TERMS.pt.md) · [Русский](TERMS.ru.md) · [Українська](TERMS.uk.md) · [简体中文](TERMS.zh-CN.md) · [日本語](TERMS.ja.md) · [한국어](TERMS.ko.md) · [ไทย](TERMS.th.md) · [हिन्दी](TERMS.hi.md) · [Català](TERMS.ca.md) · [Galego](TERMS.gl.md) · [Euskara](TERMS.eu.md)*
 
 **1. Идентификация Поставщика.** Лицом, предлагающим приложение MorseLightCrypt (далее — «Приложение») в Google Play, является Javier Comyn Pérez, адрес: calle Olivos, número 36, 28670 Villaviciosa de Odón, Madrid, España (далее — «Поставщик»). Любые сообщения, касающиеся настоящих условий, могут быть направлены Поставщику по адресу jotacomyn@gmail.com или через https://github.com/javimentallab/MorseLightCrypt/issues.
 

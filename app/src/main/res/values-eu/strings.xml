@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_send">Bidali</string>
+    <string name="tab_receive">Jaso</string>
+    <string name="tab_send_secret">Zifratu</string>
+    <string name="tab_receive_secret">Deszifratu</string>
+
+    <string name="message">Mezua</string>
+    <string name="password">Pasahitz nagusia</string>
+    <string name="show_password">Erakutsi pasahitza</string>
+    <string name="hide_password">Ezkutatu pasahitza</string>
+    <string name="speed_label">Abiadura: %1$d hitz/min (puntua = %2$d ms)</string>
+    <string name="expected_speed">Espero den abiadura: %1$d hitz/min (puntua = %2$d ms)</string>
+    <string name="repeat">Errepikatu gelditu arte</string>
+    <string name="send">Igorri</string>
+    <string name="encrypt_and_send">Zifratu eta igorri</string>
+    <string name="encrypting">Zifratzen…</string>
+    <string name="stop">Gelditu</string>
+    <string name="send_duration">%1$d s inguruko igorpena</string>
+    <string name="encrypted_length">Zifratuta: %1$d karaktere inguru</string>
+    <string name="no_flash">Mugikor honek ez du linternarik atzeko kameran.</string>
+    <string name="nothing_to_send">Mezu honetako ezer ezin da Morsez bidali.</string>
+    <string name="password_missing">Idatzi lehenik pasahitz nagusia.</string>
+    <string name="morse_preview_empty">Zure mezua Morsez agertuko da hemen.</string>
+    <string name="cipher_preview_empty">Mezu zifratua hemen agertzen da bidaltzean. Aldi bakoitzean aldatzen da.</string>
+    <string name="last_ciphertext">Azken mezu zifratua</string>
+
+    <string name="camera_permission">MorseLightCrypt-ek kamera behar du argi-pultsuak ikusteko. Ez da ezer grabatzen ezta gordetzen ere. Kamerarik gabe, jasotako mezu bat eskuz idatz dezakezu behean.</string>
+    <string name="allow_camera">Baimendu kamera</string>
+    <string name="camera_open_failed">Ezin izan da kamera ireki: %1$s</string>
+    <string name="calibrating">Esposizioa doitzen…</string>
+    <string name="start_receiving">Hasi jasotzen</string>
+    <string name="stop_receiving">Gelditu</string>
+    <string name="paused">Pausatuta: apuntatu argiari eta sakatu Hasi</string>
+    <string name="received_label">Jasotakoa (zuzen dezakezu)</string>
+    <string name="moving">Pausatuta mugitzen den bitartean</string>
+    <string name="banner_moving">Utzi mugikorra geldi!</string>
+    <string name="banner_shaky">Pultsu ezegonkorra: eutsi sendoago</string>
+    <string name="aim_at_light">Apuntatu laukia keinuka ari den argiari</string>
+    <string name="light_found">Argia aurkitu da, pultsuen zain</string>
+    <string name="receiving">Jasotzen, %1$d hitz/min inguru</string>
+    <string name="received_empty">Jasotako testua hemen agertuko da.</string>
+    <string name="decrypt">Deszifratu</string>
+    <string name="decrypting">Deszifratzen…</string>
+    <string name="decrypt_failed">Ezin izan da deszifratu. Edo pasahitza ez da hori, edo letraren bat gaizki irakurri da: ezabatu eta jaso berriro.</string>
+    <string name="line_not_opened">%1$d. lerroa ezin izan da deszifratu: %2$s</string>
+    <string name="majority_label">Gehiengoz berreraikia, lerroak mezu beraren errepikapenak direla suposatuta:</string>
+    <string name="clear">Ezabatu</string>
+    <string name="copy">Kopiatu</string>
+    <string name="recalibrate">Birkalibratu</string>
+    <string name="receive_tips">Apuntatu laukia argiari eta atximurkatu zooma egiteko, urrun badago. Bermatu mugikorra: mugitzen den bitartean ez du ezer irakurtzen.</string>
+
+    <string name="send_error">Ezin izan da igorri: %1$s</string>
+    <string name="by_light">Argia</string>
+    <string name="by_sound">Soinua</string>
+    <string name="choose_light_or_sound">Aukeratu argia, soinua edo biak.</string>
+    <string name="light_signal">Argi-seinalea</string>
+    <string name="sound_signal">Soinu-seinalea</string>
+    <string name="mic_permission">MorseLightCrypt-ek mikrofonoa behar du bip-soinuak entzuteko. Jasotzen ari zaren bitartean baino ez du entzuten, eta ez da ezer grabatzen ezta gordetzen ere. Mikrofonorik gabe, jasotako mezu bat eskuz idatz dezakezu behean.</string>
+    <string name="allow_mic">Baimendu mikrofonoa</string>
+    <string name="mic_open_failed">Ezin izan da mikrofonoa ireki: %1$s</string>
+    <string name="paused_sound">Pausatuta: hurbildu mugikorra soinura eta sakatu Hasi</string>
+    <string name="listen_for_tone">Morse tonu bat entzuten…</string>
+    <string name="tone_found">Tonua aurkitu da, bip-soinuen zain</string>
+    <string name="tone_hz">%1$d Hz</string>
+    <string name="receive_tips_sound">Hurbildu mugikorra bozgorailura eta ziurtatu inguruan isiltasuna dagoela. 300 eta 1500 Hz arteko tonu konstante ozenenari jarraitzen dio.</string>
+
+    <string name="privacy_policy">Pribatutasun-politika</string>
+    <string name="privacy_text">1. Tratamenduaren arduraduna\n\nMorseLightCrypt aplikazioa («Aplikazioa») Javier Comyn Pérezek («Hornitzailea») argitaratzen du Google Play plataforman, javimentallab garatzaile-izenarekin; haren helbidea honako hau da: calle Olivos, número 36, 28670 Villaviciosa de Odón, Madrid, España. Hornitzailea da politika honetan aipatzen diren datu pertsonalen tratamenduaren arduraduna, eta Erabiltzailea Hornitzailearekin harremanetan jar daiteke jotacomyn@gmail.com helbidean.\n\n2. Aplikazioan ez da datu pertsonalik tratatzen\n\nAplikazioak ez du Erabiltzailearen datu pertsonalik biltzen ezta tratatzen ere. Aplikazioak ez du erabiltzaile-konturik, publizitaterik, analisi-tresnarik ezta akatsen berri emateko sistemarik ere, eta ez du Interneterako sarbide-baimenik eskatzen; beraz, ezin die daturik igorri hirugarrenei. Hornitzaileak tratatzen dituen datu pertsonal bakarrak Aplikazioaren erosketari dagozkionak dira, 6. atalean deskribatuak.\n\n3. Baimenak\n\nKamera: Jaso edo Deszifratu fitxa argi moduan irekita dagoen bitartean soilik erabiltzen da, jasotzea hasi aurreko denbora barne, Erabiltzaileak gailua orientatu ahal izan dezan. Irudiak atzeman ahala aztertzen dira gailuan bertan, ez dira gordetzen ezta igortzen ere, eta inork ez du haietarako sarbiderik.\n\nMikrofonoa: Morse mezuak soinu bidez jasotzean soilik erabiltzen da, eta Aplikazioa entzuten ari den bitartean baino ez dago aktibo. Audioa gailuan bertan aztertzen da, eta ez da grabatzen, gordetzen ezta igortzen ere.\n\nLinterna eta bozgorailua: Erabiltzaileak idatzitako mezua igortzeko soilik erabiltzen dira.\n\n4. Gailuan gordetako datuak\n\nAplikazioak Erabiltzailearen ezarpenak soilik gordetzen ditu: transmisio-abiadura eta bidaltzeko eta jasotzeko modua, argi bidez edo soinu bidez. Mezuak eta pasahitzak gailuaren memorian soilik gordetzen dira, eta Aplikazioa ixtean ezabatzen dira. Aplikazioaren babeskopia desgaituta dago eta ez da gaituko.\n\n5. Arbela\n\nErabiltzaileak Kopiatu funtzioa erabiltzen badu, testua Androiden arbelera transferitzen da, eta Erabiltzaileak baimendutako beste aplikazio batzuek arbel hori atzi dezakete.\n\n6. Erosketa-datuak\n\nAplikazioa Google Play bidez erosten da, eta hark kudeatzen du ordainketa, bere baldintzen eta pribatutasun-politikaren arabera. Hornitzaileak ez ditu jasotzen Erabiltzailearen ordainketa-datuak. Eskaera bakoitzerako, Googlek datu mugatuak ematen dizkio Hornitzaileari, hala nola eskaera-zenbakia, data, zenbatekoa eta eroslearen herrialdea.\n\nEuropako Parlamentuaren eta Kontseiluaren 2016ko apirilaren 27ko 2016/679 (EB) Erregelamenduaren (Datuak Babesteko Erregelamendu Orokorra) 13. artikuluak eskatzen duenez, honako informazio hau ematen da:\n\nHelburua: eskaerak eta itzulketak kudeatzea eta Hornitzailearen kontabilitate- eta zerga-betebeharrak betetzea.\n\nOinarri juridikoa: erosketa-kontratua betetzea (Datuak Babesteko Erregelamendu Orokorraren 6.1.b) artikulua) eta Hornitzailearen legezko betebeharrak betetzea (6.1.c) artikulua).\n\nKontserbazio-epea: zerga-legeriak eskatzen duen epea; oro har, lau urte (Espainiako Zergei buruzko Lege Orokorraren 66. artikulua). Epe hori igarotakoan, datuak ezabatu egiten dira.\n\nHartzaileak: datuak ez zaizkie hirugarrenei jakinarazten, legeak hala eskatzen duenean izan ezik.\n\n7. Erabiltzailearen eskubideak\n\nErabiltzaileak datuak eskuratzeko, zuzentzeko, ezabatzeko, tratamendua mugatzeko, aurka egiteko eta eramangarritasunerako eskubideak erabil ditzake, Datuak Babesteko Erregelamendu Orokorraren 15. artikulutik 22. artikulura bitartekoen arabera, Hornitzailearengana jota jotacomyn@gmail.com helbidean. Erabiltzaileak, halaber, erreklamazioa aurkez dezake Datuak Babesteko Espainiako Agentzian (www.aepd.es).\n\n8. Harremanetarako\n\nPolitika honi buruzko kontsultak Hornitzaileari bidal dakizkioke jotacomyn@gmail.com helbidera, edo gai bat irekiz https://github.com/javimentallab/MorseLightCrypt/issues helbidean.</string>
+</resources>

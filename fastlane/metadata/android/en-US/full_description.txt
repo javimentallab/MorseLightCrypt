@@ -8,4 +8,4 @@
 <p>The receiver follows only what blinks, so a bright screen next to the lamp does not blind it, and by ear it follows only the Morse tone, not the noise around it. It measures the sender's speed by itself, tolerates a hand holding the phone and pauses while the phone moves.</p>
 <p>No network permission: nothing leaves the phone except light and sound. The microphone is open only while receiving by sound, and nothing is recorded or stored.</p>
 <p>Sending by light needs a phone with a flashlight; receiving needs a camera or a microphone.</p>
-<p>Available in English, Spanish, Portuguese, French, German, Italian, Dutch, Polish, Russian, Ukrainian, Chinese, Japanese, Korean, Thai and Hindi.</p>
+<p>Available in English, Spanish, Catalan, Galician, Basque, Portuguese, French, German, Italian, Dutch, Polish, Russian, Ukrainian, Chinese, Japanese, Korean, Thai and Hindi.</p>

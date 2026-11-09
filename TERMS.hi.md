@@ -2,7 +2,7 @@
 
 *अंतिम अद्यतन: 8 नवंबर 2026*
 
-*[English](TERMS.md) · [Español](TERMS.es.md) · [Deutsch](TERMS.de.md) · [Français](TERMS.fr.md) · [Italiano](TERMS.it.md) · [Nederlands](TERMS.nl.md) · [Polski](TERMS.pl.md) · [Português](TERMS.pt.md) · [Русский](TERMS.ru.md) · [Українська](TERMS.uk.md) · [简体中文](TERMS.zh-CN.md) · [日本語](TERMS.ja.md) · [한국어](TERMS.ko.md) · [ไทย](TERMS.th.md) · [हिन्दी](TERMS.hi.md)*
+*[English](TERMS.md) · [Español](TERMS.es.md) · [Deutsch](TERMS.de.md) · [Français](TERMS.fr.md) · [Italiano](TERMS.it.md) · [Nederlands](TERMS.nl.md) · [Polski](TERMS.pl.md) · [Português](TERMS.pt.md) · [Русский](TERMS.ru.md) · [Українська](TERMS.uk.md) · [简体中文](TERMS.zh-CN.md) · [日本語](TERMS.ja.md) · [한국어](TERMS.ko.md) · [ไทย](TERMS.th.md) · [हिन्दी](TERMS.hi.md) · [Català](TERMS.ca.md) · [Galego](TERMS.gl.md) · [Euskara](TERMS.eu.md)*
 
 **1. प्रदाता की पहचान।** MorseLightCrypt एप्लिकेशन (“ऐप”) को Javier Comyn Pérez, जिनका पता calle Olivos, número 36, 28670 Villaviciosa de Odón, Madrid, España है (“प्रदाता”), द्वारा Google Play पर उपलब्ध कराया जाता है। इन शर्तों से संबंधित कोई भी संचार jotacomyn@gmail.com पर अथवा https://github.com/javimentallab/MorseLightCrypt/issues के माध्यम से प्रदाता को भेजा जा सकता है।
 
