@@ -6,7 +6,7 @@
 
 **1. 提供者身份。** MorseLightCrypt 应用程序（以下简称“本应用”）由 Javier Comyn Pérez（地址：calle Olivos, número 36, 28670 Villaviciosa de Odón, Madrid, España，以下简称“提供者”）在 Google Play 上提供。有关本条款的任何通信均可通过 jotacomyn@gmail.com 或 https://github.com/javimentallab/MorseLightCrypt/issues 向提供者发送。
 
-**2. 标的和许可。** 本条款规范通过 Google Play 分发的本应用的使用。购买本应用后，用户通过一次性付款获得在其设备上并按 Google Play 允许的条件使用本应用的许可。本应用的源代码根据 MIT 许可证单独分发；本条款仅适用于在 Google Play 上分发的版本。
+**2. 标的和许可。** 本条款规范通过 Google Play 分发的本应用的使用。购买本应用后，用户通过一次性付款获得在其设备上并按 Google Play 允许的条件使用本应用的许可。本应用的源代码根据 PolyForm Noncommercial 1.0.0 许可证单独分发；本条款仅适用于在 Google Play 上分发的版本。
 
 **3. 技术限制。** 用户承认，通过光或声音传输的摩尔斯电码消息可被第三方察觉，且其接收取决于距离、照明和环境噪声等因素，因此消息可能丢失或被错误解读。未加密的消息可被任何看到或听到该消息的人读取。对于加密消息，主密码一旦忘记便无法找回。本应用不得在紧急情况下使用。使用手电筒和扬声器可能给第三方造成干扰或风险，因此用户在使用时应尽到应有的注意。
 

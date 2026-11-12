@@ -29,11 +29,9 @@ chino, japonés, coreano, tailandés e hindi.
 
 ## Instalar
 
-- **[F-Droid](https://f-droid.org/packages/com.javimetallab.morselightcrypt/)**: busca
-  *MorseLightCrypt* en la app de F-Droid (o en Droid-ify, Neo Store…); ella la mantiene al día.
 - **APK** de la [última versión](https://github.com/javimentallab/MorseLightCrypt/releases/latest).
-  F-Droid la compila de forma reproducible y distribuye este mismo APK firmado, así que puedes
-  cambiar de una fuente a otra y seguir actualizando.
+- **[F-Droid](https://f-droid.org/packages/com.javimetallab.morselightcrypt/)** tiene las versiones publicadas con licencia MIT. F-Droid solo admite
+  software libre, así que no recibirá las siguientes.
 
 ---
 
@@ -162,4 +160,4 @@ Consulta [CONTRIBUTING](CONTRIBUTING.md), en inglés. Para avisar en privado de 
 
 ## Licencia
 
-[MIT](LICENSE). Las licencias de terceros están en [NOTICE](NOTICE).
+[PolyForm Noncommercial 1.0.0](LICENSE): se permite cualquier uso no comercial; el uso comercial necesita permiso del autor. Las versiones hasta la 1.1.8 se publicaron con licencia MIT. Las licencias de terceros están en [NOTICE](NOTICE).
